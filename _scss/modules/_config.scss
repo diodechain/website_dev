@@ -1,8 +1,8 @@
 // Typography
 $font-family: 'Titillium Web'; // Google Font
 $global-font-size: 17px;
-$text-font-size-1: 22px;
-$text-font-size-2: 24px;
+$text-font-size-1: 1rem;
+$text-font-size-2: 1.2rem;
 $title-font-size-1: 36px;
 $title-font-size-2: 56px;
 $title-font-size-3: 64px;
@@ -14,6 +14,9 @@ $animation-arrow-header-time: 2.5s;
 // Animations Types
 $transition-links-type: ease-in-out;
 $animation-arrow-header-type: ease-in-out;
+
+// Menu
+$header-height: 6.5rem;
 
 // Mobile Menu Settings
 $cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);

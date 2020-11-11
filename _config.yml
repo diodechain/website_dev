@@ -101,7 +101,7 @@ navigation:
       link: resources/download
     - title: Explorer
       link: resources/explorer
-- title: <i class="fi flaticon-telegram"></i>
+- title: <i class="fab fa-telegram-plane"></i>
   link: https://t.me/diode_chain
   target: _blank
 - title: Download dDrive

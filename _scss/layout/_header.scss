@@ -6,8 +6,6 @@
  *
  **/
 
- $header-height: 122px;
-
 .no-scroll header.site-header .site-navigation-bar {
   overflow: visible;
 }
@@ -120,8 +118,9 @@ header.site-header {
 
           li {
 
+            // Sub nav menu
             &.subnav {
-              &>a {
+              &>a.nav-link {
                 overflow: hidden;
                 height: $header-height;
                 display: flex;
@@ -157,6 +156,7 @@ header.site-header {
                   margin-bottom: 10px;
                   position: relative;
                   width: fit-content;
+                  font-size: $text-font-size-2;
                   &:hover::before {
                     content: '';
                     position: absolute;
@@ -187,17 +187,23 @@ header.site-header {
             }
 
             a {
-              display: block;
-              color: $white;
-              padding: 10px 0;
-              font-size: $text-font-size-2;
-              text-transform: initial;
+              &.nav-link {
+                display: block;
+                color: $white;
+                padding: 10px 0;
+                font-size: $text-font-size-2;
+                text-transform: initial;
 
-              &:hover,
-              &:active {
-                color: $primary;
+                &:hover,
+                &:active {
+                  color: $primary;
+                }
+
+                i {
+                  font-size: 1.5rem;
+                }
+
               }
-
             }
           }
         }

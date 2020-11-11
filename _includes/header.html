@@ -25,15 +25,19 @@
         <nav id="navMenu" class="nav-menu">
           <ul class="menu">
             {% for nav in site.navigation %}
-              {% if nav.target %}
+              {% if nav.is_button %}
                 <li>
-                  <a href="{{ nav.link }}" target="{{ nav.target }}"
+                  <a class="button nav-button" href="{{ nav.link }}">{{ nav.title }}</a>
+                </li>
+              {% elsif nav.target %}
+                <li>
+                  <a  class="nav-link" href="{{ nav.link }}" target="{{ nav.target }}"
                     >{{ nav.title }}</a
                   >
                 </li>
               {% elsif nav.subs %}
                 <li class="subnav">
-                  <a href="{{ nav.link }}">{{ nav.title }}</a>
+                  <a class="nav-link" href="{{ nav.link }}">{{ nav.title }}</a>
                   <div class="subnav-content">
                     <div class="row container">
                       {% for subnav in nav.subs %}
@@ -46,7 +50,7 @@
                 </li>
               {% else %}
                 <li>
-                  <a href="{{ nav.link }}">{{ nav.title }}</a>
+                  <a  class="nav-link" href="{{ nav.link }}">{{ nav.title }}</a>
                 </li>
               {% endif %}
             {% endfor %}
