@@ -58,25 +58,57 @@ header-secondary-button:
 ####################################
 
 navigation:
-- title: Home
-  link: #home
+- title: Solutions
+  link: solutions/
+  subs:
+    - title: Remote Work
+      link: solutions/remove-wowrk
+    - title: Private Storage
+      link: solutions/private-storage
+    - title: Streaming Video
+      link: solutions/streaming-video
+    - title: Healthcare & Compliance
+      link: solutions/healthcare-and-compliance
+    - title: Internet of Things
+      link: solutions/internet-of-things
+    - title: IT and Developers
+      link: solutions/it-and-developers
+    - title: Serverless Communications
+      link: solutions/serverless-communications
+- title: Products
+  link: products/
+  subs:
+    - title: dDrive
+      link: products/d-drive
+    - title: Diode CLI
+      link: products/diode-cli
+    - title: Diode Network
+      link: products/diode-network
+    - title: Pricing
+      link: products/pricing
 - title: Blog
   link: blog/
-- title: Docs
-  link: https://support.diode.io
-- title: Download
-  link: download/
-- title: Explorer
-  link: prenet/
+- title: Resources
+  link: resources/
+  subs:
+    - title: How it Works
+      link: resources/how-it-works
+    - title: About
+      link: resources/about
+    - title: Docs
+      link: resources/docs
+    - title: Download
+      link: resources/download
+    - title: Explorer
+      link: resources/explorer
 - title: <i class="fi flaticon-telegram"></i>
   link: https://t.me/diode_chain
   target: _blank
-- title: <i class="fi flaticon-twitter"></i>
-  link: https://twitter.com/diode_chain
+- title: Download dDrive
+  link: download/
+  is_button: true
   target: _blank
-- title: <i class="fi flaticon-github"></i>
-  link: https://github.com/diodechain
-  target: _blank
+
 
 
 ####################################
