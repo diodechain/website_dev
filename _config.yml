@@ -60,14 +60,19 @@ header-secondary-button:
 navigation:
 - title: Solutions
   link: solutions/
+  ft_order: 1
   subs:
     - title: Remote Work
+      ft_title: Remote Work
       link: solutions/remove-wowrk
     - title: Private Storage
+      ft_title: Private Storage
       link: solutions/private-storage
     - title: Streaming Video
+      ft_title: Streaming Video
       link: solutions/streaming-video
     - title: Healthcare & Compliance
+      ft_title: Compliance
       link: solutions/healthcare-and-compliance
     - title: Internet of Things
       link: solutions/internet-of-things
@@ -77,29 +82,41 @@ navigation:
       link: solutions/serverless-communications
 - title: Products
   link: products/
+  ft_order: 2
   subs:
     - title: dDrive
+      ft_title: dDrive
       link: products/d-drive
     - title: Diode CLI
+      ft_title: CLI
       link: products/diode-cli
     - title: Diode Network
+      ft_title: Network
       link: products/diode-network
     - title: Pricing
+      ft_title: Pricing
       link: products/pricing
 - title: Blog
   link: blog/
+  ft_order: 4
 - title: Resources
   link: resources/
+  ft_order: 3
   subs:
     - title: How it Works
+      ft_title: How it Works
       link: resources/how-it-works
     - title: About
+      ft_title: About
       link: resources/about
-    - title: Docs
+    - title: About
+      ft_title: About
       link: resources/docs
     - title: Download
+      ft_title: Download
       link: resources/download
     - title: Explorer
+      ft_title: Explorer
       link: resources/explorer
 - title: <i class="fab fa-telegram-plane"></i>
   link: https://t.me/diode_chain
@@ -109,7 +126,20 @@ navigation:
   is_button: true
   target: _blank
 
-
+####################################
+######  Quick links of footer ######
+####################################
+quick_links:
+- title: Solutions
+  link: solutions/
+- title: Products
+  link: products/
+- title: Blog
+  link: blog/
+- title: Resources
+  link: resources/
+- title: Privacy Policy
+  link: privacy-policy/
 
 ####################################
 ######  Global Social Links   ######

@@ -9,49 +9,110 @@
 footer.site-footer {
   position: relative;
   color: $footer-color;
-  background-color: $footer-background-color;
+  background-color: $black-blue;
   width: 100%;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  .row {
+    align-items: flex-start;
+    // Footer menus
+    .footer-menu {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 30px;
 
-  // Footer Information
-  .footer-info {
-    padding: 60px 0 0 0;
-
-    .footer-logo {
-      position: relative;
-
-      img {
-        margin: 0 auto;
+      &__col {
+        &.quick-menu {
+          display: none;
+        }
+        .footer-link {
+          font-size: $text-font-size-2;
+          color: $white;
+          font-weight: 600;
+          text-decoration: underline;
+          line-height: 2.5;
+          &:hover {
+            color: $orange;
+          }
+        }
+        ul {
+          li {
+            a {
+              font-size: $text-font-size-1;
+              color: $white;
+              font-weight: 400;
+              line-height: 2.5;
+              &:hover {
+                color: $orange;
+              }
+            }
+          }
+        }
       }
     }
 
-    .footer-info-text {
-      font-size: 0.875rem;
-      padding: 35px 0;
+    // Footer socials
+    .footer-socials {
+      display: flex;
+      justify-content: space-between;
+      max-width: 250px;
+      min-width: 250px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+      a {
+        font-size: 1.8em;
+        color: $white;
+        line-height: 1.5;
+        &:hover {
+          color: $orange;
+        }
+      }
     }
 
-    // Social Media Icons
-    .social-icons {
-      padding-top: .5em;
-      a  {
-        color: $global-text;
 
-        &:hover,
-        &:active {
-          color: $primary;
+    // Footer texts
+    .footer-logo {
+      img {
+        width: 100px;
+      }
+    }
+    .footer-text {
+      display: flex;
+      justify-content: space-between;
+      height: 35px;
+      align-items: center;
+      font-size: 1em;
+      color: $light-gray;
+      .v-cross {
+        width: 1px;
+        height: 20px;
+        background: $light-gray;
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  footer.site-footer {
+
+    .row {
+      .footer-menu {
+        justify-content: center;
+        &__col {
+          &.quick-menu {
+            display: block;
+            .footer-link {
+              text-decoration: none;
+              line-height: 3.5;
+            }
+          }
+          &.full-menu {
+            display: none;
+          }
         }
       }
     }
   }
-
-  // Footer Copyright
-  .footer-copyright {
-    font-size: 0.8125rem;
-    border-top: 1px solid $normal-gray;
-    padding: 30px 0;
-
-    .footer-text {
-      width: 100%;
-    }
-  }
-
 }

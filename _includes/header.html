@@ -26,18 +26,18 @@
           <ul class="menu">
             {% for nav in site.navigation %}
               {% if nav.is_button %}
-                <li>
+                <li class="has-button-nav">
                   <a class="button nav-button" href="{{ nav.link }}">{{ nav.title }}</a>
                 </li>
               {% elsif nav.target %}
-                <li>
+                <li class="has-target-nav">
                   <a  class="nav-link" href="{{ nav.link }}" target="{{ nav.target }}"
                     >{{ nav.title }}</a
                   >
                 </li>
               {% elsif nav.subs %}
                 <li class="subnav">
-                  <a class="nav-link" href="{{ nav.link }}">{{ nav.title }}</a>
+                  <a class="nav-link" href="javascript:;">{{ nav.title }}</a>
                   <div class="subnav-content">
                     <div class="row container">
                       {% for subnav in nav.subs %}

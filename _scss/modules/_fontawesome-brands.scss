@@ -2,23 +2,43 @@
  * Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
- @font-face {
-  font-family: 'Font Awesome 5 Brands';
+@font-face {
+  font-family: "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: 400;
   font-display: block;
   src: url("../fonts/Fontawesome/fa-brands-400.eot");
-  src: url("../fonts/Fontawesome/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/Fontawesome/fa-brands-400.woff2") format("woff2"), url("../fonts/Fontawesome/fa-brands-400.woff") format("woff"), url("../fonts/Fontawesome/fa-brands-400.ttf") format("truetype"), url("../fonts/Fontawesome/fa-brands-400.svg#fontawesome") format("svg"); }
+  src: url("../fonts/Fontawesome/fa-brands-400.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Fontawesome/fa-brands-400.woff2") format("woff2"),
+    url("../fonts/Fontawesome/fa-brands-400.woff") format("woff"),
+    url("../fonts/Fontawesome/fa-brands-400.ttf") format("truetype"),
+    url("../fonts/Fontawesome/fa-brands-400.svg#fontawesome") format("svg");
+}
+$font-fa-youtube: "\f167";
+$font-fa-telegram-plane: "\f3fe";
+$font-fa-twitter: "\f099";
+$font-fa-github: "\f09b";
 
 .fab {
-  font-family: 'Font Awesome 5 Brands';
-  font-weight: 400; }
-
-.fa-telegram-plane:before {
-    content: "\f3fe"; 
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
 }
 
-.fab:before{
+.fa-youtube:before {
+  content: $font-fa-youtube;
+}
+.fa-telegram-plane:before {
+  content: $font-fa-telegram-plane;
+}
+.fa-twitter:before {
+  content: $font-fa-twitter;
+}
+.fa-github:before {
+  content: $font-fa-github;
+}
+
+.fab:before {
   display: inline-block;
   font-family: "Font Awesome 5 Brands";
   font-style: normal;
@@ -32,6 +52,3 @@
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
 }
-
-
-$font-fa-telegram-plane: "\f2c6";
