@@ -10,12 +10,16 @@
   overflow: visible;
 }
 
+body>section:first-of-type {
+  margin-top: $desktop-header-height;
+}
 
 header.site-header {
   position: fixed;
   width: 100%;
   background-color: $web-blue;
   z-index: 1;
+  top: 0;
 
   // Overlay Lightbox
   .overlay {

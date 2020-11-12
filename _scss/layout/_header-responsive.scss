@@ -11,6 +11,9 @@
 }
 
 @media (max-width: 992px) {
+  body>section:first-of-type {
+    margin-top: $mobile-header-height;
+  }
 
   // Site Header Mobile
   header.site-header {

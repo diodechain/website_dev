@@ -2759,11 +2759,16 @@ blockquote:before {
   overflow: visible;
 }
 
+body > section:first-of-type {
+  margin-top: 6.5rem;
+}
+
 header.site-header {
   position: fixed;
   width: 100%;
   background-color: #2d3e50;
   z-index: 1;
+  top: 0;
 }
 
 header.site-header .overlay {
@@ -3084,6 +3089,9 @@ header.site-header .arrow-down-section .arrow-down i:before {
 }
 
 @media (max-width: 992px) {
+  body > section:first-of-type {
+    margin-top: 5.5rem;
+  }
   header.site-header {
     width: 100%;
     overflow: visible !important;
