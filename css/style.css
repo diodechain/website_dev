@@ -3129,9 +3129,6 @@ header.site-header .arrow-down-section .arrow-down i:before {
     overflow-y: scroll;
     opacity: 1;
     background: #2d3e50;
-    -webkit-transform: translateY(100%);
-        -ms-transform: translateY(100%);
-            transform: translateY(100%);
     -webkit-transition: -webkit-transform 0.8s ease-in-out;
     transition: -webkit-transform 0.8s ease-in-out;
     -o-transition: transform 0.8s ease-in-out;
@@ -3372,17 +3369,11 @@ header.site-header .arrow-down-section .arrow-down i:before {
             border-radius: 1px;
   }
   header.site-header > .container .site-navigation-bar .toggle-menu .navTrigger i:nth-child(1) {
-    -webkit-animation: sera-outT 0.8s backwards;
-            animation: sera-outT 0.8s backwards;
-    animation-direction: reverse;
     margin-top: 9px;
     width: 36px;
   }
   header.site-header > .container .site-navigation-bar .toggle-menu .navTrigger i:nth-child(2) {
     margin: 11px 0 0 18px;
-    -webkit-animation: sera-outM 0.8s backwards;
-            animation: sera-outM 0.8s backwards;
-    animation-direction: reverse;
     width: 18px;
   }
 }
