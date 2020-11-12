@@ -4047,74 +4047,48 @@ section.site-section.next-section-indicator:after {
 section.offer-section {
   padding: 40px 0;
   color: #fff;
-  background-color: #F15C2E;
+  background-color: #2d3e50;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-section.offer-section .hs-form-required {
-  display: none;
-}
-
-section.offer-section a {
+section.offer-section .offer-link {
   color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-section.offer-section a:hover, section.offer-section a:active {
-  background-color: #f7a78e;
+section.offer-section .offer-link:hover {
+  color: #f15d2f;
 }
 
-section.offer-section .underline {
-  text-decoration: none;
-  border-bottom: 7px solid #fff;
-}
-
-section.offer-section .newsletter-email-signup input {
-  border-color: white;
-  border-width: 2px;
-  color: white;
-  height: 4em;
-}
-
-section.offer-section .newsletter-email-signup input::-webkit-input-placeholder {
-  color: white;
-}
-
-section.offer-section .newsletter-email-signup input::-moz-placeholder {
-  color: white;
-}
-
-section.offer-section .newsletter-email-signup input::-ms-input-placeholder {
-  color: white;
-}
-
-section.offer-section .newsletter-email-signup input::placeholder {
-  color: white;
-}
-
-section.offer-section h2 {
+section.offer-section .offer-link h2 {
+  font-size: 36px;
   text-transform: uppercase;
-  font-size: 1.75rem;
-  padding: 1.125rem 0;
 }
 
-@media (max-width: 991px) {
-  section.offer-section h2 {
-    text-align: center;
-    line-height: 1.2;
-    padding: 0;
-  }
-  section.offer-section .mc_embed_signup_scroll {
-    margin-top: 10px;
-  }
-  section.offer-section .newsletter-email-signup {
-    text-align: center;
-  }
-  section.offer-section .newsletter-email-signup input {
-    height: 3em;
-  }
+section.offer-section .offer-link i {
+  font-size: 36px;
+  font-weight: 700;
 }
 
-section.offer-section .button {
-  padding: 0em 3em;
+section.offer-section .offer-link::after {
+  content: '';
+  position: absolute;
+  width: 226px;
+  height: 1px;
+  background-color: #f15d2f;
+  bottom: -30px;
+  left: calc(50% - 113px);
 }
 
 .taglist-post {
@@ -4425,16 +4399,15 @@ section.parallax-features-section .section-features .feature:hover .icon-wrap .c
  *  @package gleesik_layout
  *
  **/
+section.blog-section {
+  padding: 150px 0;
+}
+
 section.blog-section .row {
   -webkit-box-align: initial;
   -webkit-align-items: initial;
       -ms-flex-align: initial;
           align-items: initial;
-}
-
-section.blog-section hr.small {
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
 
 section.blog-section.page-layout {
@@ -4577,7 +4550,6 @@ section.blog-section.page-layout article.blog-article .article-boxes .tags-artic
 }
 
 section.blog-section .blog-articles-container {
-  margin-top: 80px;
   -webkit-box-align: initial;
   -webkit-align-items: initial;
       -ms-flex-align: initial;
@@ -4721,11 +4693,11 @@ section.blog-section .blog-articles-container article.blog-article header.articl
 section.blog-section .blog-articles-container article.blog-article header.article-header .article-title {
   display: block;
   width: 100%;
-  margin: 30px 0;
+  margin: 15px 0 80px;
 }
 
 section.blog-section .blog-articles-container article.blog-article header.article-header .article-title h3.title {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   line-height: 1.4;
   text-transform: uppercase;
   margin-bottom: 10px;
