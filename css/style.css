@@ -5146,8 +5146,53 @@ footer.site-footer {
   color: #848484;
   background-color: #161c2a;
   width: 100%;
-  padding-top: 60px;
+  padding-top: 50px;
   padding-bottom: 40px;
+}
+
+footer.site-footer .container {
+  position: relative;
+}
+
+footer.site-footer .container .scrollup-container {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer.site-footer .container .scrollup-container .footer-logo {
+  display: none;
+}
+
+footer.site-footer .container .scrollup-container .scrollup {
+  width: 48px;
+  height: 48px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer.site-footer .container .scrollup-container .scrollup i {
+  font-size: 38px;
+  font-weight: bold;
+  color: #2d3e50;
 }
 
 footer.site-footer .row {
@@ -5223,10 +5268,6 @@ footer.site-footer .row .footer-socials a:hover {
   color: #f15d2f;
 }
 
-footer.site-footer .row .footer-logo img {
-  width: 100px;
-}
-
 footer.site-footer .row .footer-text {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5249,6 +5290,41 @@ footer.site-footer .row .footer-text .v-cross {
   width: 1px;
   height: 20px;
   background: #e3e9ed;
+}
+
+footer.site-footer .row.footer-bottom-2 {
+  display: none;
+}
+
+footer.site-footer .footer-logo img {
+  width: 140px;
+}
+
+@media (max-width: 1199px) {
+  footer.site-footer .container .scrollup-container {
+    position: inherit;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  footer.site-footer .container .scrollup-container .footer-logo {
+    display: block;
+  }
+  footer.site-footer .container .row.footer-bottom-1 {
+    display: none;
+  }
+  footer.site-footer .container .row.footer-bottom-2 {
+    display: block;
+  }
+  footer.site-footer .container .row.footer-bottom-2 .footer-text {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 20px;
+  }
 }
 
 @media (max-width: 720px) {
