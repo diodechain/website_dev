@@ -56,20 +56,6 @@ section.site-section.hero-section {
             justify-content: space-between;
             align-items: center;
 
-            .action-link {
-                color: $white;
-                font-size: $text-font-size-1;
-                display: flex;
-                align-items: center;
-                i {
-                    font-weight: 700;
-                    font-size: 1.6em;
-                }
-                &:hover {
-                    color: $orange;
-                }
-            }
-
             .action-descriptoin {
                 position: absolute;
                 bottom: -1.8em;

@@ -71,6 +71,7 @@
           font-weight: lighter;
           overflow-y: scroll;
           opacity: 1;
+          transform: translateY(100%);
           background: $web-blue;
           transition: transform 0.8s $transition-links-type;
           z-index: 99999999999999;
