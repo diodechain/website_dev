@@ -3475,6 +3475,80 @@ header.site-header .arrow-down-section .arrow-down i:before {
   }
 }
 
+/**
+ *
+ *  Breadcrumbs Style
+ *
+ *  @package gleesik_layout
+ *
+ **/
+.breadcrumbs {
+  margin-top: 6.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.breadcrumbs li {
+  font-size: 1.3rem;
+  padding: 40px 0;
+  position: relative;
+  margin-right: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.breadcrumbs li a {
+  color: #2d3e50;
+}
+
+.breadcrumbs li a:hover {
+  color: #f15d2f;
+}
+
+.breadcrumbs li::after {
+  content: '\e684';
+  font-family: '7-stroke';
+  font-weight: 700;
+  font-size: 1.5em;
+  position: absolute;
+  color: #2d3e50;
+  right: -38px;
+}
+
+.breadcrumbs li.active {
+  color: #f15d2f;
+}
+
+.breadcrumbs li.active:after {
+  content: '';
+}
+
+.breadcrumbs + section {
+  margin-top: 0rem !important;
+}
+
+@media (max-width: 992px) {
+  .breadcrumbs {
+    margin-top: 5.5rem;
+  }
+  .breadcrumbs + section {
+    margin-top: 0rem !important;
+  }
+}
+
 div.highlight {
   border: 1px solid black;
   -webkit-border-radius: .4em;

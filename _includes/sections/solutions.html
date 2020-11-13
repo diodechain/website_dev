@@ -1,0 +1,47 @@
+<!-- Features Section -->
+<section class="site-section section-focus features-section" id="features">
+  <div class="container">
+
+    <!-- Features -->
+    {% for feature in page.features %}
+    <div
+      class="row feature"
+    >
+      <div class="feature-content col-xs-12 col-sm-7 col-md-8">
+        <h3 class="feature-title">
+          {{ feature.title }}
+        </h3>
+        <p class="feature-description">
+          {{ feature.description }}
+        </p>
+        <a class="feature-link link" href="{{ feature.link-url }}">
+          {{ feature.link-text }}
+          <i class="pe-7s-angle-right"></i>
+        </a>
+      </div>
+      <div
+        class="feature-icon col-xs-0 col-sm-5 col-md-4"
+      >
+        {% include {{ feature.icon }} %}
+      </div>
+    </div>
+    {% endfor %}
+
+    <!-- CONTACT US and LEARN MORE -->
+
+    <div class="feature-more row">
+      <div class="col-xs-12 col-sm-6">
+        <a class="contact-button button button--outline">
+          CONTACT US
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <a class="link">
+          LEARN MORE
+          <i class="pe-7s-angle-right"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>

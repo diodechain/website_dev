@@ -64,7 +64,7 @@ navigation:
   subs:
     - title: Remote Work
       ft_title: Remote Work
-      link: solutions/remove-wowrk
+      link: solutions/remove-work
     - title: Private Storage
       ft_title: Private Storage
       link: solutions/private-storage
@@ -125,6 +125,14 @@ navigation:
   link: download/
   is_button: true
   target: _blank
+
+
+#################################
+######  Breadcrumbs label  ######
+#################################
+breadcrumbs:
+  solutions: Solutions
+  remote-work: Remote Work
 
 ####################################
 ######  Quick links of footer ######
@@ -276,6 +284,9 @@ collections:
   team:
     output: true 
     permalink: team/:name.html
+  solutions:
+    output: true
+    permalink: solutions/:name.html
 
 defaults:
   - scope:
