@@ -1,0 +1,32 @@
+<!-- Solutions Download Section -->
+<section class="site-section section-focus solutions-download-section" id="solutions-download">
+  <div class="downloads">
+    <div class="container">
+      <div class="row">
+        {% for download in page.downloads %}
+        <div class="download col-sm-12 col-md-6">
+          <div class="download-title-container">
+            <img src="{{ download.icon }}">
+            <h2 class="download-title">
+              {{ download.title }}
+            </h2>
+          </div>
+          <p class="download-description">
+            {{ download.description }}
+          </p>
+          <a class="button" href="{{ download.link-url }}">{{ download.link-text }}</a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-us">
+    <div class="contact-us__card">
+      <div class="description">
+        {{ page.contact_us.text }}
+      </div>
+      <a class="button button--outline button--text-black" href="">Contact Us</a>
+    </div>
+  </div>
+</section>

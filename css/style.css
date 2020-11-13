@@ -2445,6 +2445,7 @@ ul.tag-cloud-box li a:hover {
 .button--outline, button--outline {
   background-color: #fff;
   border: 2px solid #f15d2f;
+  color: #2d3e50;
 }
 
 .link {
@@ -2522,7 +2523,7 @@ button.button-block,
  **/
 body {
   font-family: "Titillium Web", Arial, sans-serif;
-  font-size: 17px;
+  font-size: 1rem;
   font-weight: normal;
   letter-spacing: 0.08rem;
   color: #5e5e5e;
@@ -4146,12 +4147,12 @@ section.offer-section .offer-link:hover {
 }
 
 section.offer-section .offer-link h2 {
-  font-size: 36px;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 
 section.offer-section .offer-link i {
-  font-size: 36px;
+  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -4339,15 +4340,184 @@ section.features-section .feature-more > div:first-child .contact-button {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  color: #2d3e50;
   font-weight: 700;
-  font-size: 1.2rem;
   margin-right: 20px;
   margin-left: auto;
 }
 
 section.features-section .feature-more > div:last-child a {
   margin-left: 20px;
+}
+
+/**
+ *
+ *  Solutions Section Style
+ *
+ *  @package gleesik_layout
+ *
+ **/
+section.solutions-section {
+  background-color: #fff !important;
+  padding: 10px 0 60px;
+}
+
+section.solutions-section .solution-section__title {
+  font-size: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  text-align: center;
+  color: #2d3e50;
+  margin-bottom: 100px;
+  font-weight: 400;
+}
+
+section.solutions-section .solution-section__title:after {
+  content: '';
+  position: absolute;
+  width: 30%;
+  height: 1px;
+  bottom: -20px;
+  left: 35%;
+  background-color: #f15d2f;
+}
+
+section.solutions-section .solution-section__description {
+  margin: 0 0 60px;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+section.solutions-section .row {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+section.solutions-section .solution {
+  background-color: #f1f3f6;
+  font-weight: 400;
+  height: 100%;
+  padding: 25px;
+}
+
+section.solutions-section .solution-title {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  margin: 20px auto;
+  text-align: center;
+  position: relative;
+}
+
+section.solutions-section .solution-title::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background-color: #f15d2f;
+  bottom: -15px;
+  left: calc(50% - 50px);
+}
+
+section.solutions-section .solution-description {
+  padding: 25px 10px 0;
+  font-size: 1.2rem;
+}
+
+/**
+ *
+ *  Solutions Download Section Style
+ *
+ *  @package gleesik_layout
+ *
+ **/
+section.solutions-download-section {
+  padding: 0;
+  position: relative;
+}
+
+section.solutions-download-section .downloads {
+  width: 100%;
+  padding: 50px 0 120px;
+  background-color: #2d3e50 !important;
+}
+
+section.solutions-download-section .downloads .container .download {
+  padding: 0 60px;
+}
+
+section.solutions-download-section .downloads .container .download:first-child {
+  border-right: 2px solid #fff;
+}
+
+section.solutions-download-section .downloads .container .download-title-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+section.solutions-download-section .downloads .container .download-title {
+  color: #f15d2f;
+  font-weight: 400;
+  margin-left: 20px;
+  font-size: 2rem;
+}
+
+section.solutions-download-section .downloads .container .download-description {
+  color: #fff;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+}
+
+section.solutions-download-section .downloads .container .download .button {
+  margin: 0 auto;
+  width: 250px;
+}
+
+section.solutions-download-section .contact-us {
+  background-color: #fff;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.solutions-download-section .contact-us__card {
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-color: #fff;
+  margin-top: -60px;
+  max-width: 814px;
+  padding: 45px 30px 50px;
+  text-align: center;
+}
+
+section.solutions-download-section .contact-us__card .description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+section.solutions-download-section .contact-us__card .button {
+  margin: 0 auto;
+  width: 230px;
+  text-transform: uppercase;
 }
 
 /**
@@ -4475,6 +4645,7 @@ section.parallax-features-section .section-features .feature:hover .icon-wrap .c
  **/
 section.blog-section {
   padding: 150px 0;
+  background-color: #f1f3f6;
 }
 
 section.blog-section .row {
@@ -4693,6 +4864,7 @@ section.blog-section .blog-articles-container article.blog-article header.articl
   max-width: 100%;
   height: auto;
   margin-bottom: 1em;
+  background-color: #fff;
 }
 
 section.blog-section .blog-articles-container article.blog-article header.article-header .img-wrap a {
@@ -4800,7 +4972,7 @@ section.blog-section .blog-articles-container article.blog-article .article-cont
 
 @media (max-width: 992px) {
   section.blog-section .blog-articles-container article.blog-article .article-content {
-    font-size: 17px;
+    font-size: 1rem;
   }
 }
 

@@ -64,7 +64,7 @@ navigation:
   subs:
     - title: Remote Work
       ft_title: Remote Work
-      link: solutions/remove-work
+      link: solutions/remote-work
     - title: Private Storage
       ft_title: Private Storage
       link: solutions/private-storage
@@ -277,6 +277,8 @@ footer-copyright-year: 2020
 ######   Widgets   ######
 #########################
 
+
+
 collections:
   posts:
     output: true 
@@ -284,9 +286,6 @@ collections:
   team:
     output: true 
     permalink: team/:name.html
-  solutions:
-    output: true
-    permalink: solutions/:name.html
 
 defaults:
   - scope:
