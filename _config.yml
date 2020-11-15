@@ -110,7 +110,7 @@ navigation:
       ft_title: About
       link: resources/about
     - title: About
-      ft_title: About
+      ft_title: Docs
       link: resources/docs
     - title: Download
       ft_title: Download
@@ -133,6 +133,28 @@ navigation:
 breadcrumbs:
   solutions: Solutions
   remote-work: Remote Work
+  private-storage: Private Storage
+  streaming-video: Streaming Video
+  healthcare-and-compliance: Healthcare & Compliance
+  internet-of-things: Internet of Things
+  it-and-developers: IT and Developers
+  serverless-communications: Serverless Communications
+
+  products: Products
+  d-drive: dDrive
+  diode-cli: Diode CLI
+  diode-network: Diode Network
+  pricing: Pricing
+
+  blog: Blog
+
+  resources: Resources
+  how-it-works: How it Works
+  about: About
+  download: Download
+  explorer: Explorer
+  docs: Docs
+
 
 ####################################
 ######  Quick links of footer ######

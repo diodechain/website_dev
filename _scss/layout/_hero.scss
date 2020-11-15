@@ -18,18 +18,18 @@ section.site-section.hero-section {
 
     .container .row {
         justify-content: left;
-
         .hero-title {
             font-size: 3em;
             line-height: 1.2;
             position: relative;
             margin-bottom: 30px;
+            font-weight: 400;
             &::after {
                 content: '';
                 position: absolute;
                 width: 220px;
                 background-color: $orange;
-                height: 2px;
+                height: 1px;
                 bottom: -7px;
                 left: 0;
             }
@@ -38,9 +38,11 @@ section.site-section.hero-section {
             font-size: 1.7em;
             line-height: 1.5;
             margin-bottom: 20px;
+            font-weight: 400;
         }
         .hero-description {
             margin-bottom: 80px;
+            font-weight: 400;
         }
         .company-name {
             position: relative;

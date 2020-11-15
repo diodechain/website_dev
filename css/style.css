@@ -4215,6 +4215,7 @@ section.site-section.hero-section .container .row .hero-title {
   line-height: 1.2;
   position: relative;
   margin-bottom: 30px;
+  font-weight: 400;
 }
 
 section.site-section.hero-section .container .row .hero-title::after {
@@ -4222,7 +4223,7 @@ section.site-section.hero-section .container .row .hero-title::after {
   position: absolute;
   width: 220px;
   background-color: #f15d2f;
-  height: 2px;
+  height: 1px;
   bottom: -7px;
   left: 0;
 }
@@ -4231,10 +4232,12 @@ section.site-section.hero-section .container .row .hero-subtitle {
   font-size: 1.7em;
   line-height: 1.5;
   margin-bottom: 20px;
+  font-weight: 400;
 }
 
 section.site-section.hero-section .container .row .hero-description {
   margin-bottom: 80px;
+  font-weight: 400;
 }
 
 section.site-section.hero-section .container .row .company-name {
