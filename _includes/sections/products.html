@@ -1,0 +1,68 @@
+<!-- Products Section -->
+<section class="site-section section-focus products-header-section" id="products-header">
+  <div class="container">
+
+    <!-- Products Header Page Title -->
+    <h2 class="products-section__title">{{ page.title }}</h2>
+
+    <!-- Products Header Page Description -->
+    <h3 class="products-section__description">{{ page.description }}</h3>
+
+
+
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="products-image">
+          <!-- Products Header Image -->
+          <img src="{{ page.header-image }}">
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <!-- Products Header Image Description -->
+        <div class="products-image-description">
+          {{ page.header-image-description }}
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<section class="site-section section-focus products-body-section" id="products-body">
+  <div class="container">
+    <!-- Products body text -->
+    <div class="products-body-text">
+      {{ page.body-text }}
+    </div>
+
+    <!-- Products body features -->
+    <ul class="products-body-features">
+      {% for feature in page.body-features %}
+        <li class="feature">
+          <div class="feature-title">
+            <img src="{{ feature.icon }}">
+            {{ feature.title }}
+          </div>
+          <p class="feature-description">
+            {{ feature.description }}
+          </p>
+        </li>
+      {% endfor %}
+    </ul>
+    <div class="products-body-actions">
+      <a href="#" class="button">DOWNLOAD</a>
+      <a href="#" class="button button--outline">GET A DEMO</a>
+      <a href="#" class="link link--arrow">LEARN MORE</a>
+    </div>
+
+  </div>
+</section>
+
+ <!-- Products footer section -->
+<section class="site-section section-focus products-footer-section" id="products-footer">
+  <div class="container">
+    <div class="row">
+      <iframe class="tutorial" src="https://www.youtube-nocookie.com/embed/Zibg-6CClc4" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>

@@ -2424,7 +2424,7 @@ ul.tag-cloud-box li a:hover {
   max-width: 100%;
   padding: 0.8em 2em;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
   -webkit-border-radius: 5px;
@@ -2449,7 +2449,7 @@ ul.tag-cloud-box li a:hover {
 }
 
 .link {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   color: #f15d2f;
   display: -webkit-box;
@@ -2477,6 +2477,21 @@ ul.tag-cloud-box li a:hover {
 
 .link--white {
   color: #fff;
+}
+
+.link--arrow {
+  position: relative;
+  display: inline-block;
+}
+
+.link--arrow::after {
+  content: '\e684';
+  position: absolute;
+  font-weight: 700;
+  font-size: 1.6em;
+  font-family: '7-stroke';
+  top: calc(50% - 14px);
+  line-height: 30px;
 }
 
 .button-cta {
@@ -4521,6 +4536,133 @@ section.solutions-download-section .contact-us__card .button {
   margin: 0 auto;
   width: 230px;
   text-transform: uppercase;
+}
+
+/**
+ *
+ *  Products Section Style
+ *
+ *  @package gleesik_layout
+ *
+ **/
+section.products-header-section {
+  background-color: #fff !important;
+  padding: 10px 0 60px;
+}
+
+section.products-header-section .products-section__title {
+  font-size: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  text-align: center;
+  color: #2d3e50;
+  margin-bottom: 50px;
+  font-weight: 400;
+}
+
+section.products-header-section .products-section__title:after {
+  content: '';
+  position: absolute;
+  width: 30%;
+  height: 1px;
+  bottom: -20px;
+  left: 35%;
+  background-color: #f15d2f;
+}
+
+section.products-header-section .products-section__description {
+  margin: 0 0 60px;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1f2739;
+  text-align: center;
+}
+
+section.products-header-section .products-image {
+  width: 100%;
+  min-height: 240px;
+  background-color: #c4c4c4;
+}
+
+section.products-header-section .products-image-description {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1f2739;
+}
+
+section.products-body-section {
+  background-color: #f1f3f6 !important;
+  padding: 50px;
+}
+
+section.products-body-section .products-body-text {
+  font-size: 1.7rem;
+  color: #2d3e50;
+  line-height: 1.5;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+section.products-body-section .products-body-text::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  background-color: #f15d2f;
+  left: calc(50% - 25px);
+  bottom: -10px;
+}
+
+section.products-body-section .products-body-features {
+  max-width: 946px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.products-body-section .products-body-features .feature {
+  background-color: #fff;
+  padding: 30px 50px;
+  margin-bottom: 70px;
+}
+
+section.products-body-section .products-body-features .feature-title {
+  text-transform: uppercase;
+  color: #2d3e50;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.products-body-section .products-body-features .feature-title > img {
+  margin-right: 15px;
+}
+
+section.products-body-section .products-body-features .feature-description {
+  font-size: 1.2rem;
+}
+
+section.products-body-section .products-body-actions {
+  text-align: center;
+}
+
+section.products-body-section .products-body-actions a {
+  margin: 0 15px 15px 15px;
+}
+
+section.products-footer-section .container iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
 }
 
 /**
