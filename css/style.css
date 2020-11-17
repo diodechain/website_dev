@@ -3964,34 +3964,64 @@ code.highlighter-rouge {
  *  @package gleesik_layout
  *
  **/
-section.site-section {
+.site-section {
   padding: 100px 0;
   background: #fff;
 }
 
-section.site-section header.section-header h1, section.site-section header.section-header h2, section.site-section header.section-header h3, section.site-section header.section-header h4, section.site-section header.section-header h5, section.site-section header.section-header h6 {
+.site-section__title {
+  font-size: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  text-align: center;
+  color: #2d3e50;
+  margin-bottom: 50px;
+  font-weight: 400;
+}
+
+.site-section__title:after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 1px;
+  bottom: -20px;
+  left: calc(50% - 75px);
+  background-color: #f15d2f;
+}
+
+.site-section__description {
+  margin: 0 0 60px;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1f2739;
+  text-align: center;
+}
+
+.site-section header.section-header h1, .site-section header.section-header h2, .site-section header.section-header h3, .site-section header.section-header h4, .site-section header.section-header h5, .site-section header.section-header h6 {
   font-weight: bold;
   text-transform: uppercase;
   color: #2d3e50;
 }
 
-section.site-section header.section-header hr.normal {
+.site-section header.section-header hr.normal {
   margin: 40px auto;
 }
 
-section.site-section.section-focus {
+.site-section.section-focus {
   background-color: #f4f8f9;
 }
 
-section.site-section.section-focus.next-section-indicator:after {
+.site-section.section-focus.next-section-indicator:after {
   border-top-color: #f4f8f9;
 }
 
-section.site-section.next-section-indicator {
+.site-section.next-section-indicator {
   position: relative;
 }
 
-section.site-section.next-section-indicator:after {
+.site-section.next-section-indicator:after {
   content: '';
   position: absolute;
   width: 0;
@@ -4379,25 +4409,8 @@ section.solutions-section {
   padding: 10px 0 60px;
 }
 
-section.solutions-section .solution-section__title {
-  font-size: 3rem;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  text-align: center;
-  color: #2d3e50;
+section.solutions-section .site-section__title {
   margin-bottom: 100px;
-  font-weight: 400;
-}
-
-section.solutions-section .solution-section__title:after {
-  content: '';
-  position: absolute;
-  width: 30%;
-  height: 1px;
-  bottom: -20px;
-  left: 35%;
-  background-color: #f15d2f;
 }
 
 section.solutions-section .solution-section__description {
@@ -4550,36 +4563,6 @@ section.products-header-section {
   padding: 10px 0 60px;
 }
 
-section.products-header-section .products-section__title {
-  font-size: 3rem;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  text-align: center;
-  color: #2d3e50;
-  margin-bottom: 50px;
-  font-weight: 400;
-}
-
-section.products-header-section .products-section__title:after {
-  content: '';
-  position: absolute;
-  width: 30%;
-  height: 1px;
-  bottom: -20px;
-  left: 35%;
-  background-color: #f15d2f;
-}
-
-section.products-header-section .products-section__description {
-  margin: 0 0 60px;
-  font-size: 2rem;
-  line-height: 1.5;
-  font-weight: 400;
-  color: #1f2739;
-  text-align: center;
-}
-
 section.products-header-section .products-image {
   width: 100%;
   min-height: 240px;
@@ -4668,37 +4651,6 @@ section.products-footer-section .container iframe {
 section.products-pricing-section {
   background-color: #fff !important;
   padding: 10px 0 60px;
-}
-
-section.products-pricing-section .products-section__title {
-  font-size: 3rem;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  text-align: center;
-  color: #2d3e50;
-  margin-bottom: 50px;
-  font-weight: 400;
-}
-
-section.products-pricing-section .products-section__title:after {
-  content: '';
-  position: absolute;
-  width: 170px;
-  height: 1px;
-  bottom: -20px;
-  left: calc(50% - 85px);
-  background-color: #f15d2f;
-}
-
-section.products-pricing-section .products-section__description {
-  margin: 0 auto 60px auto;
-  font-size: 2rem;
-  line-height: 1.5;
-  font-weight: 400;
-  color: #5c5d5f;
-  text-align: center;
-  max-width: 900px;
 }
 
 section.products-pricing-section .products-pricing__contact-us {

@@ -6,9 +6,40 @@
  *
  **/
 
-section.site-section {
+.site-section {
   padding: 100px 0;
   background: $section-bg;
+
+  &__title {
+    font-size: $title-font-size-2;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    color: $web-blue;
+    margin-bottom: 50px;
+    font-weight: 400;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 150px;
+      height: 1px;
+      bottom: -20px;
+      left: calc(50% - 75px);
+      background-color: $orange;
+    }
+  }
+
+  &__description {
+    margin: 0 0 60px;
+    font-size: $title-font-size-1;
+    line-height: 1.5;
+    font-weight: 400;
+    color: $dark-blue;
+    text-align: center;
+  }
+
   // z-index: 1;
 
   // Section Header
