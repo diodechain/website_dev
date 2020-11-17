@@ -4665,6 +4665,166 @@ section.products-footer-section .container iframe {
   height: 400px;
 }
 
+section.products-pricing-section {
+  background-color: #fff !important;
+  padding: 10px 0 60px;
+}
+
+section.products-pricing-section .products-section__title {
+  font-size: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  text-align: center;
+  color: #2d3e50;
+  margin-bottom: 50px;
+  font-weight: 400;
+}
+
+section.products-pricing-section .products-section__title:after {
+  content: '';
+  position: absolute;
+  width: 170px;
+  height: 1px;
+  bottom: -20px;
+  left: calc(50% - 85px);
+  background-color: #f15d2f;
+}
+
+section.products-pricing-section .products-section__description {
+  margin: 0 auto 60px auto;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #5c5d5f;
+  text-align: center;
+  max-width: 900px;
+}
+
+section.products-pricing-section .products-pricing__contact-us {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.products-pricing-section .plans .col-blank {
+  width: 350px;
+}
+
+section.products-pricing-section .plans .col-plan {
+  width: calc((100% - 350px) / 3);
+  padding: 15px;
+}
+
+section.products-pricing-section .plans .plan {
+  border: 1px solid #f15d2f;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  height: 285px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+section.products-pricing-section .plans .plan__title {
+  font-size: 1.3rem;
+  color: #1f2739;
+}
+
+section.products-pricing-section .plans .plan__description {
+  color: #1f2739;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+section.products-pricing-section .plans .plan__price {
+  color: #1f2739;
+  font-size: 3rem;
+}
+
+section.products-pricing-section .plans .plan__price > span {
+  font-size: 1.3rem;
+  color: #f15d2f;
+}
+
+section.products-pricing-section .pricing-table {
+  margin-bottom: 60px;
+}
+
+section.products-pricing-section .pricing-table .row.plans {
+  border-top: 1px solid #f1f3f6;
+}
+
+section.products-pricing-section .pricing-table .row.plans:last-child {
+  border-bottom: 1px solid #f1f3f6;
+}
+
+section.products-pricing-section .pricing-table .row.plans .col-blank {
+  color: #f15d2f;
+  font-size: 1.3rem;
+}
+
+section.products-pricing-section .pricing-table .row.plans .col-plan {
+  border-left: 1px solid #f15d2f;
+  background-color: #2d3e50;
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  min-height: 80px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.2;
+}
+
+section.products-pricing-section .pricing-table .row.plans .col-plan > .ammount--tip {
+  font-size: 1.2rem;
+}
+
+section.products-pricing-section .pricing-table .row.plans .col-plan > .has-asterisk {
+  position: relative;
+}
+
+section.products-pricing-section .pricing-table .row.plans .col-plan > .has-asterisk::after {
+  position: absolute;
+  content: '*';
+  right: -10px;
+}
+
 /**
  *
  *  Parallax Section Style

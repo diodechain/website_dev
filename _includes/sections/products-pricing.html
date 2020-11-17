@@ -1,0 +1,61 @@
+<!-- Products Section -->
+<section class="site-section section-focus products-pricing-section" id="products-pricing">
+  <div class="container">
+
+    <!-- Products Pricing Page Title -->
+    <h2 class="products-section__title">{{ page.title }}</h2>
+
+
+    <!-- Products Pricing Cards (Desktop) -->
+    <div class="plans row">
+      <div class="col-blank"><!-- blank area --></div>
+      {% for plan in page.plans %}
+        <div class="col-plan">
+          <div class="plan">
+            <div class="plan__title">
+              {{ plan.title }}
+            </div>
+            <div class="plan__description">
+              {{ plan.description }}
+            </div>
+            <div class="plan__price">
+              ${{ plan.price }}<span>/MO</span>
+            </div>
+
+            <div class="plan__action">
+              <a class="button"> GO! </a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <!-- Products Pricing Table (Desktop) -->
+
+    <div class="pricing-table">
+      {% for item in page.items %}
+        <div class="row plans">
+          <div class="col-blank">
+            {{ item.title }}
+          </div>
+          {% for plan in item.plans %}
+            <div class="col-plan">
+              {{ plan.value }}
+            </div>
+          {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
+    
+
+    <!-- Products Pricing Page Description -->
+    <h3 class="products-section__description">{{ page.description }}</h3>
+
+    <!-- Contact us -->
+    <div class="products-pricing__contact-us">
+      <a id="contact-us" class="button button--outline" href="#">
+        CONTACT US
+      </a>
+    </div>
+  </div>
+</section>

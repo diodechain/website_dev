@@ -121,3 +121,133 @@ section.products-footer-section {
     }
   }
 }
+
+
+section.products-pricing-section {
+  background-color: $white !important;
+  padding: 10px 0 60px;
+
+  .products-section__title {
+    font-size: $title-font-size-2;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    color: $web-blue;
+    margin-bottom: 50px;
+    font-weight: 400;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 170px;
+      height: 1px;
+      bottom: -20px;
+      left: calc(50% - 85px);
+      background-color: $orange;
+    }
+  }
+
+  .products-section__description {
+    margin: 0 auto 60px auto;
+    font-size: $title-font-size-1;
+    line-height: 1.5;
+    font-weight: 400;
+    color: $gray;
+    text-align: center;
+    max-width: 900px;
+  }
+
+  .products-pricing__contact-us {
+    display: flex;
+    justify-content: center;
+  }
+
+  .plans {
+    .col-blank {
+      width: 350px;
+    }
+    .col-plan {
+      width: calc((100% - 350px) / 3);
+      padding: 15px;
+    }
+
+    // pricing card
+    .plan {
+      border: 1px solid $orange;
+      border-radius: 5px;
+      padding: 20px;
+      text-align: center;
+      height: 285px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 30px;
+
+      &__title {
+        font-size: $text-font-size-2;
+        color: $dark-blue;
+      }
+      &__description {
+        color: $dark-blue;
+        line-height: 1.5;
+        letter-spacing: 1px;
+      }
+      &__price {
+        color: $dark-blue;
+        font-size: $title-font-size-2;
+        &>span {
+          font-size: $text-font-size-2;
+          color: $orange;
+        }
+      }
+    }
+
+    
+  }
+  
+  // pricing table
+  .pricing-table {
+    margin-bottom: 60px;
+    .row.plans {
+      border-top: 1px solid $web-gray;
+
+      &:last-child {
+        border-bottom: 1px solid $web-gray;
+      }
+
+
+      .col-blank {
+        color: $orange;
+        font-size: $text-font-size-2;
+      }
+      .col-plan {
+        border-left: 1px solid $orange;
+        background-color: $web-blue;
+        color: $white;
+        text-align: center;
+        font-size: $text-font-size-2;
+        text-transform: uppercase;
+        font-weight: 400;
+        min-height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.2;
+        &>.ammount--tip {
+          font-size: $text-font-size-1;
+        }
+        &>.has-asterisk {
+          position: relative;
+          &::after {
+            position: absolute;
+            content: '*';
+            right: -10px;
+          }
+        }
+      }
+    }
+  }
+
+}
