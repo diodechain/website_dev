@@ -1,0 +1,265 @@
+/**
+ *
+ *  How It Works Section Style
+ *
+ *  @package gleesik_layout
+ *
+ **/
+
+ section.how-it-works-section {
+  background-color: $white !important;
+  padding: 10px 0 60px;
+  .container {
+
+
+    iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 400px;
+    }
+
+    .actions {
+      margin: 60px auto 0 auto;
+      text-align: center;
+      &> a {
+        margin: 15px;
+      }
+    }
+  }
+}
+
+section.how-it-works-section--2 {
+  padding: 60px 0;
+  .container {
+    .title {
+      position: relative;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: $title-font-size-1;
+      margin-bottom: 40px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 1px;
+        background-color: $orange;
+        left: calc(50% - 25px);
+        bottom: -15px;
+      }
+    }
+
+    .description {
+      font-size: $text-font-size-1;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+}
+
+section.how-it-works-section--3 {
+  padding: 0;
+  .section-top-container {
+    padding: 60px 0 0 0;
+    background-color: $white !important;
+    width: 100%;
+    .container {
+      border-top: 1px solid $orange;
+      border-left: 1px solid $orange;
+      border-right: 1px solid $orange;
+      padding: 50px 0 20px;
+      .title {
+        position: relative;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: $title-font-size-1;
+        margin-bottom: 40px;
+        color: $web-blue;
+  
+        &::after {
+          content: '';
+          position: absolute;
+          width: 50px;
+          height: 1px;
+          background-color: $orange;
+          left: calc(50% - 25px);
+          bottom: -15px;
+        }
+      }
+  
+      .description {
+        font-size: $text-font-size-1;
+        max-width: 800px;
+        margin: 0 auto 50px auto;
+        color: $web-blue;
+      }
+
+      .row {
+        align-items: flex-start;
+        &>.item-container {
+          position: relative;
+          .item {
+            padding: 0 30px; 
+
+            &-title-wrapper {
+              display: flex;
+              align-items: center;
+              margin-bottom: 30px;
+              img {
+                margin-right: 15px;
+              }
+            }
+            &-title {
+              font-size: $text-font-size-2;
+              text-transform: uppercase;
+              color: $web-blue;
+            }
+
+            &-description {
+              font-size: $text-font-size-1;
+              color: $web-blue;
+            }
+          }
+
+          &:first-child::after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 300px;
+            background-color: $orange;
+            top: 60px;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+  .section-bottom-container {
+    padding: 0;
+    background-color: $web-blue !important;
+    color: $white;
+    width: 100%;
+    .container {
+      border-left: 1px solid $orange;
+      border-right: 1px solid $orange;
+      border-bottom: 1px solid $orange;
+      padding: 70px 0 0 0;
+
+      .item-container {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .item {
+          padding: 0 30px; 
+          margin-bottom: 60px;
+
+          &-title-wrapper {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            img {
+              margin-right: 15px;
+            }
+          }
+          &-title {
+            font-size: $text-font-size-2;
+            text-transform: uppercase;
+          }
+
+          &-description, &-description>p  {
+            font-size: $text-font-size-1;
+          }
+        }
+
+      }
+
+    }
+
+    .action {
+      text-align: center;
+      padding: 70px 0;
+    }
+
+
+  }
+
+
+}
+
+section.how-it-works-section--4 {
+  background-color: $white !important;
+  padding: 80px 0;
+  .container {
+    .title {
+      position: relative;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: $title-font-size-1;
+      margin-bottom: 50px;
+      color: $web-blue;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 1px;
+        background-color: $orange;
+        left: calc(50% - 25px);
+        bottom: -15px;
+      }
+    }
+
+    .description {
+      font-size: $text-font-size-1;
+      max-width: 800px;
+      margin: 0 auto 50px auto;
+      color: $web-blue;
+    }
+
+    .row {
+      margin-bottom: 60px;
+
+      .number {
+        width: 25%;
+        color: $orange;
+        text-align: center;
+        font-size: 9rem;
+        order: 1;
+      }
+
+      .item {
+        width: 75%;
+        border: 2px solid $orange;
+        padding: 40px;
+        order: 2;
+
+        &-title {
+          font-size: $text-font-size-2;
+          margin-bottom: 40px;
+          text-transform: uppercase;
+          text-align: center;
+          color: $web-blue;
+        } 
+        &-description {
+          font-size: $text-font-size-1;
+          line-height: 1.5;
+          color: $web-blue;
+        }
+      }
+    }
+    .row:nth-child(even) {
+      .number {
+        order: 2;
+      }
+      .item {
+        order: 1;
+      }
+    }
+    .action {
+      text-align: center;
+      width: 100%;
+    }
+
+  }
+}

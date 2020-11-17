@@ -1,5 +1,7 @@
 # Information for compile
-exclude: ["node_modules", "gulpfile.js", "package.json", "Gemfile", "README.md", "resources", "run"]
+# exclude: ["node_modules", "gulpfile.js", "package.json", "Gemfile", "README.md", "resources", "run"]
+exclude: ["node_modules", "gulpfile.js", "package.json", "Gemfile", "README.md", "run"]
+
 include: ["install.sh", "msa.pdf"]
 
 baseurl:
@@ -103,8 +105,8 @@ navigation:
   link: resources/
   ft_order: 3
   subs:
-    - title: How it Works
-      ft_title: How it Works
+    - title: How It Works
+      ft_title: How It Works
       link: resources/how-it-works
     - title: About
       ft_title: About
