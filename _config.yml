@@ -111,7 +111,7 @@ navigation:
     - title: About
       ft_title: About
       link: resources/about
-    - title: About
+    - title: Docs
       ft_title: Docs
       link: resources/docs
     - title: Download
