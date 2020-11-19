@@ -3013,6 +3013,10 @@ header.site-header .site-navigation-bar .navigation-bar nav.nav-menu ul li.curre
   position: relative;
 }
 
+header.site-header .site-navigation-bar .navigation-bar nav.nav-menu ul li.current-menu-item a.button {
+  color: #fff;
+}
+
 header.site-header .site-navigation-bar .navigation-bar nav.nav-menu ul li a.nav-link {
   display: block;
   color: #fff;
@@ -6099,108 +6103,263 @@ section.contact-section .form-container form.contact-form .form-action .send-but
  *
  **/
 section.download-section {
-  counter-reset: boxes;
+  padding: 0;
+  font-size: 1.2rem;
 }
 
-section.download-section .row > [class*="col-"] {
-  -webkit-box-pack: stretch;
-  -webkit-justify-content: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
+section.download-section .download {
+  padding: 60px 0;
 }
 
-section.download-section .button-cta {
-  display: none;
-  margin-bottom: 0.4em;
+section.download-section .download:first-child {
+  background-color: #F1F3F6;
+  color: #1f2739;
 }
 
-section.download-section code {
-  white-space: nowrap;
-  border: 1px solid black;
-  -webkit-border-radius: .4em;
-          border-radius: .4em;
-  background-color: #2e0a23;
-  color: lightgray;
-  font-size: 0.8em;
-  display: inline-block;
-  overflow: auto;
-  width: 100%;
-  text-align: center;
-  padding: 1em .5em 1em .5em;
-  font-family: monospace;
+section.download-section .download:last-child {
+  background-color: #2d3e50;
+  color: #fff;
 }
 
-section.download-section .row {
-  -webkit-box-align: initial;
-  -webkit-align-items: initial;
-      -ms-flex-align: initial;
-          align-items: initial;
-  margin-bottom: 1em;
+section.download-section .download-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-section.download-section hr.small {
-  margin-top: 40px;
-  margin-bottom: 40px;
+section.download-section .download-title h2 {
+  font-size: 3rem;
 }
 
-section.download-section .download-header {
-  margin-bottom: 1em;
-  text-align: center;
-}
-
-section.download-section .download-header .title {
-  font-size: 2em;
-  font-weight: bold;
-}
-
-section.download-section .download-header p {
-  font-size: 1.5em;
-}
-
-section.download-section .download-box {
-  text-align: center;
-  height: 100%;
-  margin-bottom: 1em;
-}
-
-section.download-section .download-box h4::before {
-  counter-increment: boxes;
-  content: counter(boxes);
-  padding: 3px 8px;
-  margin-right: .5em;
-  color: white;
-  font-weight: bold;
-  font-family: monospace;
-  background-color: #F15C2E;
-  border: 0.1em solid #F15C2E;
-  -webkit-border-radius: 2em;
-          border-radius: 2em;
-}
-
-section.download-section .download-box .download-content {
-  padding: 1em 0.7em;
-  margin-top: 0;
-  border: 2px solid #e3e9ed;
-  height: inherit;
-}
-
-section.download-section .download-box .download-content p {
-  margin: 1em 0;
-}
-
-section.download-section .download-box .download-content .download-link {
-  font-size: 90%;
-  display: inline-block;
-  margin: 0.3em;
+section.download-section .download-title img {
+  margin-right: 15px;
 }
 
 section.download-section .download-content {
-  padding: 0;
-  margin-top: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
-section.download-section .download-content p {
-  margin: 1em 0;
+section.download-section .download-description {
+  font-size: 1.9rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+section.download-section .download__left {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 170px;
+}
+
+section.download-section .download-action {
+  position: relative;
+}
+
+section.download-section .download-action .button {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+section.download-section .download-action .action-description {
+  position: absolute;
+  bottom: -1.8em;
+  font-size: .6em;
+}
+
+section.download-section .download-command {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+section.download-section .download-command .command-label {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+section.download-section .download-command .download-action {
+  padding: 0 25px;
+}
+
+section.download-section .download-command .download-action .button {
+  width: 100%;
+}
+
+section.download-section .download-command .download-action .action-description {
+  width: calc(100% - 50px);
+  text-align: center;
+}
+
+section.download-section .download hr.orange {
+  background-color: #f15d2f;
+  margin-bottom: 50px;
+}
+
+section.download-section .download .row {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+section.download-section .download .download-choices .choice {
+  background-color: #fff;
+  color: #1f2739;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  padding: 20px;
+  min-height: 300px;
+}
+
+section.download-section .download .download-choices .choice-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+section.download-section .download .download-choices .choice-title .circle {
+  margin-right: 15px;
+  background-color: #f15d2f;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+section.download-section .download .download-choices .choice-description {
+  text-align: center;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+section.download-section .download .download-choices .choice-action {
+  background-color: #f15d2f;
+  color: #fff;
+  padding: 7px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 35px;
+}
+
+section.download-section .download .download-choices .choice-action > img {
+  margin-right: 10px;
+}
+
+section.download-section .download .download-choices .choice-command {
+  background-color: #1f2739;
+  color: #fff;
+  padding: 7px;
+  font-size: 12px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  height: 35px;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.download-section .download .download-choices .choice-hint {
+  color: #f15d2f;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+section.download-section .download .download-choices .choice-downloads {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+section.download-section .download .download-choices .choice-downloads .download-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  color: #f15d2f;
+}
+
+section.download-section .download .download-choices .choice-downloads .download-item img {
+  margin-right: 10px;
 }
 
 /**

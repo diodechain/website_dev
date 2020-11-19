@@ -1,0 +1,59 @@
+---
+layout: default
+title: Download
+description: Our mission is to empower secure communication with edge infrastructure.
+text: <p>Everything we do at Diode is to enable individuals and organizations to securely connect with their edge infrastructure.  Diode applications, such as dDrive and the Diode CLI, enable secure remote access to on-premise assets, files, and software with minimal setup and maintenance effort.  The Diode Network makes all this possible by enabling a world where it is sustainable to provide category leading software without exploiting user data.</p><p>Today, the team at Diode is busy developing next generation Diode applications, expanding the capabilities of the Diode Network, and growing our base of customers, partners, and developers.</p><p>Please get in touch if you’d like to explore a collaboration with Diode!</p>
+
+downloads:
+  - title: dDrive
+    description: A cloud experience for your local storage - install on your computer, server, or device and start collaborating!
+    download: link
+    learn-more: link
+    icon: /images/diode-drive.png
+
+  - title: Diode CLI
+    description: Serverless remote access for your IT assets, localhost websites / webservices, and data/video streams.
+    icon: /images/diode-client.png
+    learn-more: link
+    command: $ curl -Ssf https://diode.io/install.sh | sh
+
+    choices:
+      - title: Download Diode CLI
+        description: Download the binary for your operating system
+        downloads:
+          - title: Raspberry Pi (ARM)
+            icon: /images/raspberry-p-logo.png
+            active-icon: something
+            link: something
+          - title: MacOS X
+            icon: /images/apple-logo.svg
+            active-icon: something
+            link: something
+          - title: MacOS package
+            icon: /images/mac-os-package.svg
+            active-icon: something
+            link: something
+          - title: Windows (64bit)
+            icon: /images/windows-logo.svg
+            active-icon: something
+            link: something
+          - title: Linux (64-bit)
+            icon: /images/linux-logo.png
+            active-icon: something
+            link: x
+      - title: Unzip and Install
+        description: Unzip the CLI. On Windows, you can double click it.
+        command: $ unzip Downloads/diode_windows_amd64.zip
+        hint: We recommend moving it into a $PATH directory such as /home/[user]/.local/bin
+      - title: Publish Ports
+        description: To publish, e.g. local http, ports to the Diode Network call
+        command: $ diode publish -public 80:80
+
+
+---
+
+{% include header.html %}
+
+{% include breadcrumbs.html %}
+
+{% include sections/download.html %}

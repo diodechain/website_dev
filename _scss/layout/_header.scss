@@ -187,6 +187,9 @@ header.site-header {
               a {
                 color: $primary;
                 position: relative;
+                &.button {
+                  color: $white;
+                }
               }
             }
 
