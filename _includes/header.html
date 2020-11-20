@@ -37,7 +37,7 @@
                 </li>
               {% elsif nav.subs %}
                 <li class="subnav">
-                  <a class="nav-link" href="javascript:;">{{ nav.title }}</a>
+                  <div class="nav-link" data-href="{{ nav.link }}">{{ nav.title }}</div>
                   <div class="subnav-content">
                     <div class="row container">
                       {% for subnav in nav.subs %}

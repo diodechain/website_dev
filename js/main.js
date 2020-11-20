@@ -42,6 +42,10 @@
       if (!$current && !path || (href && path.includes(href))) {
         $current = $(this);
         $(this).parent().addClass('current-menu-item');
+        if ($(this).parent().prop("tagName") != "LI")  {
+          console.log(path, "s-s-s-s")
+          $(this).parent().parent().parent().parent().addClass('current-menu-item');
+        }
       }
     })
 

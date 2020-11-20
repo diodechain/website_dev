@@ -122,13 +122,18 @@ header.site-header {
 
           li {
 
+            &.current-menu-item>.nav-link {
+              color: $orange;
+            }
+
             // Sub nav menu
             &.subnav {
-              &>a.nav-link {
+              &>.nav-link {
                 overflow: hidden;
                 height: $desktop-header-height;
                 display: flex;
                 align-items: center;
+                cursor: pointer;
               }
 
               &:hover>.subnav-content {
@@ -165,13 +170,22 @@ header.site-header {
                     content: '';
                     position: absolute;
                     height: 2px;
-                    background-color: $diode-orange;
+                    background-color: $orange;
                     bottom: 0;
                     width: 100%;
                   }
                   &.current-menu-item {
                     color: $orange;
                   }
+                }
+
+                &>.current-menu-item>a::before {
+                  content: '';
+                  position: absolute;
+                  height: 2px;
+                  background-color: $diode-orange;
+                  bottom: 0;
+                  width: 100%;
                 }
 
               }
@@ -184,7 +198,7 @@ header.site-header {
             }
 
             &.current-menu-item {
-              a {
+              .nav-link {
                 color: $primary;
                 position: relative;
                 &.button {
@@ -193,24 +207,22 @@ header.site-header {
               }
             }
 
-            a {
-              &.nav-link {
-                display: block;
-                color: $white;
-                padding: 10px 0;
-                font-size: $text-font-size-2;
-                text-transform: initial;
+            .nav-link {
+              display: block;
+              color: $white;
+              padding: 10px 0;
+              font-size: $text-font-size-2;
+              text-transform: initial;
 
-                &:hover,
-                &:active {
-                  color: $primary;
-                }
-
-                i {
-                  font-size: 1.5rem;
-                }
-
+              &:hover,
+              &:active {
+                color: $primary;
               }
+
+              i {
+                font-size: 1.5rem;
+              }
+
             }
           }
         }
