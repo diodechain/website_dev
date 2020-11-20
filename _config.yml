@@ -113,18 +113,19 @@ navigation:
       link: resources/about
     - title: Docs
       ft_title: Docs
-      link: resources/docs
+      link: https://support.diode.io/
+      target: _blank
     - title: Download
       ft_title: Download
       link: resources/download
     - title: Explorer
       ft_title: Explorer
-      link: resources/explorer
+      link: /prenet
 - title: <i class="fab fa-telegram-plane"></i>
   link: https://t.me/diode_chain
   target: _blank
 - title: Download dDrive
-  link: download/
+  link: resources/download/
   is_button: true
   target: _blank
 

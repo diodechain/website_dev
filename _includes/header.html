@@ -42,7 +42,12 @@
                     <div class="row container">
                       {% for subnav in nav.subs %}
                         <div class="col-sm-4">
-                          <a href="{{ subnav.link }}">{{ subnav.title }}</a>
+                          <a
+                            href="{{ subnav.link }}"
+                            {% if subnav.target %}
+                            target="{{ subnav.target }}"
+                            {% endif %}
+                          >{{ subnav.title }}</a>
                         </div>
                       {% endfor %}
                     </div>
