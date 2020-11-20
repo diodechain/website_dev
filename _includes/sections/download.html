@@ -62,16 +62,18 @@
                                 {{choice.description}}
                             </div>
                             {% if choice.downloads %}
-                            <div class="choice-action">
-                                <img src="/images/windows-logo-white.svg">
-                                (64 BIT)
-                            </div>
+
+                            {% for item in site.downloads %}
+                            <a id="{{ item.id }}" class="choice-action" href="{{ site.download-base }}{{ item.link }}">
+                                {{ item.title }}
+                            </a>
+                            {% endfor %}
+
                             <div class="choice-downloads">
-                                {% for dls in choice.downloads %}
-                                    <div class="download-item">
-                                        <img src="{{dls.icon}}" />
-                                        {{dls.title}}
-                                    </div>
+                                {% for item in site.downloads %}
+                                    <a class="download-item" href="{{ site.download-base }}{{ item.link }}">
+                                        {{ item.title }}
+                                    </a>
                                 {% endfor %}
                             </div>
                             {% else %}

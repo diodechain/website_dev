@@ -124,12 +124,12 @@ section.download-section {
           margin-bottom: 10px;
         }
         &-action {
+          display: none;
           background-color: $orange;
           color: $white;
           padding: 7px;
           border-radius: 4px;
           text-align: center;
-          display: flex;
           font-size: 14px;
           justify-content: center;
           align-items: center;
@@ -166,6 +166,7 @@ section.download-section {
             display: flex;
             font-size: 14px;
             color: $orange;
+            line-height: 1.5;
             img {
               margin-right: 10px;
             }

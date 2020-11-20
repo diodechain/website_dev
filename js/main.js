@@ -43,7 +43,6 @@
         $current = $(this);
         $(this).parent().addClass('current-menu-item');
         if ($(this).parent().prop("tagName") != "LI")  {
-          console.log(path, "s-s-s-s")
           $(this).parent().parent().parent().parent().addClass('current-menu-item');
         }
       }
@@ -221,7 +220,7 @@
     }
     let downloadLink = $("#" + OSName)
     if (downloadLink.length > 0) {
-      downloadLink.css("display", "block")
+      downloadLink.css("display", "flex")
       let file = downloadLink.attr("href")
       file = file.substring(file.lastIndexOf('/') + 1)
       $("#filename").text(file)

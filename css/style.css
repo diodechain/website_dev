@@ -6293,16 +6293,13 @@ section.download-section .download .download-choices .choice-description {
 }
 
 section.download-section .download .download-choices .choice-action {
+  display: none;
   background-color: #f15d2f;
   color: #fff;
   padding: 7px;
   -webkit-border-radius: 4px;
           border-radius: 4px;
   text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   font-size: 14px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -6370,6 +6367,7 @@ section.download-section .download .download-choices .choice-downloads .download
   display: flex;
   font-size: 14px;
   color: #f15d2f;
+  line-height: 1.5;
 }
 
 section.download-section .download .download-choices .choice-downloads .download-item img {
