@@ -19,6 +19,10 @@ $font-fa-youtube: "\f167";
 $font-fa-telegram-plane: "\f3fe";
 $font-fa-twitter: "\f099";
 $font-fa-github: "\f09b";
+$font-fa-raspberry-pi: "\f7bb";
+$font-fa-windows: "\f17a";
+$font-fa-apple: "\f179";
+$font-fa-linux: "\f17c";
 
 .fab {
   font-family: "Font Awesome 5 Brands";
@@ -36,6 +40,18 @@ $font-fa-github: "\f09b";
 }
 .fa-github:before {
   content: $font-fa-github;
+}
+.fa-raspberry-pi:before {
+  content: $font-fa-raspberry-pi;
+}
+.fa-windows:before {
+  content: $font-fa-windows;
+}
+.fa-apple:before {
+  content: $font-fa-apple;
+}
+.fa-linux:before {
+  content: $font-fa-linux;
 }
 
 .fab:before {

@@ -134,8 +134,9 @@ section.download-section {
           justify-content: center;
           align-items: center;
           height: 35px;
-          &>img {
-            margin-right: 10px;
+          i {
+            font-size: 18px;
+            margin-right: 5px;
           }
         }
         &-command {
@@ -163,12 +164,15 @@ section.download-section {
           margin-top: 20px;
 
           .download-item {
-            display: flex;
             font-size: 14px;
             color: $orange;
             line-height: 1.5;
-            img {
-              margin-right: 10px;
+            display: flex;
+            align-items: center;
+            margin: 0 7px;
+            i {
+              font-size: 18px;
+              margin-right: 5px;
             }
           }
         }
