@@ -15,6 +15,10 @@
 
       <!-- Toggle Mobile Menu -->
       <div class="col-xs-8 toggle-menu">
+        <div class="toggle-menu__actions">
+          <a class="nav-link--shortcut" href="https://t.me/diode_chain" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+          <a class="button nav-button" href="resources/download/">GET DIODE</a>
+        </div>
         <!-- Burger -->
         <div class="navTrigger"><i></i><i></i></div>
       </div>
@@ -63,7 +67,41 @@
         </nav>
       </div>
     </div>
-
+  </div>
+  
+  <!-- Toggle Mobile Sub Menu -->
+  {% for nav in site.navigation %}
+    {% if nav.subs %}
+      <div class="toggle-submenu" data-parent="{{ nav.link }}">
+        <div class="sub-header">
+          <div class="container">
+            <div class="button-back">
+              <i class="pe-7s-angle-left"></i>
+            </div>
+            <div class="sub-header__title">
+              Solution
+            </div>
+            <div class="button-close">
+              <i></i><i></i>
+            </div>
+          </div>
+        </div>
+        <div class="sub-menu">
+          <div class="container">
+            <ul class="subnavs">
+              {% for subnav in nav.subs %}
+              <li class="subnav">
+                <a class="subnav-link" href="{{ subnav.link }}">
+                  {{ subnav.title }}
+                </a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
   <!-- Overlay Lightbox -->
   <div id="video_overlay" class="overlay"></div>
 </header>

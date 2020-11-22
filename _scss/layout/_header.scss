@@ -21,6 +21,11 @@ header.site-header {
   z-index: 1;
   top: 0;
 
+  // Toggle Mobile Sub Menu
+  .toggle-submenu {
+    display: none;
+  }
+
   // Overlay Lightbox
   .overlay {
     display: none;
