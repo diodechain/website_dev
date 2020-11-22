@@ -2447,6 +2447,12 @@ ul.tag-cloud-box li a:hover {
           border-radius: 5px;
 }
 
+@media (max-width: 768px) {
+  .button, button {
+    font-size: 1.1rem;
+  }
+}
+
 .button.button-focus, button.button-focus {
   background-color: #ed4423;
 }
@@ -4433,6 +4439,16 @@ section.site-section.hero-section {
           background-size: 50%;
 }
 
+@media (max-width: 768px) {
+  section.site-section.hero-section {
+    -webkit-background-size: inherit inherit;
+            background-size: inherit;
+    background-position: right 20px;
+    background-image: url("/images/hero-right-mobile.png");
+    padding-bottom: 60px;
+  }
+}
+
 section.site-section.hero-section .container .row {
   -webkit-box-pack: left;
   -webkit-justify-content: left;
@@ -4446,6 +4462,7 @@ section.site-section.hero-section .container .row .hero-title {
   position: relative;
   margin-bottom: 30px;
   font-weight: 400;
+  max-width: 500px;
 }
 
 section.site-section.hero-section .container .row .hero-title::after {
@@ -4458,17 +4475,81 @@ section.site-section.hero-section .container .row .hero-title::after {
   left: 0;
 }
 
+section.site-section.hero-section .container .row .hero-title--xs {
+  display: none;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  position: relative;
+  margin-bottom: 30px;
+  font-weight: 400;
+  max-width: 400px;
+}
+
+section.site-section.hero-section .container .row .hero-title--xs::after {
+  content: '';
+  position: absolute;
+  width: 220px;
+  background-color: #f15d2f;
+  height: 1px;
+  bottom: -12px;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  section.site-section.hero-section .container .row .hero-title {
+    display: none;
+  }
+  section.site-section.hero-section .container .row .hero-title--xs {
+    display: block;
+  }
+}
+
 section.site-section.hero-section .container .row .hero-subtitle {
   font-size: 1.7em;
   line-height: 1.5;
   margin-bottom: 20px;
   font-weight: 400;
+  max-width: 500px;
+}
+
+section.site-section.hero-section .container .row .hero-subtitle--xs {
+  display: none;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  margin-bottom: 40px;
+  font-weight: 400;
+  max-width: 80%;
+}
+
+@media (max-width: 768px) {
+  section.site-section.hero-section .container .row .hero-subtitle {
+    display: none;
+  }
+  section.site-section.hero-section .container .row .hero-subtitle--xs {
+    display: block;
+  }
 }
 
 section.site-section.hero-section .container .row .hero-description {
   margin-bottom: 80px;
   font-weight: 400;
   font-size: 1.2rem;
+  max-width: 500px;
+}
+
+section.site-section.hero-section .container .row .hero-description--xs {
+  max-width: 70%;
+  display: none;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  section.site-section.hero-section .container .row .hero-description {
+    display: none;
+  }
+  section.site-section.hero-section .container .row .hero-description--xs {
+    display: block;
+  }
 }
 
 section.site-section.hero-section .container .row .company-name {
@@ -4495,12 +4576,47 @@ section.site-section.hero-section .container .row .action-container {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 600px;
 }
 
 section.site-section.hero-section .container .row .action-container .action-descriptoin {
   position: absolute;
   bottom: -1.8em;
   font-size: .58em;
+}
+
+section.site-section.hero-section .container .row .action-container .text-xs {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  section.site-section.hero-section .container .row .action-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  section.site-section.hero-section .container .row .action-container .text-sm {
+    display: none;
+  }
+  section.site-section.hero-section .container .row .action-container .text-xs {
+    display: block;
+  }
+  section.site-section.hero-section .container .row .action-container .action-descriptoin {
+    display: none;
+  }
+  section.site-section.hero-section .container .row .action-container .action-button {
+    margin-bottom: 50px;
+  }
+  section.site-section.hero-section .container .row .action-container .link {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /**
