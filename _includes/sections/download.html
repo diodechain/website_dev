@@ -1,0 +1,95 @@
+<!-- Download Section -->
+<section class="site-section download-section" id="download">
+    {% for download in page.downloads %}
+    <div class="download">
+        <div class="container">
+            <div class="row">
+                <div class="download__left col-sm-4">
+                    <div class="download-title">
+                        <img class="icon" src="{{ download.icon }}" />
+                        <h2 class="title">{{ download.title }} </h2>
+                    </div>
+                    {% if forloop.index == 1 %}
+                    <div class="download-action">
+                        <a class="button">Download dDrive for MacOS</a>
+                        <div class="action-description">
+                            Available for <a href="">Windows</a>, <a href="">MacOS</a>, and <a href="">Linux</a> (<a href="">Raspberry Pi</a>)
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="col-sm-8">
+                    <div class="download-content">
+                        <div class="download-description">
+                            {{ download.description }}
+                        </div>
+                        <a class="link link--arrow">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+
+            {% if download.command %}
+            <div class="row download-command">
+                <div class="col-xs-12">
+                    <p>
+                        Copy & paste the line below into a terminal:
+                    <p>
+                    <div class="download-action">
+                        <div class="button">
+                            {{ download.command }}
+                        </div>
+                        <div class="action-description">
+                            Supported on macOS, Linux, Raspberry Pi (or Windows if you have curl)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            {% if download.choices %}
+            <hr class="orange" />
+            <p>Or manually install in location of your choice</p>
+            <div class="row download-choices">
+                {% for choice in download.choices %}
+                    <div class="col-md-4">
+                        <div class="choice">
+                            <div class="choice-title">
+                                <div class="circle">
+                                    {{forloop.index}}
+                                </div>
+                                {{choice.title}}
+                            </div>
+                            <div class="choice-description">
+                                {{choice.description}}
+                            </div>
+                            {% if choice.downloads %}
+
+                            {% for item in site.downloads %}
+                            <a id="{{ item.id }}" class="choice-action" href="{{ site.download-base }}{{ item.link }}">
+                                {{ item.title }}
+                            </a>
+                            {% endfor %}
+
+                            <div class="choice-downloads">
+                                {% for item in site.downloads %}
+                                    <a class="download-item" href="{{ site.download-base }}{{ item.link }}">
+                                        {{ item.title }}
+                                    </a>
+                                {% endfor %}
+                            </div>
+                            {% else %}
+                            <div class="choice-command ">
+                                {{ choice.command }}
+                            </div>
+                            <div class="choice-hint">
+                                {{ choice.hint }}
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+</section>

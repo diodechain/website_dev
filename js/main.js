@@ -32,7 +32,38 @@
     var $body = $('body');
     var $nav_menu = $('.navigation-bar');
     var $nav_menu_link = $('#navMenu ul li a');
+    var $nav_menu_link_subnav = $('#navMenu ul li.subnav .nav-link');
     var $toggle_menu_button = $('.navTrigger');
+
+    
+    var $toggle_submenu = $(".toggle-submenu");
+
+
+    /**
+     *  Mobile Menu Navigation
+     **/
+    $nav_menu_link_subnav.on('click', function () {
+      var parentLink = this.dataset.href;
+      console.log(parentLink)
+      $toggle_submenu.each(function () {
+        if (this.dataset.parent == parentLink) {
+          $(this).addClass("show");
+        } else {
+          $(this).removeClass("show");
+        }
+      });
+    });
+    // Back button
+    $(".toggle-submenu .button-back").on('click', function() {
+      $toggle_submenu.removeClass("show");
+    });
+    // Back button
+    $(".toggle-submenu .button-close").on('click', function() {
+      $toggle_submenu.removeClass("show");
+      $nav_menu.toggleClass('active');
+      $body.toggleClass('no-scroll');
+      $(this).toggleClass('active');
+    });
 
     // Setting initial active menu
     var $current = null
@@ -42,6 +73,9 @@
       if (!$current && !path || (href && path.includes(href))) {
         $current = $(this);
         $(this).parent().addClass('current-menu-item');
+        if ($(this).parent().prop("tagName") != "LI")  {
+          $(this).parent().parent().parent().parent().addClass('current-menu-item');
+        }
       }
     })
 
@@ -72,6 +106,7 @@
       $nav_menu.removeClass('active');
       $body.removeClass('no-scroll');
       $toggle_menu_button.removeClass('active');
+      $toggle_submenu.removeClass("show");
     });
 
     /**
@@ -217,7 +252,7 @@
     }
     let downloadLink = $("#" + OSName)
     if (downloadLink.length > 0) {
-      downloadLink.css("display", "block")
+      downloadLink.css("display", "flex")
       let file = downloadLink.attr("href")
       file = file.substring(file.lastIndexOf('/') + 1)
       $("#filename").text(file)

@@ -1,5 +1,7 @@
 # Information for compile
-exclude: ["node_modules", "gulpfile.js", "package.json", "Gemfile", "README.md", "resources", "run"]
+# exclude: ["node_modules", "gulpfile.js", "package.json", "Gemfile", "README.md", "resources", "run"]
+exclude: ["node_modules", "gulpfile.js", "package.json", "Gemfile", "README.md", "run"]
+
 include: ["install.sh", "msa.pdf"]
 
 baseurl:
@@ -58,26 +60,119 @@ header-secondary-button:
 ####################################
 
 navigation:
-- title: Home
-  link: #home
+- title: Solutions
+  link: solutions/
+  ft_order: 1
+  subs:
+    - title: Remote Work
+      ft_title: Remote Work
+      link: solutions/remote-work
+    - title: Private Storage
+      ft_title: Private Storage
+      link: solutions/private-storage
+    - title: Streaming Video
+      ft_title: Streaming Video
+      link: solutions/streaming-video
+    - title: Healthcare & Compliance
+      ft_title: Compliance
+      link: solutions/healthcare-and-compliance
+    - title: Internet of Things
+      link: solutions/internet-of-things
+    - title: IT and Developers
+      link: solutions/it-and-developers
+    - title: Serverless Communications
+      link: solutions/serverless-communications
+- title: Products
+  link: products/
+  ft_order: 2
+  subs:
+    - title: dDrive
+      ft_title: dDrive
+      link: products/d-drive
+    - title: Diode CLI
+      ft_title: CLI
+      link: products/diode-cli
+    - title: Diode Network
+      ft_title: Network
+      link: products/diode-network
+    - title: Pricing
+      ft_title: Pricing
+      link: products/pricing
 - title: Blog
   link: blog/
-- title: Docs
-  link: https://support.diode.io
-- title: Download
-  link: download/
-- title: Explorer
-  link: prenet/
-- title: <i class="fi flaticon-telegram"></i>
+  ft_order: 4
+- title: Resources
+  link: resources/
+  ft_order: 3
+  subs:
+    - title: How It Works
+      ft_title: How It Works
+      link: resources/how-it-works
+    - title: About
+      ft_title: About
+      link: resources/about
+    - title: Docs
+      ft_title: Docs
+      link: https://support.diode.io/
+      target: _blank
+    - title: Download
+      ft_title: Download
+      link: resources/download
+    - title: Explorer
+      ft_title: Explorer
+      link: /prenet
+- title: <i class="fab fa-telegram-plane"></i>
   link: https://t.me/diode_chain
   target: _blank
-- title: <i class="fi flaticon-twitter"></i>
-  link: https://twitter.com/diode_chain
-  target: _blank
-- title: <i class="fi flaticon-github"></i>
-  link: https://github.com/diodechain
+- title: Download dDrive
+  link: resources/download/
+  is_button: true
   target: _blank
 
+
+#################################
+######  Breadcrumbs label  ######
+#################################
+breadcrumbs:
+  solutions: Solutions
+  remote-work: Remote Work
+  private-storage: Private Storage
+  streaming-video: Streaming Video
+  healthcare-and-compliance: Healthcare & Compliance
+  internet-of-things: Internet of Things
+  it-and-developers: IT and Developers
+  serverless-communications: Serverless Communications
+
+  products: Products
+  d-drive: dDrive
+  diode-cli: Diode CLI
+  diode-network: Diode Network
+  pricing: Pricing
+
+  blog: Blog
+
+  resources: Resources
+  how-it-works: How it Works
+  about: About
+  download: Download
+  explorer: Explorer
+  docs: Docs
+
+
+####################################
+######  Quick links of footer ######
+####################################
+quick_links:
+- title: Solutions
+  link: solutions/
+- title: Products
+  link: products/
+- title: Blog
+  link: blog/
+- title: Resources
+  link: resources/
+- title: Privacy Policy
+  link: privacy-policy/
 
 ####################################
 ######  Global Social Links   ######
@@ -206,6 +301,8 @@ footer-copyright-year: 2020
 #########################
 ######   Widgets   ######
 #########################
+
+
 
 collections:
   posts:

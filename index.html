@@ -1,6 +1,51 @@
 ---
 layout: default
 
+hero-title: Reclaim your digital sovereignity
+hero-subtitle: Share and manage files and internal systems without moving to the cloud
+hero-description: <span class="company-name">Diode<span>TM</span></span> lets you retain the security and privacy of a local area network while enabling the convenience of remote accessibility - all without IT admins.
+
+hero-xs-title: Web3 technologies <br/> for remote productivity
+hero-xs-subtitle: Turn your on-premise system into a hybrid solution overnight.
+hero-xs-description: At Diode, we help businesses, professionals, and individuals to retain the security and privacy of a local area network while enabling mobile sharing and accessibility.
+
+
+
+features:
+  ### Feature 1
+  - title: Remote Work
+    description: >-
+      Diode is a great choice for businesses and individuals who want to keep their files on their local systems, but need to unlock the efficiencies that come with remote access.  Files are stored on your hard-drive, but can be shared with employees, partners, and customers as easily as cloud-based solutions.  Both native file synchronization and web-based sharing are supported, and permissions can be managed at a granular level.
+    icon: svgs/remote-work.svg
+    link-text: Solutions for remote Work
+    link-url: https://www.electromaker.io/tutorial/blog/raspberry-pi-vpn-server
+
+  ### Feature 2
+  - title: Data Sovereignity
+    description: >-
+      For too long, people have been trading privacy and data sovereignity for convenience, often against their better judgement!  Diode’s technologies enable every person and every business to reclaim sovereignity over their information, while also enabling all of the efficiency and access improvements that come with cloud-first storage solutions.  Our serverless technology retains compliance with your existing regulatory regime, and does not require IT support to maintain.
+    icon: svgs/data-sovereignity.svg
+    link-text: Benefits for Compliance WITH Regulatory Regimes
+    link-url: https://www.electromaker.io/tutorial/blog/raspberry-pi-vpn-server
+
+  ### Feature 3
+  - title: No IT Administration
+    description: >-
+      Other solutions require you to implement complicated IT technologies to manage sharing, or force you to use centrally managed servers that often have questionable privacy policies.  These alternatives require you to choose the lesser of two evils - a brittle, complicated, and costly IT system or a simpler system that requires undue trust in a third party vendor.  Both of these bad alternatives introduce points of vulnerability.  Diode brings the best of both worlds - our servers are fully trustless and open source, eliminating attack vectors and proving the security of your valuable data.  
+    icon: svgs/no-it-administration.svg
+    link-text: How It Works
+    link-url: https://www.electromaker.io/tutorial/blog/raspberry-pi-vpn-server
+
+
+
+
+
+
+
+
+
+
+
 about-title: Look mum, no server!
 about-description: >-
     The Diode P2P network allows any device on the planet to directly serve secured content to the public Internet. 
@@ -14,58 +59,15 @@ about-description: >-
 # 
 
 
-features-title: What can Diode do for You?
-features-description: Here are some example use cases of a decentralized P2P network. To learn more about the technical foundations, check the docs.
-features:
-
-    ### Feature 1
-    - title: Publish your Raspberry Pi Webcam to the Internet
-      description: >-
-        See above for a step-by-step guide for how to publish your Raspberry PI on the Diode P2P network. The
-        example uses Diode shared streams to broadcast the video stream through the P2P network, and supports many 
-        simultaneous viewers.  
-
-        Check out our demo streams at https://betahaus-berlin.diode.link and https://pi-taipei.diode.link, and open 
-        multiple browser windows at once so see the shared streams in action. <blockquote>curl -Ssf https://diode.io/install.sh | sh</blockquote>
-
-    # icon: svgs/security.svg
-
-    ### Feature 2
-    - title: SSH into your Devices from Anywhere
-      description: >-
-        Instead of using centralized servers with static IP addresses or DynDNS, you can use the static Ethereum
-        Addresses with the Diode P2P network to setup a reliable virtual private network around the globe. All 
-        existing TCP based applications are compatible with the Diode P2P network, and can be streamed through it.
-        To try this out, install the Diode P2P Client and tunnel your SSH connection to any other device on the Diode P2P
-        network: <blockquote>ssh pi@pi-taipei.diode -o 'ProxyCommand=nc -X 5 -x localhost:1080 %h %p'</blockquote>
-
-    # icon: svgs/lower_cost.svg
-    # https://www.electromaker.io/tutorial/blog/raspberry-pi-vpn-server
-
-    ### Feature 3
-    - title: Share Your Network with Your Friends
-      description: >-
-        Define a Diode Fleet to which only your invited Friends have access. You're creating an invite-only
-        private network over the Internet. You and your Friends can exclusively use this network for all types 
-        of secure digital traffic - whether that be file sharing, secure communications, or streaming private content.
-        Since all communication is E2E encrypted using Ethereum Addresses for authentication, no one can get in the middle
-        of your conversations. 
-
-    # icon: svgs/streaming.svg
-
 
 ---
 
 {% include header.html %}
 
-{% include sections/about.html %}
+{% include sections/hero.html %}
 
 {% include sections/features.html %}
 
-{% include sections/offer.html offer-text="Follow us on twitter!" button-text="@diode_chain" link="https://twitter.com/diode_chain" %}
+{% include sections/offer.html offer-text="Join the conversation on Telegram" button-text="@diode_chain" link="https://t.me/diode_chain" %}
 
 {% include sections/blog.html %}
-
-{% include sections/offer.html offer-text="Chat with us on telegram!" button-text="@diode_chain" link="https://t.me/diode_chain" %}
-
-{% include sections/team.html %}

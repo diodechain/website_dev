@@ -7,14 +7,11 @@
  **/
 
 section.blog-section {
+  padding: 150px 0;
+  background-color: $web-gray;
 
   .row {
     align-items: initial;
-  }
-
-  hr.small {
-    margin-top: 40px;
-    margin-bottom: 40px;
   }
 
   // Blog Page
@@ -148,7 +145,6 @@ section.blog-section {
   // Blog Articles Container
   .blog-articles-container {
     // width: 100%;
-    margin-top: 80px;
     align-items: initial;
 
     // Resonsive Media
@@ -220,6 +216,7 @@ section.blog-section {
           max-width: 100%;
           height: auto;
           margin-bottom: 1em;
+          background-color: $white;
 
           a {
             width: 100%;
@@ -274,10 +271,10 @@ section.blog-section {
         .article-title {
           display: block;
           width: 100%;
-          margin: 30px 0;
+          margin: 15px 0 80px;
 
           h3.title {
-            font-size: 1.6rem;
+            font-size: 1.2rem;
             line-height: 1.4;
             text-transform: uppercase;
             margin-bottom: 10px;
