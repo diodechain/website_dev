@@ -11,15 +11,24 @@
         <h3 class="feature-title">
           {{ feature.title }}
         </h3>
+        <h3 class="feature-title--xs">
+          {{ feature.xs-title }}
+        </h3>
         <p class="feature-description">
           {{ feature.description }}
+        </p>
+        <p class="feature-description--xs">
+          {{ feature.xs-description }}
         </p>
         <a class="feature-link link link--arrow" href="{{ feature.link-url }}">
           {{ feature.link-text }}
         </a>
+        <a class="feature-link--xs link link--arrow" href="{{ feature.link-url }}">
+          SHOW MORE
+        </a>
       </div>
       <div
-        class="feature-icon col-xs-0 col-sm-5 col-md-4"
+        class="feature-icon feature-icon--{{ forloop.index }} col-xs-0 col-sm-5 col-md-4"
       >
         {% include {{ feature.icon }} %}
       </div>
@@ -29,16 +38,26 @@
     <!-- CONTACT US and LEARN MORE -->
 
     <div class="feature-more row">
-      <div class="col-xs-12 col-sm-6">
+      <div class="col-sm-6">
         <a class="contact-button button button--outline">
           CONTACT US
         </a>
       </div>
-      <div class="col-xs-12 col-sm-6">
+      <div class="col-sm-6">
         <a class="link link--arrow">
           LEARN MORE
         </a>
       </div>
+    </div>
+
+
+    <div class="feature-more--xs">
+      <a class="contact-button button button--outline">
+        CONTACT US
+      </a>
+      <a class="button">
+        GET STARTED
+      </a>
     </div>
 
   </div>

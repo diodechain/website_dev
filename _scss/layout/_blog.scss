@@ -9,7 +9,9 @@
 section.blog-section {
   padding: 150px 0;
   background-color: $web-gray;
-
+  @media (max-width: 768px) {
+    padding: 50px 0;
+  }
   .row {
     align-items: initial;
   }
@@ -230,18 +232,22 @@ section.blog-section {
             @media (max-width: 992px) {
               object-fit: cover;
               height: 200px;
-            }    
+            }
           }
 
           img.vertical-preview {
-            object-fit: contain;
+            object-fit: cover;
             object-position: center;
             height: 250px;
             width: 100%;
 
             @media (max-width: 992px) {
               height: 200px;
-            }    
+            }
+            @media (max-width: 768px) {
+              height: 300px;
+              object-fit: cover;
+            }
           }
 
 
@@ -278,7 +284,9 @@ section.blog-section {
             line-height: 1.4;
             text-transform: uppercase;
             margin-bottom: 10px;
-
+            @media (max-width: 768px) {
+              text-transform: inherit;
+            }
             a {
               color: $secondary;
 
@@ -462,10 +470,13 @@ section.blog-section {
 
   // View All Posts
   .view-posts {
-    hr.normal {
-      margin: 20px auto;
+    &>div {
+      margin-top: -50px;
+      text-align: center;
+      @media (max-width: 768px) {
+        text-align: left;
+      }
     }
-
     .button-cta {
       margin-bottom: 0;
       float: inherit !important;

@@ -10,8 +10,8 @@ section.offer-section {
   padding: 40px 0;
   color: $white;
   background-color: $web-blue;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 0;
+
   .offer-link {
     color: $white;
     display: flex;
@@ -40,6 +40,17 @@ section.offer-section {
       background-color: $orange;
       bottom: -30px;
       left: calc(50% - 113px);
+    }
+    @media (max-width: 768px) {
+      text-align: center;
+      h2 {
+        font-size: $text-font-size-2;
+        font-weight: 400;
+        text-transform: inherit;
+      }
+      i {
+        display: none;
+      }
     }
   }
 }
