@@ -45,7 +45,7 @@
       @media (max-width: 768px) {
         color: $black-blue;
         font-size: 1.4em;
-        top: 28px;
+        top: calc(50% - 11px);
       }
     }
     &.active {

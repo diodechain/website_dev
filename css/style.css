@@ -3760,7 +3760,7 @@ header.site-header .arrow-down-section .arrow-down i:before {
   .breadcrumbs li::after {
     color: #161c2a;
     font-size: 1.4em;
-    top: 28px;
+    top: calc(50% - 11px);
   }
 }
 
