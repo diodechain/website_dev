@@ -19,8 +19,17 @@
     margin-right: 40px;
     display: flex;
     align-items: center;
+
+    @media (max-width: 768px) {
+      padding: 30px 0;
+      font-size: $text-font-size-2-xs;
+      margin-right: 35px;
+    }
     a {
       color: $web-blue;
+      @media (max-width: 768px) {
+        color: $black-blue;
+      }
       &:hover {
         color: $orange;
       }
@@ -32,12 +41,20 @@
       font-size: 1.5em;
       position: absolute;
       color: $web-blue;
-      right: -38px;
+      right: -32px;
+      @media (max-width: 768px) {
+        color: $black-blue;
+        font-size: 1.4em;
+        top: 28px;
+      }
     }
     &.active {
       color: $orange;
       &:after {
         content: '';
+      }
+      @media (max-width: 768px) {
+        color: $gray;
       }
     }
   }
