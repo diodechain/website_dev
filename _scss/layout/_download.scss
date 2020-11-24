@@ -42,6 +42,10 @@ section.download-section {
       line-height: 1.5;
       margin-bottom: 30px;
     }
+    
+    .link {
+      margin-right: 20px;
+    }
 
     &__left {
       flex-direction: column;
@@ -50,9 +54,19 @@ section.download-section {
     }
     &-action {
       position: relative;
+      display: flex;
       .button {
         padding-left: 25px;
         padding-right: 25px;
+        width: fit-content;
+      }
+      code {
+        background-color: $orange;
+        padding: 15px 20px;
+        text-align: center;
+        border-radius: 4px;
+        width: 100%;
+        font-size: $text-font-size-2;
       }
       .action-description {
         position: absolute;
@@ -62,7 +76,7 @@ section.download-section {
     }
     &-command {
       margin-top: 50px;
-      margin-bottom: 60px;
+      margin-bottom: 70px;
       .command-label {
         font-size: $text-font-size-2;
         font-weight: 400;
@@ -94,7 +108,9 @@ section.download-section {
         color: $dark-blue;
         border-radius: 4px;
         padding: 20px;
-        min-height: 300px;
+        min-height: 325px;
+        flex-direction: column;
+        display: flex;
 
         &-title {
           display: flex;
@@ -107,8 +123,8 @@ section.download-section {
             margin-right: 15px;
             background-color: $orange;
             border-radius: 50%;
-            width: 30px;
-            height: 30px;
+            width: 40px;
+            height: 40px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -117,14 +133,32 @@ section.download-section {
 
           }
         }
-
+        code {
+          background-color: $dark-blue;
+          color: $white;
+          width: 100%;
+          overflow-x: auto;
+          height: 35px;
+          border-radius: 4px;
+          white-space: nowrap;
+          overflow-x: auto;
+          display: flex;
+          align-items: center;
+          padding: 0 10px;
+          font-size: 12px;
+          justify-content: center;
+        }
+        &-hint {
+          line-height: 1.5;
+          text-align: center;
+        }
         &-description {
           text-align: center;
           line-height: 1.8;
           margin-bottom: 10px;
         }
         &-action {
-          display: none;
+          display: flex;
           background-color: $orange;
           color: $white;
           padding: 7px;

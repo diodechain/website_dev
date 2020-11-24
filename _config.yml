@@ -195,23 +195,70 @@ links:
 #########################
 ######  Downloads  ######
 #########################
-download-base: https://github.com/diodechain/diode_go_client/releases/download/v0.6.1/
-downloads:
-- title: <i class="fab fa-raspberry-pi"></i> Raspberry Pi (ARM)
-  link: diode_linux_arm.zip
-  id: Raspberry Pi
-- title: <i class="fab fa-apple"></i> MacOS X
-  link: diode_darwin_amd64.zip
-  id: MacOS
-- title: <i class="fas fa-cube"></i> MacOS Package
-  link: diode_darwin.pkg
-  id: MacOS
-- title: <i class="fab fa-windows"></i> Windows (64-bit)
-  link: diode_windows_amd64.zip
-  id: Windows
-- title: <i class="fab fa-linux"></i> Linux (64-bit)
-  link: diode_linux_amd64.zip
-  id: Linux
+d-drive:
+  title: dDrive
+  title-1: Diode Drive
+  description: A cloud experience for your local storage - install on your computer, server, or device and start collaborating!
+  # for solutions page(desktop)
+  description-1: dDrive combines the privacy and compliance benefits of local storage with the benefits and efficiency of remote access.
+  # for solutions page(mobile)
+  description-2: Existing file servers and new Diode-enabled NAS systems can use Diode Drive to combine the privacy and compliance benefits of local storage with the benefits and efficiency of remote access.
+  icon: /images/diode-drive.png
+  download-base: https://github.com/diodechain/diode_go_client/releases/download/v0.6.1/
+  downloads:
+  - title: <i class="fab fa-raspberry-pi"></i> Raspberry Pi (ARM)
+    link: diode_linux_arm.zip
+    name: Raspberry Pi
+    id: raspberry-pi
+  - title: <i class="fab fa-apple"></i> MacOS X
+    link: diode_darwin_amd64.zip
+    name: MacOS
+    id: macos
+  - title: <i class="fab fa-windows"></i> Windows (64-bit)
+    link: diode_windows_amd64.zip
+    name: Windows
+    id: windows
+  - title: <i class="fab fa-linux"></i> Linux (64-bit)
+    link: diode_linux_amd64.zip
+    name: Linux
+    id: linux
+diode-cli:
+  title: Diode CLI
+  description: Serverless remote access for your IT assets, localhost websites / webservices, and data/video streams.
+  # for solution page(desktop)
+  description-1: The Diode CLI is used to maintain systems in hard-to-access facilities and to securely publish data streams and web properties.
+  icon: /images/diode-client.png
+  learn-more: link
+  download-command: 'curl -Ssf https://diode.io/install.sh | sh'
+  download-base: https://github.com/diodechain/diode_go_client/releases/download/v0.6.1/
+  downloads:
+  - title: <i class="fab fa-raspberry-pi"></i> Raspberry Pi (ARM)
+    link: diode_linux_arm.zip
+    name: Raspberry Pi
+    id: raspberry-pi
+  - title: <i class="fab fa-apple"></i> MacOS X
+    link: diode_darwin_amd64.zip
+    name: MacOS
+    id: macos
+  - title: <i class="fas fa-cube"></i> MacOS Package
+    link: diode_darwin.pkg
+    name: MacOS Package
+    id: macos-package
+  - title: <i class="fab fa-windows"></i> Windows (64-bit)
+    link: diode_windows_amd64.zip
+    name: Windows
+    id: windows
+  - title: <i class="fab fa-linux"></i> Linux (64-bit)
+    link: diode_linux_amd64.zip
+    name: Linux
+    id: linux
+# for only solution pages (mobile)
+diode-network:
+  title: Diode Network
+  description: The Diode Network is the world’s only fully decentralized communications network capable of supporting the needs of private, secure communications for the enterprise.
+  # TODO: define
+  link: '#'
+
 
 #########################
 ######   Widgets   ######

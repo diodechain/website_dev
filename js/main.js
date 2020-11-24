@@ -261,7 +261,7 @@
     $("#search").change(search);
 
     /**
-     * Downloads
+     * Downloads (dDrive and Diode CLI)
      */
     let OSName = "Unknown OS";
     if (navigator.userAgent.indexOf("Win") != -1) OSName = "Windows";
@@ -270,12 +270,15 @@
       if (navigator.userAgent.indexOf("armv") != -1) OSName = "Raspberry Pi";
       else OSName = "Linux";
     }
-    let downloadLink = $("#" + OSName);
+    let downloadLink = $(
+      "." + OSName.toLowerCase().replace(/\s+/g, '-')
+    );
     if (downloadLink.length > 0) {
-      downloadLink.css("display", "flex");
+      downloadLink.removeClass("hide");
       let file = downloadLink.attr("href");
       file = file.substring(file.lastIndexOf("/") + 1);
       $("#filename").text(file);
+      $("#osname").text(OSName);
     }
 
     // FAQ TOC

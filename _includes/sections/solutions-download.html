@@ -2,39 +2,59 @@
 <section class="site-section section-focus solutions-download-section" id="solutions-download">
   <div class="downloads">
     <div class="container">
+      <!-- Desktop layout -->
       <div class="row hidden-xs">
-        {% for download in page.downloads %}
         <div class="download col-sm-6 col-xs-12">
           <div class="download-title-container">
-            <img src="{{ download.icon }}">
+            <img src="{{ site.d-drive.icon }}">
             <h2 class="download-title">
-              {{ download.title }}
+              {{ site.d-drive.title }}
             </h2>
           </div>
           <p class="download-description">
-            {{ download.description }}
+            {{ site.d-drive.description-1 }}
           </p>
-          <a class="button" href="{{ download.link-url }}">{{ download.link-text }}</a>
+          {% for download in site.d-drive.downloads %}
+          <a class="button hide {{ download.id }}" href="{{ site.d-drive.download-base }}{{ download.link }}">GET {{ site.d-drive.title }}</a>
+          {% endfor %}
         </div>
-        {% endfor %}
+        <div class="download col-sm-6 col-xs-12">
+          <div class="download-title-container">
+            <img src="{{ site.diode-cli.icon }}">
+            <h2 class="download-title">
+              {{ site.diode-cli.title }}
+            </h2>
+          </div>
+          <p class="download-description">
+            {{ site.diode-cli.description-1 }}
+          </p>
+          {% for download in site.diode-cli.downloads %}
+          <a class="button hide {{ download.id }}" href="{{ site.diode-cli.download-base }}{{ download.link }}">GET {{ site.diode-cli.title }}</a>
+          {% endfor %}
+        </div>
       </div>
+      <!-- Mobile layout (this design has bid diff from desktop) -->
       <div class="row hidden-sm hidden-md hidden-lg">
         <div class="col-xs-12 download--xs">
           <h3 class="download-title">Product 1 Highlight:</h3>
-          <a class="download-link link">
-            DIODE DRIVE
+          {% for download in site.d-drive.downloads %}
+          <a
+            class="download-link link hide {{ download.id }}"
+            href="{{ site.d-drive.download-base }}{{ download.link }}">
+            {{ site.d-drive.title-1 }}
           </a>
+          {% endfor %}
           <p class="download-description">
-            Existing file servers and new Diode-enabled NAS systems can use Diode Drive to combine the privacy and compliance benefits of local storage with the benefits and efficiency of remote access.
+            {{ site.d-drive.description-2 }}
           </p>
         </div>
         <div class="col-xs-12 download--xs">
           <h3 class="download-title">Product 2 Highlight:</h3>
-          <a class="download-link link">
-            DIODE NETWORK
+          <a class="download-link link" href="{{ site.diode-network.link }}">
+            {{ site.diode-network.title }}
           </a>
           <p class="download-description">
-            The Diode Network is the world’s only fully decentralized communications network capable of supporting the needs of private, secure communications for the enterprise.
+            {{ site.diode-network.description }}
           </p>
         </div>
 
@@ -45,10 +65,10 @@
   <div class="contact-us">
     <div class="contact-us__card">
       <div class="description">
-        {{ page.contact_us.text }}
+        {{ layout.contact_us.text }}
       </div>
-      <a class="button button--outline hidden-xs" href="">Contact Us</a>
-      <a class="button hidden-sm hidden-md hidden-lg" href="">Contact Us</a>
+      <a class="button button--outline hidden-xs" href="{{ site.links.contact_us }}">Contact Us</a>
+      <a class="button hidden-sm hidden-md hidden-lg" href="{{ site.links.contact_us }}">Contact Us</a>
     </div>
   </div>
 </section>

@@ -4,10 +4,10 @@
     <div class="row">
       <div class="col-xs-12">
         <!-- Solutions Page Description -->
-        <h3 class="solution-section__description">{{ page.description }}</h3>
+        <h3 class="solution-section__description">{{ page.page-description }}</h3>
 
         <!-- Solutions Page Title -->
-        <h2 class="site-section__title">{{ page.title }}</h2>
+        <h2 class="site-section__title">{{ page.page-title }}</h2>
       </div>
     </div>
     <!-- Solutions -->
@@ -26,8 +26,10 @@
           </div>
         </div>
       {% endfor %}
+
+      <!-- Bottom Button (Mobile Design) -->
       <div class="col-xs-12 hidden-md hidden-lg">
-        <a href="" class="button">GET A DEMO</a>
+        <a class="button" href="{{ site.links.learn_more }}">GET A DEMO</a>
       </div>
 
     </div>
