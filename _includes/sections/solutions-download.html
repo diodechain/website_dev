@@ -2,9 +2,9 @@
 <section class="site-section section-focus solutions-download-section" id="solutions-download">
   <div class="downloads">
     <div class="container">
-      <div class="row">
+      <div class="row hidden-xs">
         {% for download in page.downloads %}
-        <div class="download col-sm-12 col-md-6">
+        <div class="download col-sm-6 col-xs-12">
           <div class="download-title-container">
             <img src="{{ download.icon }}">
             <h2 class="download-title">
@@ -18,6 +18,27 @@
         </div>
         {% endfor %}
       </div>
+      <div class="row hidden-sm hidden-md hidden-lg">
+        <div class="col-xs-12 download--xs">
+          <h3 class="download-title">Product 1 Highlight:</h3>
+          <a class="download-link link">
+            DIODE DRIVE
+          </a>
+          <p class="download-description">
+            Existing file servers and new Diode-enabled NAS systems can use Diode Drive to combine the privacy and compliance benefits of local storage with the benefits and efficiency of remote access.
+          </p>
+        </div>
+        <div class="col-xs-12 download--xs">
+          <h3 class="download-title">Product 2 Highlight:</h3>
+          <a class="download-link link">
+            DIODE NETWORK
+          </a>
+          <p class="download-description">
+            The Diode Network is the world’s only fully decentralized communications network capable of supporting the needs of private, secure communications for the enterprise.
+          </p>
+        </div>
+
+      </div>
     </div>
   </div>
 
@@ -26,7 +47,8 @@
       <div class="description">
         {{ page.contact_us.text }}
       </div>
-      <a class="button button--outline button--text-black" href="">Contact Us</a>
+      <a class="button button--outline hidden-xs" href="">Contact Us</a>
+      <a class="button hidden-sm hidden-md hidden-lg" href="">Contact Us</a>
     </div>
   </div>
 </section>

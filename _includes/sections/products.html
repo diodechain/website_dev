@@ -11,13 +11,13 @@
 
 
     <div class="row">
-      <div class="col-xs-6">
+      <div class="col-sm-12 col-md-6">
         <div class="products-image">
           <!-- Products Header Image -->
           <img src="{{ page.header-image }}">
         </div>
       </div>
-      <div class="col-xs-6">
+      <div class="col-sm-12 col-md-6 hidden-sm hidden-xs">
         <!-- Products Header Image Description -->
         <div class="products-image-description">
           {{ page.header-image-description }}
@@ -48,21 +48,23 @@
         </li>
       {% endfor %}
     </ul>
-    <div class="products-body-actions">
+    <div class="products-body-actions hidden-xs">
       <a href="#" class="button">DOWNLOAD</a>
       <a href="#" class="button button--outline">GET A DEMO</a>
       <a href="#" class="link link--arrow">LEARN MORE</a>
     </div>
-
+    <div class="products-body-actions hidden-sm hidden-md hidden-lg">
+      <a href="#" class="button button--outline">GET A DEMO</a>
+      <a href="#" class="button button--outline">DOWNLOAD</a>
+      <a href="#" class="button button--outline">DOCUMENTATION</a>
+    </div>
   </div>
 </section>
 
  <!-- Products footer section -->
 <section class="site-section section-focus products-footer-section" id="products-footer">
   <div class="container">
-    <div class="row">
-      <iframe class="tutorial" src="https://www.youtube-nocookie.com/embed/Zibg-6CClc4" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <iframe class="tutorial" src="https://www.youtube-nocookie.com/embed/Zibg-6CClc4" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 </section>

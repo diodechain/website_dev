@@ -22,13 +22,23 @@ section.products-header-section {
     font-weight: 400;
     color: $dark-blue;
   }
- 
+  @media (max-width: 768px) {
+    .site-section__description {
+      color: $dark-blue;
+      margin-bottom: 20px;
+    }
+    .products-image {
+      margin-bottom: 40px;
+    }
+  }
 }
 
 section.products-body-section {
   background-color: $web-gray !important;
   padding: 50px;
-
+  @media (max-width: 768px) {
+    padding: 50px 0 40px;
+  }
   .products-body-text {
     font-size: 1.7rem;
     color: $web-blue;
@@ -45,6 +55,11 @@ section.products-body-section {
       left: calc(50% - 25px);
       bottom: -10px;
     }
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+      text-align: center;
+    }
   }
 
   .products-body-features {
@@ -56,6 +71,11 @@ section.products-body-section {
       padding: 30px 50px;
       margin-bottom: 70px;
 
+      @media (max-width: 768px) {
+        padding: 40px 50px;
+        margin-bottom: 50px;
+      }
+
       &-title {
         text-transform: uppercase;
         color: $web-blue;
@@ -66,9 +86,23 @@ section.products-body-section {
         &>img {
           margin-right: 15px;
         }
+
+        @media (max-width: 768px) {
+          font-size: 18px;
+          display: flex;
+          justify-content: center;
+          &>img {
+            width: 20px;
+            margin-left: -30px;
+          }
+        }
+
       }
       &-description {
         font-size: $text-font-size-1;
+        @media (max-width: 768px) {
+          font-size: 18px;
+        }
       }
     }
   }
@@ -79,15 +113,34 @@ section.products-body-section {
     a {
       margin: 0 15px 15px 15px;
     }
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      a {
+        width: 160px;
+        height: 38px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
   }
 }
 
 section.products-footer-section {
   .container {
+    text-align: center;
     iframe {
       width: 100%;
       max-width: 800px;
       height: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      @media (max-width: 768px) {
+        height: 300px;
+      }
     }
   }
 }

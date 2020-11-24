@@ -29,6 +29,20 @@
       left: calc(50% - 75px);
       background-color: $orange;
     }
+
+    @media (max-width: 993px) {
+      font-size: $title-font-size-2-xs;
+      margin-top: 50px;
+      margin-bottom: 40px;
+      &:after {
+        width: 36px;
+        left: calc(50% - 18px);
+      }
+    }
+
+    @media (max-width: 768px) {
+      font-size: $title-font-size-1-xs;
+    }
   }
 
   &__description {
@@ -38,6 +52,13 @@
     font-weight: 400;
     color: $gray;
     text-align: center;
+    @media (max-width: 993px) {
+      font-size: $title-font-size-1-xs;
+    }
+    @media (max-width: 768px) {
+      font-size: $text-font-size-1;
+    }
+
   }
 
   // z-index: 1;

@@ -44,6 +44,38 @@ section.solutions-download-section {
           margin: 0 auto;
           width: 250px;
         }
+
+        &--xs {
+          &:first-child {
+            position: relative;
+            margin-bottom: 50px;
+            &::after {
+              content: '';
+              position: absolute;
+              width: 36px;
+              height: 2px;
+              background-color: $white;
+              bottom: 0;
+              left: calc(50% - 18px);
+            }
+          }
+          .download-title {
+            color: $white;
+            font-size: $text-font-size-2;
+            margin-left: 0;
+            margin-bottom: 25px;
+          }
+          .download-link {
+            margin-bottom: 30px;
+            font-weight: 400;
+            // font-family: 'Abel';
+          }
+          .download-description {
+            color: $white;
+            font-size: $text-font-size-1;
+            font-weight: 400;
+          }
+        }
       }
     }
   }
@@ -73,6 +105,14 @@ section.solutions-download-section {
         margin: 0 auto;
         width: 230px;
         text-transform: uppercase;
+      }
+
+      @media (max-width: 768px) {
+        margin-top: -90px;
+        width: 90%;
+        .button {
+          width: fit-content;
+        }
       }
     }
 

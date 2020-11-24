@@ -72,6 +72,7 @@
       let path = location.pathname.substr(1)
       if (!$current && !path || (href && path.includes(href))) {
         $current = $(this);
+        if (!path) return;
         $(this).parent().addClass('current-menu-item');
         if ($(this).parent().prop("tagName") != "LI")  {
           $(this).parent().parent().parent().parent().addClass('current-menu-item');
