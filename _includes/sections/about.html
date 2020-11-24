@@ -3,15 +3,15 @@
 
   <div class="container">
     <!-- Products Header Page Title -->
-    <h2 class="site-section__title">{{ page.title }}</h2>
+    <h2 class="site-section__title">{{ page.header-title }}</h2>
 
     <!-- Products Header Page Description -->
-    <h3 class="site-section__description">{{ page.description }}</h3>
+    <h3 class="site-section__description">{{ page.header-description }}</h3>
 
     <div class="content-container">
         {{ page.text }}
         <div class="action">
-          <a class="button button--outline"> CONTACT US </a>
+          <a class="button button--outline" href="{{ site.links.contact_us }}"> CONTACT US </a>
         </div>
     </div>
   </div>
@@ -58,7 +58,7 @@
 
         {% if forloop.index == forloop.length - 1 %}
           <div class="story__action">
-            <a href="" class="button button--outline">CONTACT US</a>
+            <a class="button button--outline" href="{{ site.links.contact_us }}">CONTACT US</a>
           </div>
         {% endif %}
       </div>
