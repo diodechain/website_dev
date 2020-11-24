@@ -16,22 +16,26 @@
         <p class="hero-description--xs">{{ page.hero-xs-description }}</p>
       
         <div class="action-container">
-          <a class="button action-button">
+          <a class="button action-button" alt="{{ page.hero-links[0].title }}" href="{{ page.hero-links[0].url }}">
             <div class="text-sm">
-              Download <span class="company-name">dDrive<span>TM</span></span> for MacOS
+              {{ page.hero-links[0].label }}
             </div>
             <div class="text-xs">
-              GET A DEMO
+              {{ page.hero-links[0].xs-label }}
             </div>
           </a>
-          <a class="link text-sm link--white link--arrow" href="">
-              LEARN MORE
+          <a class="link text-sm link--white link--arrow" href="{{ page.hero-links[1].url }}">
+            {{ page.hero-links[1].label }}
           </a>
-          <a class="link text-xs link--white link--arrow" href="">
-              DIODE IS THE FUTURE OF WEB3
+          <a class="link text-xs link--white link--arrow" href="{{ page.hero-links[1].url }}">
+              {{ page.hero-links[1].xs-label }}
           </a>
           <div class="action-descriptoin">
-            Available for <a href="">Windows</a>, <a href="">MacOS</a>, and <a href="">Linux</a> (<a href="">Raspberry Pi</a>)
+            Available for 
+            <a href="{{ site.download-base }}{{ site.downloads[3].link }}" alt="{{ site.downloads[3].id }}">Windows</a>, 
+            <a href="{{ site.download-base }}{{ site.downloads[1].link }}" alt="{{ site.downloads[1].id }}">MacOS</a>, 
+            and <a href="{{ site.download-base }}{{ site.downloads[4].link }}" alt="{{ site.downloads[4].id }}">Linux</a> 
+            (<a href="{{ site.download-base }}{{ site.downloads[0].link }}" alt="{{ site.downloads[0].id }}">Raspberry Pi</a>)
           </div>
         </div>
 

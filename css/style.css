@@ -7100,7 +7100,7 @@ footer.site-footer {
   background-color: #161c2a;
   width: 100%;
   padding-top: 50px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 
 footer.site-footer .container {
@@ -7140,6 +7140,8 @@ footer.site-footer .container .scrollup-container .scrollup {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
+  z-index: 50;
 }
 
 footer.site-footer .container .scrollup-container .scrollup i {
@@ -7237,12 +7239,22 @@ footer.site-footer .row .footer-text {
           align-items: center;
   font-size: 1em;
   color: #e3e9ed;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 footer.site-footer .row .footer-text .v-cross {
   width: 1px;
   height: 20px;
   background: #e3e9ed;
+}
+
+footer.site-footer .row.footer-bottom-1 {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer.site-footer .row.footer-bottom-2 {
@@ -7269,14 +7281,17 @@ footer.site-footer .footer-logo img {
     display: none;
   }
   footer.site-footer .container .row.footer-bottom-2 {
-    display: block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
   footer.site-footer .container .row.footer-bottom-2 .footer-text {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-bottom: 20px;
+    line-height: 1.5;
   }
 }
 

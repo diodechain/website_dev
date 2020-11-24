@@ -1,6 +1,7 @@
 ---
 layout: default
 
+### Hero Section
 hero-title: Reclaim your digital sovereignity
 hero-subtitle: Share and manage files and internal systems without moving to the cloud
 hero-description: <span class="company-name">Diode<span>TM</span></span> lets you retain the security and privacy of a local area network while enabling the convenience of remote accessibility - all without IT admins.
@@ -8,9 +9,17 @@ hero-description: <span class="company-name">Diode<span>TM</span></span> lets yo
 hero-xs-title: Web3 technologies <br/> for remote productivity
 hero-xs-subtitle: Turn your on-premise system into a hybrid solution overnight.
 hero-xs-description: At Diode, we help businesses, professionals, and individuals to retain the security and privacy of a local area network while enabling mobile sharing and accessibility.
+hero-links:
+  - url: /resources/download/
+    title: Download
+    label: Download <span class="company-name">dDrive<span>TM</span></span> for MacOS
+    xs-label: GET A DEMO
+  - url: /resources/how-it-works/
+    title: Learn more
+    label: LEARN MORE
+    xs-label: GET A DEMO
 
-
-
+### Feature Section
 features:
   ### Feature 1
   - title: Remote Work
@@ -20,7 +29,7 @@ features:
     xs-description: Diode offers a suite of security technologies that make it easy to share files, intranet websites, and network access with partners and employees without exposing your systems to the outside world.  Our serverless technology retains compliance with your existing regulatory regime, and does not require IT support to maintain.  A Diode productivity solution is a great choice for businesses and individuals who want to retain privacy and control, but need to unlock the efficiencies that come with remote access.
     icon: svgs/remote-work.svg
     link-text: Solutions for remote Work
-    link-url: https://www.electromaker.io/tutorial/blog/raspberry-pi-vpn-server
+    link-url: /solutions/remote-work/
 
   ### Feature 2
   - title: Data Sovereignity
@@ -30,50 +39,21 @@ features:
     xs-description: Our decentralized routing and communications network is end to end encrypted and can handle all types of work loads.  Communications over the network are extremely resilient - they can initiate via any available node and they look just like any other secure Internet communication.  The Diode Network is the perfect solution for organizations building inherently secure communication applications, or looking to replace in-house relay servers that are not core competence.
     icon: svgs/data-sovereignity.svg
     link-text: Benefits for Compliance WITH Regulatory Regimes
-    link-url: https://www.electromaker.io/tutorial/blog/raspberry-pi-vpn-server
+
+    ### TODO: the link should be resolved
+    link-url: /products/d-drive/
 
   ### Feature 3
   - title: No IT Administration
     description: >-
-      Other solutions require you to implement complicated IT technologies to manage sharing, or force you to use centrally managed servers that often have questionable privacy policies.  These alternatives require you to choose the lesser of two evils - a brittle, complicated, and costly IT system or a simpler system that requires undue trust in a third party vendor.  Both of these bad alternatives introduce points of vulnerability.  Diode brings the best of both worlds - our servers are fully trustless and open source, eliminating attack vectors and proving the security of your valuable data.  
+      Other solutions require you to implement complicated IT technologies to manage sharing, or force you to use centrally managed servers that often have questionable privacy policies.  These alternatives require you to choose the lesser of two evils - a brittle, complicated, and costly IT system or a simpler system that requires undue trust in a third party vendor.  Both of these bad alternatives introduce points of vulnerability.  Diode brings the best of both worlds - our servers are fully trustless and open source, eliminating attack vectors and proving the security of your valuable data.
     xs-title: Web3 Devices
     xs-description: The Diode Network is the only public infrastructure that supports fully trustless interactions with devices and computing systems.  New types of Internet-based serverless devices are now possible, such as video cameras <Streaming Video (link to blog post on cameras)>, website hosting servers <Web3 Hosting>, file servers <Private Storage>, and IoT sensors <IoT>.  By building a Web3 device around Diode, product manufacturers get all of the security and connectivity of an Internet-based device, with none of the complexities or cost of cloud vendors, IT maintenance, or software upgrades.
     icon: svgs/no-it-administration.svg
     link-text: How It Works
-    link-url: https://www.electromaker.io/tutorial/blog/raspberry-pi-vpn-server
-
-
-
-
-
-
-
-
-
-
-
-about-title: Look mum, no server!
-about-description: >-
-    The Diode P2P network allows any device on the planet to directly serve secured content to the public Internet. 
-    We're ending the monopoly of datacenter servers and the need for static IP addresses. With Diode, your Ethereum
-    address is your static address, and, with ENS (Ethereum Name System) and BNS (Blockchain Name System), your content
-    can be accessed with a human-readable names.
-
-
-# Chinese Firewall https://news.ycombinator.com/item?id=15590912
-# https://www.electromaker.io/tutorial/blog/raspberry-pi-vpn-server:
-# 
-
-
-
+    link-url: /resources/how-it-works/
 ---
 
-{% include header.html %}
-
-{% include sections/hero.html %}
-
-{% include sections/features.html %}
-
-{% include sections/offer.html offer-text="Join the conversation on Telegram" button-text="@diode_chain" link="https://t.me/diode_chain" %}
-
-{% include sections/blog.html %}
+{% include header.html %} {% include sections/hero.html %} {% include
+sections/features.html %} {% include sections/offer.html offer-text="Join the
+conversation on Telegram" %} {% include sections/blog.html %}

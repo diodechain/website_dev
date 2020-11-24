@@ -174,17 +174,23 @@ quick_links:
 - title: Privacy Policy
   link: privacy-policy/
 
-####################################
-######  Global Social Links   ######
-####################################
-youtube: 'https://www.youtube.com/channel/UC3b5voADiipUmq1Q-vtPKsA'
-# pinterest: '#'
-# facebook: '#'
-twitter: 'https://twitter.com/diode_chain'
-twitter_username: 'diode_chain'
-telegram: 'https://t.me/diode_chain'
-# google-plus: '#'
-# vimeo: '#'
+#############################
+######  Global Links   ######
+#############################
+links:
+  # Common Links
+  learn_more: /resources/how-it-works/
+  contact_us: 'https://t.me/diode_chain'
+
+  # Social Links
+  youtube: 'https://www.youtube.com/channel/UC3b5voADiipUmq1Q-vtPKsA'
+  # pinterest: '#'
+  # facebook: '#'
+  twitter: 'https://twitter.com/diode_chain'
+  twitter_username: 'diode_chain'
+  telegram: 'https://t.me/diode_chain'
+  # google-plus: '#'
+  # vimeo: '#'
 
 #########################
 ######  Downloads  ######

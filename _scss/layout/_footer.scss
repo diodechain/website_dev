@@ -12,9 +12,11 @@ footer.site-footer {
   background-color: $black-blue;
   width: 100%;
   padding-top: 50px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   .container {
     position: relative;
+
+    // Scrollup button
     .scrollup-container {
       position: absolute;
       width: 100%;
@@ -30,14 +32,13 @@ footer.site-footer {
         display: flex;
         justify-content: center;
         align-items: center;
-
-
-
+        cursor: pointer;
+        z-index: 50;
 
         i {
           font-size: 38px;
           font-weight: bold;
-          color: $web-blue
+          color: $web-blue;
         }
       }
     }
@@ -100,7 +101,6 @@ footer.site-footer {
       }
     }
 
-
     .footer-text {
       display: flex;
       justify-content: space-between;
@@ -108,11 +108,17 @@ footer.site-footer {
       align-items: center;
       font-size: 1em;
       color: $light-gray;
+      flex-wrap: wrap;
+
       .v-cross {
         width: 1px;
         height: 20px;
         background: $light-gray;
       }
+    }
+
+    &.footer-bottom-1 {
+      align-items: center;
     }
 
     &.footer-bottom-2 {
@@ -141,10 +147,10 @@ footer.site-footer {
         display: none;
       }
       .row.footer-bottom-2 {
-        display: block;
+        display: flex;
         .footer-text {
           justify-content: center;
-          padding-bottom: 20px;
+          line-height: 1.5;
         }
       }
     }
@@ -169,6 +175,4 @@ footer.site-footer {
       }
     }
   }
-
 }
-
