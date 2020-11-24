@@ -310,6 +310,8 @@ table {
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
