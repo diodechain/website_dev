@@ -179,8 +179,11 @@ quick_links:
 #############################
 links:
   # Common Links
-  learn_more: /resources/how-it-works/
+  learn_more: 'https://support.diode.io/'
   contact_us: 'https://t.me/diode_chain'
+  get_a_demo: '/products/pricing/'
+  try_it_out: '/products/pricing/'
+  download: '/resources/download/'
 
   # Social Links
   youtube: 'https://www.youtube.com/channel/UC3b5voADiipUmq1Q-vtPKsA'

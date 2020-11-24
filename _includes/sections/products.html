@@ -3,10 +3,10 @@
   <div class="container">
 
     <!-- Products Header Page Title -->
-    <h2 class="site-section__title">{{ page.title }}</h2>
+    <h2 class="site-section__title">{{ page.header-title }}</h2>
 
     <!-- Products Header Page Description -->
-    <h3 class="site-section__description">{{ page.description }}</h3>
+    <h3 class="site-section__description">{{ page.header-description }}</h3>
 
 
 
@@ -49,14 +49,14 @@
       {% endfor %}
     </ul>
     <div class="products-body-actions hidden-xs">
-      <a href="#" class="button">DOWNLOAD</a>
-      <a href="#" class="button button--outline">GET A DEMO</a>
-      <a href="#" class="link link--arrow">LEARN MORE</a>
+      <a href="{{ site.links.download }}" class="button">DOWNLOAD</a>
+      <a href="{{ site.links.get_a_demo }}" class="button button--outline">GET A DEMO</a>
+      <a href="{{ site.links.learn_more }}" class="link link--arrow">LEARN MORE</a>
     </div>
     <div class="products-body-actions hidden-sm hidden-md hidden-lg">
-      <a href="#" class="button button--outline">GET A DEMO</a>
-      <a href="#" class="button button--outline">DOWNLOAD</a>
-      <a href="#" class="button button--outline">DOCUMENTATION</a>
+      <a href="{{ site.links.get_a_demo }}" class="button button--outline">GET A DEMO</a>
+      <a href="{{ site.links.download }}" class="button button--outline">DOWNLOAD</a>
+      <a href="{{ site.links.learn_more }}" class="button button--outline">DOCUMENTATION</a>
     </div>
   </div>
 </section>

@@ -10,9 +10,16 @@
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="actions">
-      <a href="" class="button">GET dDRIVE</a>
-      <a href="" class="button button--outline">START USING THE NETWORK</a>
-      <a href="" class="link link--arrow">LEARN MORE</a>
+      {% for download in site.d-drive.downloads %}
+      <a 
+        class="button {{ download.id }} hide"
+        href="{{ site.d-drive.download-base }}{{ download.link }}"
+      >
+        GET dDRIVE
+      </a>
+      {% endfor %}
+      <a href="{{ site.diode-network.link }}" class="button button--outline">START USING THE NETWORK</a>
+      <a href="{{ site.links.learn_more }}" class="link link--arrow">LEARN MORE</a>
     </div>
   </div>
 </section>
@@ -82,7 +89,7 @@
 
     </div>
     <div class="action">
-      <a href="" class="button button--outline">TRY IT OUT</a>
+      <a href="{{ site.links.try_it_out }}" class="button button--outline">TRY IT OUT</a>
     </div>
 
   </div>
@@ -114,7 +121,7 @@
       </div>
     {% endfor %}
     <div class="action">
-      <a class="link link--arrow">LEARN MORE</a>
+      <a href="{{ site.links.learn_more }}" class="link link--arrow">LEARN MORE</a>
     </div>
   </div>
 </section>
