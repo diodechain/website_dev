@@ -1,7 +1,13 @@
 <!-- Download Section -->
 <section class="site-section download-section" id="download">
+    <div class="container hidden-sm hidden-md hidden-lg">
+        <!-- Download Page Title -->
+        <h2 class="site-section__title">{{ page.header-title }}</h2>
+        <!-- Download Description -->
+        <h3 class="site-section__description">{{ page.header-description }}</h3>
+    </div>
     <!-- Download dDrive -->
-    <div class="download">
+    <div class="download hidden-xs">
         <div class="container">
             <div class="row">
                 <div class="download__left col-sm-4">
@@ -36,7 +42,7 @@
     <!-- Download Diode CLI -->
     <div class="download">
         <div class="container">
-            <div class="row">
+            <div class="row hidden-xs">
                 <div class="download__left col-sm-4">
                     <div class="download-title">
                         <img class="icon" src="{{ site.diode-cli.icon }}" />
@@ -55,15 +61,18 @@
 
             <div class="row download-command">
                 <div class="col-xs-12">
-                    <p>
+                    <p class="hidden-xs">
                         Copy & paste the line below into a terminal:
+                    </p>
+                    <p class="hidden-sm hidden-md hidden-lg">
+                        Copy & paste below line into a terminal to install the Diode client for your current user on macOS, Linux, Raspberry Pi (or Windows if you have curl).
                     </p>
                     <div class="download-action">
                         <code>
                             <span class="noselect">$ </span>
                             {{ site.diode-cli.download-command }}
                         </code>
-                        <div class="action-description">
+                        <div class="action-description hidden-xs">
                             Supported on macOS, Linux, Raspberry Pi (or Windows if you have curl)
                         </div>
                     </div>
@@ -73,7 +82,7 @@
             <p>Or manually install in location of your choice</p>
             <div class="row download-choices">
                 {% for choice in page.choices %}
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-12">
                         <div class="choice">
                             <div class="choice-title">
                                 <div class="circle">

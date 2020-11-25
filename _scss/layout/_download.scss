@@ -9,6 +9,11 @@
 section.download-section {
   padding: 0;
   font-size: $text-font-size-1;
+
+  .site-section__description {
+    text-transform: uppercase;
+  }
+
   .download {
     padding: 60px 0;
     &:first-child {
@@ -18,6 +23,13 @@ section.download-section {
     &:last-child {
       background-color: $web-blue;
       color: $white;
+      @media (max-width: 768px) {
+        background-color: $white;
+        color: $gray;
+        padding: 0;
+        text-align: center;
+        font-size: 18px;
+      }
     }
 
     &-title {
@@ -42,7 +54,7 @@ section.download-section {
       line-height: 1.5;
       margin-bottom: 30px;
     }
-    
+
     .link {
       margin-right: 20px;
     }
@@ -55,6 +67,9 @@ section.download-section {
     &-action {
       position: relative;
       display: flex;
+      @media (max-width: 768px) {
+        padding: 0 !important;
+      }
       .button {
         padding-left: 25px;
         padding-right: 25px;
@@ -67,16 +82,28 @@ section.download-section {
         border-radius: 4px;
         width: 100%;
         font-size: $text-font-size-2;
+        @media (max-width: 768px) {
+          margin-top: 30px;
+          background-color: $web-blue;
+          color: $white;
+          font-size: 14px;
+          padding: 40px 0;
+          white-space: nowrap;
+          overflow-x: auto;
+        }
       }
       .action-description {
         position: absolute;
         bottom: -1.8em;
-        font-size: .6em;
+        font-size: 0.6em;
       }
     }
     &-command {
       margin-top: 50px;
       margin-bottom: 70px;
+      @media (max-width: 768px) {
+        margin-bottom: 30px;
+      }
       .command-label {
         font-size: $text-font-size-2;
         font-weight: 400;
@@ -103,6 +130,19 @@ section.download-section {
       align-items: flex-start;
     }
     .download-choices {
+      @media (max-width: 768px) {
+        & > div {
+          background-color: $bg;
+          color: $dark-blue;
+          margin-top: 50px;
+          width: 110%;
+          margin-left: -5%;
+          margin-right: -5%;
+          &:last-child {
+            margin-bottom: 80px;
+          }
+        }
+      }
       .choice {
         background-color: $white;
         color: $dark-blue;
@@ -111,6 +151,7 @@ section.download-section {
         min-height: 325px;
         flex-direction: column;
         display: flex;
+        margin-bottom: 30px;
 
         &-title {
           display: flex;
@@ -124,13 +165,13 @@ section.download-section {
             background-color: $orange;
             border-radius: 50%;
             width: 40px;
+            min-width: 40px;
             height: 40px;
             display: flex;
             justify-content: center;
             align-items: center;
             color: $white;
             font-size: $text-font-size-1;
-
           }
         }
         code {
@@ -211,8 +252,31 @@ section.download-section {
           }
         }
 
+        @media (max-width: 768px) {
+          background-color: transparent;
+          min-height: inherit;
+          padding-top: 30px;
+
+          &-title {
+            position: relative;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+            font-size: 20px;
+            text-transform: inherit;
+            .circle {
+              position: absolute;
+              left: 10px;
+            }
+          }
+
+          &-description {
+            font-size: 20px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+          }
+        }
       }
     }
-
   }
 }
