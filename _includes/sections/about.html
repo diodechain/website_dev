@@ -11,7 +11,8 @@
     <div class="content-container">
         {{ page.text }}
         <div class="action">
-          <a class="button button--outline" href="{{ site.links.contact_us }}"> CONTACT US </a>
+          <a class="button button--outline hidden-xs" href="{{ site.links.contact_us }}">CONTACT US </a>
+          <a class="button hidden-sm hidden-md hidden-lg" href="{{ site.links.contact_us }}">CONTACT US </a>
         </div>
     </div>
   </div>
@@ -46,7 +47,7 @@
 </section>
 
 <!-- Story Sections -->
-<section class="site-section story-section" id="story">
+<section class="site-section story-section hidden-xs" id="story">
   <h3 class="section-title">Our Story</h3>
   {% for story in page.stories %}
     <div class="story story--{{ story.style-type }}">
@@ -66,3 +67,15 @@
   {% endfor %}
 </section>
 
+<section class="site-section story-section story-section--xs hidden-sm hidden-md hidden-lg" id="xs_story">
+  <h3 class="section-title">Our Story</h3>
+  {% for story in page.xs-stories %}
+    <div class="story story--{{ story.style-type }}">
+      <div class="container">
+        <div class="story__content">
+          {{ story.description }}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</section>

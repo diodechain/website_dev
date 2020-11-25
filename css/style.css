@@ -4728,6 +4728,15 @@ section.about-section .content-container {
   line-height: 1.2;
 }
 
+@media (max-width: 768px) {
+  section.about-section .content-container {
+    padding: 20px 0 50px;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+    font-size: 18px;
+  }
+}
+
 section.about-section .content-container .action {
   width: 100%;
   text-align: center;
@@ -4758,6 +4767,17 @@ section.team-section .site-section__title--small::after {
   bottom: -10px;
 }
 
+@media (max-width: 768px) {
+  section.team-section .site-section__title--small {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 50px;
+  }
+  section.team-section .site-section__title--small::after {
+    bottom: -20px;
+  }
+}
+
 section.team-section .site-section__description--small {
   font-size: 1.2rem;
   max-width: 750px;
@@ -4766,13 +4786,20 @@ section.team-section .site-section__description--small {
   margin-bottom: 50px;
 }
 
+@media (max-width: 768px) {
+  section.team-section .site-section__description--small {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
 section.team-section .container {
   position: relative;
 }
 
 section.team-section .team-card {
   position: absolute;
-  width: 100%;
+  width: calc(100% - 30px);
   padding: 50px 60px 50px 60px;
   background-color: #fff;
   color: #2d3e50;
@@ -4783,6 +4810,33 @@ section.team-section .team-card {
   display: -ms-flexbox;
   display: flex;
   z-index: 2;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+@media (max-width: 1199px) {
+  section.team-section .team-card {
+    width: calc(100% - 118px);
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 993px) {
+  section.team-section .team-card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  section.team-section .team-card {
+    position: inherit;
+    width: 100%;
+    -webkit-border-bottom-left-radius: 0;
+            border-bottom-left-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+            border-bottom-right-radius: 0;
+  }
 }
 
 section.team-section .team-card .member-col {
@@ -4823,6 +4877,25 @@ section.team-section .team-card .member-col .member-position {
   letter-spacing: 1px;
 }
 
+@media (max-width: 768px) {
+  section.team-section .team-card .member-col {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  section.team-section .team-card .member-col .member-picture {
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section.team-section .team-card .member-col .member-name {
+    font-size: 18px;
+    min-height: 40px;
+  }
+  section.team-section .team-card .member-col .member-position {
+    font-size: 18px;
+  }
+}
+
 section.story-section {
   padding: 100px 0 0;
   background-color: #F1F3F6;
@@ -4858,7 +4931,7 @@ section.story-section .story__title {
 }
 
 section.story-section .story__title::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 50px;
   height: 1px;
@@ -4896,6 +4969,57 @@ section.story-section .story--white {
 section.story-section .story--dark {
   background-color: #2d3e50;
   color: #fff;
+}
+
+section.story-section--xs {
+  background-color: #fff;
+  padding: 50px 0 0;
+}
+
+section.story-section--xs .section-title {
+  font-size: 20px;
+  text-transform: inherit;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+section.story-section--xs .section-title::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  left: calc(50% - 20px);
+  height: 1px;
+  background-color: #f15d2f;
+  bottom: -20px;
+}
+
+section.story-section--xs .story {
+  font-size: 18px;
+}
+
+section.story-section--xs .story--gray-card {
+  padding-bottom: 0;
+}
+
+section.story-section--xs .story--gray-card .container > .story__content {
+  background-color: #F1F3F6;
+  padding: 20px;
+  color: #1f2739;
+}
+
+section.story-section--xs .story--dark {
+  position: relative;
+  padding-top: 80px;
+}
+
+section.story-section--xs .story--dark::before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 1px;
+  background-color: #f15d2f;
+  top: 50px;
+  left: calc(50% - 18px);
 }
 
 /**
