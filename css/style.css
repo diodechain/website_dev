@@ -5682,6 +5682,18 @@ section.products-pricing-section .products-section__description {
   max-width: 900px;
 }
 
+@media (max-width: 993px) {
+  section.products-pricing-section .products-section__description {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section.products-pricing-section .products-section__description {
+    font-size: 20px;
+  }
+}
+
 section.products-pricing-section .products-pricing__contact-us {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5700,6 +5712,26 @@ section.products-pricing-section .plans .col-blank {
 section.products-pricing-section .plans .col-plan {
   width: calc((100% - 350px) / 3);
   padding: 15px;
+}
+
+@media (max-width: 1199px) {
+  section.products-pricing-section .plans .col-blank {
+    width: 250px;
+  }
+  section.products-pricing-section .plans .col-plan {
+    width: calc((100% - 250px) / 3);
+    padding: 15px;
+  }
+}
+
+@media (max-width: 993px) {
+  section.products-pricing-section .plans .col-blank {
+    width: 180px;
+  }
+  section.products-pricing-section .plans .col-plan {
+    width: calc((100% - 180px) / 3);
+    padding: 15px;
+  }
 }
 
 section.products-pricing-section .plans .plan {
@@ -5746,6 +5778,15 @@ section.products-pricing-section .plans .plan__price > span {
   color: #f15d2f;
 }
 
+@media (max-width: 993px) {
+  section.products-pricing-section .plans .plan__price {
+    font-size: 34px;
+  }
+  section.products-pricing-section .plans .plan__price > span {
+    font-size: 18px;
+  }
+}
+
 section.products-pricing-section .pricing-table {
   margin-bottom: 60px;
 }
@@ -5761,6 +5802,7 @@ section.products-pricing-section .pricing-table .row.plans:last-child {
 section.products-pricing-section .pricing-table .row.plans .col-blank {
   color: #f15d2f;
   font-size: 1.3rem;
+  line-height: 1.2;
 }
 
 section.products-pricing-section .pricing-table .row.plans .col-plan {
@@ -5804,6 +5846,12 @@ section.products-pricing-section .pricing-table .row.plans .col-plan > .has-aste
   position: absolute;
   content: '*';
   right: -10px;
+}
+
+@media (max-width: 993px) {
+  section.products-pricing-section .pricing-table .row.plans .col-plan, section.products-pricing-section .pricing-table .row.plans .col-blank {
+    font-size: 1.2rem;
+  }
 }
 
 /**

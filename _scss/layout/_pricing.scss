@@ -10,6 +10,14 @@ section.products-pricing-section {
       color: $gray;
       text-align: center;
       max-width: 900px;
+
+      @media (max-width: 993px) {
+        font-size: $text-font-size-2;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
     }
   
     .products-pricing__contact-us {
@@ -25,7 +33,25 @@ section.products-pricing-section {
         width: calc((100% - 350px) / 3);
         padding: 15px;
       }
-  
+
+      @media (max-width: 1199px) {
+        .col-blank {
+            width: 250px;
+        }
+        .col-plan {
+            width: calc((100% - 250px) / 3);
+            padding: 15px;
+        }
+      }
+      @media (max-width: 993px) {
+        .col-blank {
+            width: 180px;
+        }
+        .col-plan {
+            width: calc((100% - 180px) / 3);
+            padding: 15px;
+        }
+      }
       // pricing card
       .plan {
         border: 1px solid $orange;
@@ -55,6 +81,16 @@ section.products-pricing-section {
             color: $orange;
           }
         }
+
+        @media (max-width: 993px) {
+            &__price {
+                font-size: 34px;
+                &>span {
+                    font-size: 18px;
+                }
+            }
+        }
+
       }
   
       
@@ -74,6 +110,7 @@ section.products-pricing-section {
         .col-blank {
           color: $orange;
           font-size: $text-font-size-2;
+          line-height: 1.2;
         }
         .col-plan {
           border-left: 1px solid $orange;
@@ -100,6 +137,11 @@ section.products-pricing-section {
               right: -10px;
             }
           }
+        }
+        @media (max-width: 993px) {
+            .col-plan, .col-blank {
+                font-size: $text-font-size-1;
+            }
         }
       }
     }

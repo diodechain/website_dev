@@ -7,7 +7,7 @@
 
 
     <!-- Products Pricing Cards (Desktop) -->
-    <div class="plans row">
+    <div class="plans row hidden-xs">
       <div class="col-blank"><!-- blank area --></div>
       {% for plan in page.plans %}
         <div class="col-plan">
@@ -31,8 +31,7 @@
     </div>
 
     <!-- Products Pricing Table (Desktop) -->
-
-    <div class="pricing-table">
+    <div class="pricing-table hidden-xs">
       {% for item in page.items %}
         <div class="row plans">
           <div class="col-blank">
