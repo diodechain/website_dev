@@ -281,6 +281,17 @@
       $("#osname").text(OSName);
     }
 
+    // Pricing page - plans (carousel)
+    const planCarousel = $("#plans_xs");
+    if (planCarousel) {
+      planCarousel.owlCarousel({
+        loop: true,
+        dots: true,
+        autoWidth: true,
+        items: 3
+      });
+    }
+
     // FAQ TOC
     let toc = $("#auto-table-of-contents");
     if (toc) {

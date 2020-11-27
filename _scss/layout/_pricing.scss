@@ -92,8 +92,16 @@ section.products-pricing-section {
         }
 
       }
-  
-      
+
+      // mobile layout
+      &--xs {
+        .col-plan {
+            width: 100%;
+            .plan {
+              margin-bottom: 0;
+            }
+        }
+      }
     }
     
     // pricing table

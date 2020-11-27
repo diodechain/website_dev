@@ -45,7 +45,29 @@
         </div>
       {% endfor %}
     </div>
-    
+
+    <!-- Products Pricing Plans (Mobile) -->
+    <div id="plans_xs" class="plans plans--xs owl-carousel hidden-sm hidden-md hidden-lg">
+      {% for plan in page.plans %}
+        <div class="col-plan">
+          <div class="plan">
+            <div class="plan__title">
+              {{ plan.title }}
+            </div>
+            <div class="plan__description">
+              {{ plan.description }}
+            </div>
+            <div class="plan__price">
+              ${{ plan.price }}<span>/MO</span>
+            </div>
+
+            <div class="plan__action">
+              <a class="button"> GO! </a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
 
     <!-- Products Pricing Page Description -->
     <h3 class="products-section__description">{{ page.header-description }}</h3>
