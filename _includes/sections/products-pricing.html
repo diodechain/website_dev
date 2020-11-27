@@ -49,6 +49,7 @@
     <!-- Products Pricing Plans (Mobile) -->
     <div id="plans_xs" class="plans plans--xs owl-carousel hidden-sm hidden-md hidden-lg">
       {% for plan in page.plans %}
+        {% assign outer_forloop = forloop %}
         <div class="col-plan">
           <div class="plan">
             <div class="plan__title">
@@ -63,6 +64,24 @@
 
             <div class="plan__action">
               <a class="button"> GO! </a>
+            </div>
+
+            <div class="plan__features">
+              <ul>
+                {% for item in page.items %}
+                  {% assign title = tem.title %}
+                  {% assign value = item.plans[outer_forloop.index0].xs-value %}
+                  {% if value and value != "None" %}
+                  <li>
+                    {% if value == true %}
+                      {{ item.title }}
+                    {% else %}
+                      {{ value }}
+                    {% endif %}
+                  </li>
+                  {% endif %}
+                 {% endfor %}
+              </ul>
             </div>
           </div>
         </div>

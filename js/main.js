@@ -288,7 +288,8 @@
         loop: true,
         dots: true,
         autoWidth: true,
-        items: 3
+        items: 3,
+        singleItem:true
       });
     }
 

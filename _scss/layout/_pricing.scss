@@ -98,7 +98,45 @@ section.products-pricing-section {
         .col-plan {
             width: 100%;
             .plan {
+              height: inherit;
+              min-height: 500px;
               margin-bottom: 0;
+              &__features {
+                margin-top: 20px;
+                ul {
+                  min-height: 240px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: flex-start;
+                  li {
+                    display: flex;
+                    min-height: 20px;
+                    text-align: center;
+                    position: relative;
+                    padding-left: 30px;
+                    &::before {
+                      content: '';
+                      position: absolute;
+                      width: 7px;
+                      height: 2px;
+                      background-color: $orange;
+                      left: 4px;
+                      top: 9px;
+                      transform: rotate(45deg);
+                    }
+                    &::after {
+                      content: '';
+                      position: absolute;
+                      width: 13px;
+                      height: 2px;
+                      background-color: $orange;
+                      transform: rotate(-45deg);
+                      left: 8px;
+                      top: 8px;
+                    }
+                  }
+                }
+              }
             }
         }
       }
