@@ -10,19 +10,17 @@
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="actions hidden-xs">
-      {% for download in site.d-drive.downloads %}
       <a 
-        class="button {{ download.id }} hide"
-        href="{{ site.d-drive.download-base }}{{ download.link }}"
+        class="button"
+        href="{{ site.links.download }}"
       >
-        GET dDRIVE
+        Download
       </a>
-      {% endfor %}
       <a href="{{ site.diode-network.link }}" class="button button--outline">START USING THE NETWORK</a>
       <a href="{{ site.links.learn_more }}" class="link link--arrow">LEARN MORE</a>
     </div>
     <div class="actions hidden-sm hidden-md hidden-lg">
-      <a class="button" href="{{ site.links.download }}">GET DIODE</a>
+      <a class="button" href="{{ site.links.download }}">Download</a>
       <a class="button button--outline" href="{{ site.links.learn_more }}">LEARN MORE</a>
     </div>
   </div>
@@ -57,7 +55,7 @@
             <div class="item-container col-sm-6">
               <div class="item">
                 <div class="item-title-wrapper">
-                  <img src="/images/rect_{{ forloop.index + 1 }}.svg">
+                  <img src="images/rect_{{ forloop.index + 1 }}.svg">
                   <h4 class="item-title">
                     {{ item.title }}
                   </h4>
@@ -78,7 +76,7 @@
           {% if forloop.index > 2 %}
             <div class="item">
               <div class="item-title-wrapper">
-                <img src="/images/rect_{{ forloop.index + 1 }}.svg">
+                <img src="images/rect_{{ forloop.index + 1 }}.svg">
                 <h4 class="item-title">
                   {{ item.title }}
                 </h4>

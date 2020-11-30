@@ -4544,7 +4544,7 @@ section.offer-section .offer-link::after {
 section.site-section.hero-section {
   background-color: #2d3e50;
   color: #fff;
-  background-image: url("/images/hero-right.png");
+  background-image: url("images/hero-right.png");
   background-repeat: no-repeat;
   background-position: right;
   -webkit-background-size: 50% 50%;
@@ -4556,7 +4556,7 @@ section.site-section.hero-section {
     -webkit-background-size: inherit inherit;
             background-size: inherit;
     background-position: right 20px;
-    background-image: url("/images/hero-right-mobile.png");
+    background-image: url("images/hero-right-mobile.png");
     padding-bottom: 60px;
   }
 }

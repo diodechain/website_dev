@@ -120,7 +120,7 @@ navigation:
       link: resources/download
     - title: Explorer
       ft_title: Explorer
-      link: /prenet
+      link: prenet
 - title: <i class="fab fa-telegram-plane"></i>
   link: https://t.me/diode_chain
   target: _blank
@@ -181,9 +181,9 @@ links:
   # Common Links
   learn_more: 'https://support.diode.io/'
   contact_us: 'https://t.me/diode_chain'
-  get_a_demo: '/products/pricing/'
-  try_it_out: '/products/pricing/'
-  download: '/resources/download/'
+  get_a_demo: 'products/pricing/'
+  try_it_out: 'products/pricing/'
+  download: 'resources/download/'
 
   # Social Links
   youtube: 'https://www.youtube.com/channel/UC3b5voADiipUmq1Q-vtPKsA'
@@ -206,7 +206,7 @@ d-drive:
   description-1: dDrive combines the privacy and compliance benefits of local storage with the benefits and efficiency of remote access.
   # for solutions page(mobile)
   description-2: Existing file servers and new Diode-enabled NAS systems can use Diode Drive to combine the privacy and compliance benefits of local storage with the benefits and efficiency of remote access.
-  icon: /images/diode-drive.png
+  icon: images/diode-drive.png
   download-base: https://github.com/diodechain/diode_go_client/releases/download/v0.6.1/
   downloads:
   - title: <i class="fab fa-raspberry-pi"></i> Raspberry Pi (ARM)
@@ -230,7 +230,7 @@ diode-cli:
   description: Serverless remote access for your IT assets, localhost websites / webservices, and data/video streams.
   # for solution page(desktop)
   description-1: The Diode CLI is used to maintain systems in hard-to-access facilities and to securely publish data streams and web properties.
-  icon: /images/diode-client.png
+  icon: images/diode-client.png
   learn-more: link
   download-command: 'curl -Ssf https://diode.io/install.sh | sh'
   download-base: https://github.com/diodechain/diode_go_client/releases/download/v0.6.1/
@@ -259,8 +259,7 @@ diode-cli:
 diode-network:
   title: Diode Network
   description: The Diode Network is the world’s only fully decentralized communications network capable of supporting the needs of private, secure communications for the enterprise.
-  # TODO: define
-  link: '#'
+  link: 'https://support.diode.io/category/cck0x29491'
 
 
 #########################
