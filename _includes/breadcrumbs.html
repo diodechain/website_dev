@@ -5,7 +5,8 @@
     {% if forloop.index == crumbs_total %}
         <li class="active">{{ site.breadcrumbs[crumb] }}</li>
     {% else %}
-        <li><a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ site.breadcrumbs[crumb] }}</a>
+        <li>{{ site.breadcrumbs[crumb] }}
+        <!--<li><a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ site.breadcrumbs[crumb] }}</a> -->
     {% endif %}
   {% endfor %}
 </ul>
