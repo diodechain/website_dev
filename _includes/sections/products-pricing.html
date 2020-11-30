@@ -39,7 +39,15 @@
           </div>
           {% for plan in item.plans %}
             <div class="col-plan">
-              {{ plan.value }}
+              {% if plan.value != true and plan.value != false %}
+                {{ plan.value }}
+              {% else %}
+                {% if plan.value  %}
+                  Yes
+                {% else %}
+                  No
+                {% endif %}
+              {% endif %}
             </div>
           {% endfor %}
         </div>

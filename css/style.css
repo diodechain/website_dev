@@ -5934,8 +5934,12 @@ section.products-pricing-section .pricing-table .row.plans .col-plan {
   line-height: 1.2;
 }
 
+section.products-pricing-section .pricing-table .row.plans .col-plan > .ammount {
+  font-size: 24px;
+}
+
 section.products-pricing-section .pricing-table .row.plans .col-plan > .ammount--tip {
-  font-size: 1.2rem;
+  font-size: 18px;
 }
 
 section.products-pricing-section .pricing-table .row.plans .col-plan > .has-asterisk {
