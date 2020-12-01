@@ -95,12 +95,12 @@ navigation:
     - title: Diode Network
       ft_title: Network
       link: products/diode-network
-    - title: Pricing
-      ft_title: Pricing
-      link: products/pricing
+- title: Pricing
+  link: pricing/
+  ft_order: 4
 - title: Blog
   link: blog/
-  ft_order: 4
+  ft_order: 5
 - title: Resources
   link: resources/
   ft_order: 3

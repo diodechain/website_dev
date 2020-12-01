@@ -28,6 +28,21 @@ section.products-pricing-section {
     .plans {
       .col-blank {
         width: 350px;
+        &--text {
+          padding: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 30px;
+          color: $orange;
+          font-weight: 400;
+          line-height: 1.5;
+          margin-bottom: 30px;
+          text-align: center;
+          a {
+            text-decoration: underline;
+          }
+        }
       }
       .col-plan {
         width: calc((100% - 350px) / 3);
@@ -37,6 +52,7 @@ section.products-pricing-section {
       @media (max-width: 1199px) {
         .col-blank {
             width: 250px;
+            font-size: 24px;
         }
         .col-plan {
             width: calc((100% - 250px) / 3);
@@ -46,6 +62,7 @@ section.products-pricing-section {
       @media (max-width: 993px) {
         .col-blank {
             width: 180px;
+            font-size: 20px;
         }
         .col-plan {
             width: calc((100% - 180px) / 3);

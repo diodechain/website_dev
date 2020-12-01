@@ -11,7 +11,7 @@
 section.site-section.hero-section {
     background-color: $web-blue;
     color: $white;
-    background-image: url('images/hero-right.png');
+    background-image: url('../images/hero-right.png');
     background-repeat: no-repeat;
     background-position: right;
     background-size: 50%;
@@ -19,7 +19,7 @@ section.site-section.hero-section {
     @media (max-width: 768px) {
         background-size: inherit;
         background-position: right 20px;
-        background-image: url('images/hero-right-mobile.png');
+        background-image: url('../images/hero-right-mobile.png');
         padding-bottom: 60px;
     }
 

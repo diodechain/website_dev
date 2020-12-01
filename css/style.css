@@ -4544,7 +4544,7 @@ section.offer-section .offer-link::after {
 section.site-section.hero-section {
   background-color: #2d3e50;
   color: #fff;
-  background-image: url("images/hero-right.png");
+  background-image: url("../images/hero-right.png");
   background-repeat: no-repeat;
   background-position: right;
   -webkit-background-size: 50% 50%;
@@ -4556,7 +4556,7 @@ section.site-section.hero-section {
     -webkit-background-size: inherit inherit;
             background-size: inherit;
     background-position: right 20px;
-    background-image: url("images/hero-right-mobile.png");
+    background-image: url("../images/hero-right-mobile.png");
     padding-bottom: 60px;
   }
 }
@@ -5741,6 +5741,32 @@ section.products-pricing-section .plans .col-blank {
   width: 350px;
 }
 
+section.products-pricing-section .plans .col-blank--text {
+  padding: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+  color: #f15d2f;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+section.products-pricing-section .plans .col-blank--text a {
+  text-decoration: underline;
+}
+
 section.products-pricing-section .plans .col-plan {
   width: calc((100% - 350px) / 3);
   padding: 15px;
@@ -5749,6 +5775,7 @@ section.products-pricing-section .plans .col-plan {
 @media (max-width: 1199px) {
   section.products-pricing-section .plans .col-blank {
     width: 250px;
+    font-size: 24px;
   }
   section.products-pricing-section .plans .col-plan {
     width: calc((100% - 250px) / 3);
@@ -5759,6 +5786,7 @@ section.products-pricing-section .plans .col-plan {
 @media (max-width: 993px) {
   section.products-pricing-section .plans .col-blank {
     width: 180px;
+    font-size: 20px;
   }
   section.products-pricing-section .plans .col-plan {
     width: calc((100% - 180px) / 3);
