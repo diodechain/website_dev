@@ -28,7 +28,7 @@ section.download-section {
         color: $gray;
         padding: 0;
         text-align: center;
-        font-size: 18px;
+        font-size: $text-font-size-2-xs;
       }
     }
 
@@ -210,7 +210,7 @@ section.download-section {
           align-items: center;
           height: 35px;
           i {
-            font-size: 18px;
+            font-size: $text-font-size-2-xs;
             margin-right: 5px;
           }
         }
@@ -246,7 +246,7 @@ section.download-section {
             align-items: center;
             margin: 0 7px;
             i {
-              font-size: 18px;
+              font-size: $text-font-size-2-xs;
               margin-right: 5px;
             }
           }

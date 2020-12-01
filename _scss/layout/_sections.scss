@@ -41,7 +41,7 @@
     }
 
     @media (max-width: 768px) {
-      font-size: $title-font-size-1-xs;
+      font-size: $text-font-size-4-xs;
     }
   }
 
@@ -53,7 +53,7 @@
     color: $gray;
     text-align: center;
     @media (max-width: 993px) {
-      font-size: $title-font-size-1-xs;
+      font-size: $text-font-size-4-xs;
     }
     @media (max-width: 768px) {
       font-size: $text-font-size-1;

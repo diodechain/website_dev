@@ -2483,7 +2483,7 @@ ul.tag-cloud-box li a:hover {
 
 @media (max-width: 768px) {
   .button, button {
-    font-size: 1.05rem;
+    font-size: 18px;
     padding: 0.6em 1.5em;
   }
 }
@@ -2553,7 +2553,7 @@ ul.tag-cloud-box li a:hover {
 
 @media (max-width: 768px) {
   .link {
-    font-size: 1.05rem;
+    font-size: 18px;
   }
 }
 
@@ -2875,7 +2875,7 @@ blockquote:before {
 }
 
 body > section:first-of-type {
-  margin-top: 6.5rem;
+  margin-top: 97px;
 }
 
 header.site-header {
@@ -2941,7 +2941,7 @@ header.site-header .parallax-wrapper {
 header.site-header > .container {
   pointer-events: none;
   max-height: 1080px;
-  height: 6.5rem;
+  height: 97px;
 }
 
 header.site-header > .container .heading-content {
@@ -2964,7 +2964,7 @@ header.site-header .site-navigation-bar {
       -ms-flex-pack: justify;
           justify-content: space-between;
   pointer-events: all;
-  height: 6.5rem;
+  height: 97px;
   z-index: 2;
   font-weight: bold;
 }
@@ -3013,7 +3013,7 @@ header.site-header .site-navigation-bar .navigation-bar nav.nav-menu ul li.curre
 
 header.site-header .site-navigation-bar .navigation-bar nav.nav-menu ul li.subnav > .nav-link {
   overflow: hidden;
-  height: 6.5rem;
+  height: 97px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3033,12 +3033,13 @@ header.site-header .site-navigation-bar .navigation-bar nav.nav-menu ul li > .su
   display: none;
   position: fixed;
   left: 0;
-  top: 6.5rem;
-  background-color: #fff;
+  top: 97px;
+  background-color: #F1F3F6;
   width: 100%;
   z-index: 1;
   padding-top: 50px;
   padding-bottom: 50px;
+  border-bottom: 2px solid #f15d2f;
 }
 
 header.site-header .site-navigation-bar .navigation-bar nav.nav-menu ul li > .subnav-content .container {
@@ -3227,7 +3228,7 @@ header.site-header .arrow-down-section .arrow-down i:before {
 
 @media (max-width: 992px) {
   body > section:first-of-type {
-    margin-top: 5.5rem;
+    margin-top: 80px;
   }
   header.site-header {
     width: 100%;
@@ -3252,13 +3253,13 @@ header.site-header .arrow-down-section .arrow-down i:before {
     visibility: hidden;
   }
   header.site-header > .container {
-    height: 5.5rem;
+    height: 80px;
   }
   header.site-header > .container::before {
     opacity: 0;
   }
   header.site-header > .container .site-navigation-bar {
-    height: 5.5rem;
+    height: 80px;
     z-index: 99999999999998;
   }
   header.site-header > .container .site-navigation-bar .logo img {
@@ -3266,7 +3267,7 @@ header.site-header .arrow-down-section .arrow-down i:before {
   }
   header.site-header > .container .site-navigation-bar .navigation-bar {
     position: fixed;
-    top: 5.5rem;
+    top: 80px;
     left: 0;
     width: 100%;
     height: calc(100vh - 50px);
@@ -3321,7 +3322,7 @@ header.site-header .arrow-down-section .arrow-down i:before {
     content: none;
   }
   header.site-header > .container .site-navigation-bar .navigation-bar .nav-menu ul.menu li > .nav-link {
-    height: 5.5rem !important;
+    height: 80px !important;
     display: -webkit-box !important;
     display: -webkit-flex !important;
     display: -ms-flexbox !important;
@@ -3588,7 +3589,7 @@ header.site-header .arrow-down-section .arrow-down i:before {
     left: 0;
   }
   header.site-header > .toggle-submenu .sub-header > .container {
-    height: 5.5rem;
+    height: 80px;
     background-color: #2d3e50;
     display: -webkit-box;
     display: -webkit-flex;
@@ -3731,7 +3732,7 @@ header.site-header .arrow-down-section .arrow-down i:before {
  *
  **/
 .breadcrumbs {
-  margin-top: 6.5rem;
+  margin-top: 97px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3761,7 +3762,7 @@ header.site-header .arrow-down-section .arrow-down i:before {
 @media (max-width: 768px) {
   .breadcrumbs li {
     padding: 30px 0;
-    font-size: 1.2rem;
+    font-size: 20px;
     margin-right: 35px;
   }
 }
@@ -3818,7 +3819,7 @@ header.site-header .arrow-down-section .arrow-down i:before {
 
 @media (max-width: 992px) {
   .breadcrumbs {
-    margin-top: 5.5rem;
+    margin-top: 80px;
   }
   .breadcrumbs + section {
     margin-top: 0rem !important;
@@ -4264,7 +4265,7 @@ code.highlighter-rouge {
 
 @media (max-width: 768px) {
   .site-section__title {
-    font-size: 1.7rem;
+    font-size: 22px;
   }
 }
 
@@ -4279,7 +4280,7 @@ code.highlighter-rouge {
 
 @media (max-width: 993px) {
   .site-section__description {
-    font-size: 1.7rem;
+    font-size: 22px;
   }
 }
 
@@ -4652,7 +4653,7 @@ section.site-section.hero-section .container .row .hero-description {
 section.site-section.hero-section .container .row .hero-description--xs {
   max-width: 70%;
   display: none;
-  font-size: 1.05rem;
+  font-size: 18px;
 }
 
 @media (max-width: 768px) {
@@ -5159,7 +5160,7 @@ section.features-section .feature .feature-description {
 
 section.features-section .feature .feature-description--xs {
   display: none;
-  font-size: 1.05rem;
+  font-size: 18px;
   margin-bottom: 30px;
 }
 

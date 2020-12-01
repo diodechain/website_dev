@@ -7,10 +7,10 @@ $title-font-size-1: 2.0rem;
 $title-font-size-2: 3rem;
 $title-font-size-3: 64px;
 
-$text-font-size-1-xs: 1.05rem;
-$text-font-size-2-xs: 1.2rem;
-$title-font-size-1-xs: 1.7rem;
-$title-font-size-2-xs: 2.2rem;
+$text-font-size-1-xs: 16px;
+$text-font-size-2-xs: 18px;
+$text-font-size-3-xs: 20px;
+$text-font-size-4-xs: 22px;
 
 // Animations Timing
 $transition-links: 300ms;
@@ -21,10 +21,10 @@ $transition-links-type: ease-in-out;
 $animation-arrow-header-type: ease-in-out;
 
 // Menu
-$desktop-header-height: 6.5rem;
+$desktop-header-height: 97px;
 
 // Mobile Menu Settings
-$mobile-header-height: 5.5rem;
+$mobile-header-height: 80px;
 
 $cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
 $menuItems: 12;

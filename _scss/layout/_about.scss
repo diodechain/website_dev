@@ -29,7 +29,7 @@ section.about-section {
     @media (max-width: 768px) {
       padding: 20px 0 50px;
       border-radius: 4px;
-      font-size: 18px;
+      font-size: $text-font-size-2-xs;
     }
 
     .action {
@@ -79,7 +79,7 @@ section.team-section {
     margin-right: auto;
     margin-bottom: 50px;
     @media (max-width: 768px) {
-      font-size: 18px;
+      font-size: $text-font-size-2-xs;
       font-weight: 400;
     }
   }
@@ -145,11 +145,11 @@ section.team-section {
           margin-right: auto;
         }
         .member-name {
-          font-size: 18px;
+          font-size: $text-font-size-2-xs;
           min-height: 40px;
         }
         .member-position {
-          font-size: 18px;
+          font-size: $text-font-size-2-xs;
         }
       }
     }
@@ -249,7 +249,7 @@ section.story-section {
     }
 
     .story {
-      font-size: 18px;
+      font-size: $text-font-size-2-xs;
       &--gray-card {
         padding-bottom: 0;
         .container > .story__content {
