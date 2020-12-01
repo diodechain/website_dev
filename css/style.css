@@ -4581,7 +4581,7 @@ section.site-section.hero-section .container .row .hero-title {
 section.site-section.hero-section .container .row .hero-title::after {
   content: '';
   position: absolute;
-  width: 220px;
+  width: 260px;
   background-color: #f15d2f;
   height: 1px;
   bottom: -7px;

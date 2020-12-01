@@ -124,7 +124,7 @@ navigation:
 - title: <i class="fab fa-telegram-plane"></i>
   link: https://t.me/diode_chain
   target: _blank
-- title: Download dDrive
+- title: Download
   link: resources/download/
   is_button: true
   target: _blank
