@@ -13,16 +13,16 @@
   display: inline-block;
   width: auto;
   max-width: 100%;
-  padding: 0.8em 2em;
+  padding: 10px 20px;
   cursor: pointer;
   font-size: $text-font-size-1;
   font-weight: bold;
   text-align: center;
   border-radius: 5px;
+  border: 2px solid $orange;
 
   @media (max-width: 768px) {
-    font-size: $text-font-size-2-xs;
-    padding: 0.6em 1.5em;
+    font-size: $text-font-size-1-xs;
   }
 
   &.button-focus {
@@ -82,7 +82,10 @@
   }
 
   @media (max-width: 768px) {
-    font-size: $text-font-size-2-xs;
+    font-size: $text-font-size-1-xs;
+    &::after {
+      bottom: -8px;
+    }
   }
 }
 

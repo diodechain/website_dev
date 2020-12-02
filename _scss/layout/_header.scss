@@ -103,7 +103,7 @@ header.site-header {
 
     // Logo
     .logo img {
-      width: 150px;
+      width: 120px;
       max-width: initial;
     }
 
@@ -126,6 +126,7 @@ header.site-header {
           justify-content: space-between;
 
           li {
+            padding: 0 10px;
 
             &.current-menu-item>.nav-link {
               color: $orange;
@@ -201,6 +202,7 @@ header.site-header {
             
             &:last-child {
               margin-right: 0;
+              padding: 0;
             }
 
             &.current-menu-item {

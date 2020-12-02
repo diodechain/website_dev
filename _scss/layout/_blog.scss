@@ -43,7 +43,7 @@ section.blog-section {
 
       border: 1px solid gray;
       padding: 1em;
-      border-style: dashed;      
+      border-style: dashed;
     }
 
     article.blog-article {
@@ -314,7 +314,7 @@ section.blog-section {
         width: 100%;
 
         @media (max-width: 992px) {
-          font-size: $global-font-size;
+          font-size: $text-font-size-1;
         }
 
         strong {

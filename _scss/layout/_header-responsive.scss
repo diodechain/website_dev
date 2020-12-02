@@ -445,4 +445,21 @@
   .toggle-submenu.show {
     display: none !important;
   }
+  &.subnav {
+    width: 120px;
+    &:hover {
+      &::after {
+        content: '';
+        position: absolute;
+        margin-left: 30px;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid $bg;
+      }
+    }
+  }
 }

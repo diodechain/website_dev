@@ -1,11 +1,9 @@
 // Typography
 $font-family: 'Titillium Web'; // Google Font
-$global-font-size: 1rem;
-$text-font-size-1: 1.2rem;
-$text-font-size-2: 1.3rem;
-$title-font-size-1: 2.0rem;
-$title-font-size-2: 3rem;
-$title-font-size-3: 64px;
+$text-font-size-1: 18px;
+$text-font-size-2: 20px;
+$title-font-size-1: 29px;
+$title-font-size-2: 50px;
 
 $text-font-size-1-xs: 16px;
 $text-font-size-2-xs: 18px;
@@ -21,10 +19,10 @@ $transition-links-type: ease-in-out;
 $animation-arrow-header-type: ease-in-out;
 
 // Menu
-$desktop-header-height: 97px;
+$desktop-header-height: 90px;
 
 // Mobile Menu Settings
-$mobile-header-height: 80px;
+$mobile-header-height: 70px;
 
 $cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
 $menuItems: 12;

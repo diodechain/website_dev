@@ -26,7 +26,7 @@ section.site-section.hero-section {
     .container .row {
         justify-content: left;
         .hero-title {
-            font-size: 3em;
+            font-size: $title-font-size-2;
             line-height: 1.2;
             position: relative;
             margin-bottom: 30px;
@@ -69,7 +69,7 @@ section.site-section.hero-section {
             }
         }
         .hero-subtitle {
-            font-size: 1.7em;
+            font-size: $title-font-size-1;
             line-height: 1.5;
             margin-bottom: 20px;
             font-weight: 400;
