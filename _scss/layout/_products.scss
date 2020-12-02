@@ -57,7 +57,7 @@ section.products-body-section {
     }
 
     @media (max-width: 768px) {
-      font-size: 20px;
+      font-size: $text-font-size-3-xs;
       text-align: center;
     }
   }

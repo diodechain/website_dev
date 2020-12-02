@@ -50,7 +50,7 @@ section.download-section {
     }
 
     &-description {
-      font-size: 1.9rem;
+      font-size: $title-font-size-1;
       line-height: 1.5;
       margin-bottom: 30px;
     }
@@ -130,6 +130,16 @@ section.download-section {
       align-items: flex-start;
     }
     .download-choices {
+      .choice-downloads {
+        .fas.fa-cube {
+          display: block;
+          width: 18px;
+          height: 18px;
+          background-image: url(../images/mac-os-package.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
       @media (max-width: 768px) {
         & > div {
           background-color: $bg;
@@ -262,7 +272,7 @@ section.download-section {
             text-align: center;
             justify-content: center;
             width: 100%;
-            font-size: 20px;
+            font-size: $text-font-size-3-xs;
             text-transform: inherit;
             .circle {
               position: absolute;
@@ -271,7 +281,7 @@ section.download-section {
           }
 
           &-description {
-            font-size: 20px;
+            font-size: $text-font-size-3-xs;
             line-height: 1.5;
             margin-bottom: 30px;
           }

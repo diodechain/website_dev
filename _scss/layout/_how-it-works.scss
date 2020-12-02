@@ -57,7 +57,7 @@ section.how-it-works-section--2 {
 
       @media (max-width: 768px) {
         color: $web-blue;
-        font-size: 20px;
+        font-size: $text-font-size-3-xs;
         text-transform: inherit;
         &::after {
           bottom: -20px;
@@ -112,7 +112,7 @@ section.how-it-works-section--3 {
         }
 
         @media (max-width: 768px) {
-          font-size: 20px;
+          font-size: $text-font-size-3-xs;
           text-transform: inherit;
           color: $web-blue;
           &::after {
@@ -334,7 +334,7 @@ section.how-it-works-section--4 {
       }
 
       @media (max-width: 768px) {
-        font-size: 20px;
+        font-size: $text-font-size-3-xs;
         text-transform: inherit;
         margin-bottom: 40px;
         &::after {

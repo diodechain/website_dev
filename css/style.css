@@ -7472,7 +7472,7 @@ section.download-section .download-content {
 }
 
 section.download-section .download-description {
-  font-size: 1.9rem;
+  font-size: 29px;
   line-height: 1.5;
   margin-bottom: 30px;
 }
@@ -7584,6 +7584,15 @@ section.download-section .download .row {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+section.download-section .download .download-choices .choice-downloads .fas.fa-cube {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-image: url(../images/mac-os-package.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (max-width: 768px) {

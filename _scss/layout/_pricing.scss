@@ -16,7 +16,7 @@ section.products-pricing-section {
       }
 
       @media (max-width: 768px) {
-        font-size: 20px;
+        font-size: $text-font-size-3-xs;
       }
     }
   
@@ -62,7 +62,7 @@ section.products-pricing-section {
       @media (max-width: 993px) {
         .col-blank {
             width: 180px;
-            font-size: 20px;
+            font-size: $text-font-size-3-xs;
         }
         .col-plan {
             width: calc((100% - 180px) / 3);
