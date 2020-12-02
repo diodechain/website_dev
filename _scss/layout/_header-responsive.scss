@@ -439,3 +439,10 @@
     }
   }
 }
+
+// Large Media
+@media (min-width: 993px) {
+  .toggle-submenu.show {
+    display: none !important;
+  }
+}

@@ -3724,6 +3724,12 @@ header.site-header .arrow-down-section .arrow-down i:before {
   }
 }
 
+@media (min-width: 993px) {
+  .toggle-submenu.show {
+    display: none !important;
+  }
+}
+
 /**
  *
  *  Breadcrumbs Style
