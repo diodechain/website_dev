@@ -3044,8 +3044,8 @@ header.site-header .site-navigation-bar .navigation-bar nav.nav-menu ul li > .su
   background-color: #F1F3F6;
   width: 100%;
   z-index: 1;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   border-bottom: 2px solid #f15d2f;
 }
 
