@@ -5877,6 +5877,21 @@ section.products-pricing-section .plans .plan__price > span {
   }
 }
 
+@media (max-width: 768px) {
+  section.products-pricing-section .plans .plan__price {
+    font-size: 50px;
+  }
+  section.products-pricing-section .plans .plan__price > span {
+    font-size: 20px;
+  }
+  section.products-pricing-section .plans .plan__action {
+    padding: 15px;
+  }
+  section.products-pricing-section .plans .plan__action .button {
+    width: 150px;
+  }
+}
+
 section.products-pricing-section .plans--xs .col-plan {
   width: 100%;
 }

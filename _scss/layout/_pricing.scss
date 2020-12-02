@@ -101,13 +101,26 @@ section.products-pricing-section {
 
         @media (max-width: 993px) {
             &__price {
-                font-size: 34px;
+                font-size: $text-font-size-6-xs;
                 &>span {
                     font-size: $text-font-size-2-xs;
                 }
             }
         }
-
+        @media (max-width: 768px) {
+          &__price {
+              font-size: $title-font-size-2;
+              &>span {
+                  font-size: $text-font-size-2;
+              }
+          }
+          &__action {
+            padding: 15px;
+            .button {
+              width: 150px;
+            }
+          }
+        }
       }
 
       // mobile layout
@@ -190,7 +203,7 @@ section.products-pricing-section {
           align-items: center;
           line-height: 1.2;
           &>.ammount {
-            font-size: 24px;
+            font-size: $text-font-size-3;
           }
           &>.ammount--tip {
             font-size: $text-font-size-2-xs;
