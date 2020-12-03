@@ -25,7 +25,12 @@ section.features-section {
       order: 1;
     }
     &-icon {
-      order: 2
+      order: 2;
+
+      svg {
+        width: 100%;
+        max-width: 294px;
+      }
     }
     @media (max-width: 768px) {
       &-icon {

@@ -4574,11 +4574,17 @@ section.offer-section .offer-link::after {
 section.site-section.hero-section {
   background-color: #2d3e50;
   color: #fff;
-  background-image: url("../images/hero-right.png");
+  background-image: url("../images/cloud.png");
   background-repeat: no-repeat;
   background-position: right;
   -webkit-background-size: 50% 50%;
           background-size: 50%;
+}
+
+@media (max-width: 993px) {
+  section.site-section.hero-section {
+    background-position: top right;
+  }
 }
 
 @media (max-width: 768px) {
@@ -4596,6 +4602,37 @@ section.site-section.hero-section .container .row {
   -webkit-justify-content: left;
       -ms-flex-pack: left;
           justify-content: left;
+  position: relative;
+}
+
+section.site-section.hero-section .container .row::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../images/ic.png");
+  background-repeat: no-repeat;
+  background-position: 86% 40%;
+}
+
+@media (max-width: 1200px) {
+  section.site-section.hero-section .container .row::after {
+    background-position: right 40%;
+  }
+}
+
+@media (max-width: 993px) {
+  section.site-section.hero-section .container .row::after {
+    -webkit-background-size: 200px 200px;
+            background-size: 200px;
+    background-position: 90% 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  section.site-section.hero-section .container .row::after {
+    display: none;
+  }
 }
 
 section.site-section.hero-section .container .row .hero-title {
@@ -4610,7 +4647,7 @@ section.site-section.hero-section .container .row .hero-title {
 section.site-section.hero-section .container .row .hero-title::after {
   content: '';
   position: absolute;
-  width: 260px;
+  width: 400px;
   background-color: #f15d2f;
   height: 1px;
   bottom: -7px;
@@ -4724,7 +4761,7 @@ section.site-section.hero-section .container .row .action-container {
 section.site-section.hero-section .container .row .action-container .action-descriptoin {
   position: absolute;
   bottom: -1.8em;
-  font-size: .58em;
+  font-size: 12px;
 }
 
 section.site-section.hero-section .container .row .action-container .text-xs {
@@ -5122,6 +5159,11 @@ section.features-section .feature-icon {
   -webkit-order: 2;
       -ms-flex-order: 2;
           order: 2;
+}
+
+section.features-section .feature-icon svg {
+  width: 100%;
+  max-width: 294px;
 }
 
 @media (max-width: 768px) {
@@ -7589,7 +7631,7 @@ section.download-section .download-action code {
 section.download-section .download-action .action-description {
   position: absolute;
   bottom: -1.8em;
-  font-size: 0.6em;
+  font-size: 12px;
 }
 
 section.download-section .download-command {
