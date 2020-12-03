@@ -27,6 +27,7 @@ section.download-section {
           color: $gray;
           line-height: 1.5;
           margin-bottom: 30px;
+          text-align: center;
         }
         .download__left {
           width: 100%;
@@ -61,6 +62,22 @@ section.download-section {
       img {
         margin-right: 15px;
       }
+      @media (max-width: 768px) {
+        position: relative;
+        width: 100%;
+        margin-bottom: 30px;
+
+        h2 {
+          font-size: $text-font-size-4-xs;
+          width: 100%;
+          text-align: left;
+          color: $web-blue;
+        }
+        img {
+          // display: none;
+          height: 40px;
+        }
+      }
     }
     &-content {
       display: flex;
@@ -82,12 +99,17 @@ section.download-section {
       flex-direction: column;
       justify-content: space-between;
       min-height: 170px;
+      @media (max-width: 768px) {
+        min-height: inherit;
+        width: 100%;
+      }
     }
     &-action {
       position: relative;
       display: flex;
       @media (max-width: 768px) {
         padding: 0 !important;
+        margin-bottom: 50px;
       }
       .button {
         padding-left: 25px;
@@ -115,6 +137,7 @@ section.download-section {
         position: absolute;
         bottom: -1.8em;
         font-size: 12px;
+        min-width: 400px;
       }
     }
     &-command {
@@ -122,6 +145,7 @@ section.download-section {
       margin-bottom: 70px;
       @media (max-width: 768px) {
         margin-bottom: 30px;
+        margin-top: 0;
       }
       .command-label {
         font-size: $text-font-size-2;

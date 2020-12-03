@@ -2495,8 +2495,8 @@ ul.tag-cloud-box li a:hover {
 .button:hover, .button:active, button:hover, button:active {
   background-color: #ed4423;
   color: #fff;
-  -webkit-filter: drop-shadow(0px 0px 25px #f15d2f);
-          filter: drop-shadow(0px 0px 25px #f15d2f);
+  -webkit-filter: drop-shadow(0px 0px 5px #f15d2f);
+          filter: drop-shadow(0px 0px 5px #f15d2f);
 }
 
 .button--outline, button--outline {
@@ -2528,8 +2528,8 @@ ul.tag-cloud-box li a:hover {
 
 .link:hover {
   color: #f15d2f;
-  -webkit-filter: drop-shadow(0px 0px 25px #f15d2f);
-          filter: drop-shadow(0px 0px 25px #f15d2f);
+  -webkit-filter: drop-shadow(0px 0px 10px #f15d2f);
+          filter: drop-shadow(0px 0px 10px #f15d2f);
 }
 
 .link--white {
@@ -4634,6 +4634,7 @@ section.site-section.hero-section .container .row::after {
   background-image: url("../images/ic.png");
   background-repeat: no-repeat;
   background-position: 86% 40%;
+  pointer-events: none;
 }
 
 @media (max-width: 1200px) {
@@ -7511,6 +7512,7 @@ section.download-section .download:nth-child(2) {
     color: #5c5d5f;
     line-height: 1.5;
     margin-bottom: 30px;
+    text-align: center;
   }
   section.download-section .download:nth-child(2) .download__left {
     width: 100%;
@@ -7566,6 +7568,23 @@ section.download-section .download-title img {
   margin-right: 15px;
 }
 
+@media (max-width: 768px) {
+  section.download-section .download-title {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  section.download-section .download-title h2 {
+    font-size: 22px;
+    width: 100%;
+    text-align: left;
+    color: #2d3e50;
+  }
+  section.download-section .download-title img {
+    height: 40px;
+  }
+}
+
 section.download-section .download-content {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7605,6 +7624,13 @@ section.download-section .download__left {
   min-height: 170px;
 }
 
+@media (max-width: 768px) {
+  section.download-section .download__left {
+    min-height: inherit;
+    width: 100%;
+  }
+}
+
 section.download-section .download-action {
   position: relative;
   display: -webkit-box;
@@ -7616,6 +7642,7 @@ section.download-section .download-action {
 @media (max-width: 768px) {
   section.download-section .download-action {
     padding: 0 !important;
+    margin-bottom: 50px;
   }
 }
 
@@ -7653,6 +7680,7 @@ section.download-section .download-action .action-description {
   position: absolute;
   bottom: -1.8em;
   font-size: 12px;
+  min-width: 400px;
 }
 
 section.download-section .download-command {
@@ -7663,6 +7691,7 @@ section.download-section .download-command {
 @media (max-width: 768px) {
   section.download-section .download-command {
     margin-bottom: 30px;
+    margin-top: 0;
   }
 }
 

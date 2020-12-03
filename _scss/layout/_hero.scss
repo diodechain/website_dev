@@ -40,6 +40,7 @@ section.site-section.hero-section {
             background-image: url('../images/ic.png');
             background-repeat: no-repeat;
             background-position: 86% 40%;
+            pointer-events: none;
             @media (max-width: 1200px) {
                 background-position: right 40%;
             }

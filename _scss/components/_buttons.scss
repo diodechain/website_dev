@@ -33,7 +33,7 @@
   &:active {
     background-color: $dark-orange;
     color: $white;
-    filter: drop-shadow(0px 0px 25px $orange);
+    filter: drop-shadow(0px 0px 5px $orange);
   }
 
   &--outline {
@@ -60,7 +60,7 @@
   }
   &:hover {
     color: $orange;
-    filter: drop-shadow(0px 0px 25px $orange);
+    filter: drop-shadow(0px 0px 10px $orange);
   }
 
   &--white {
