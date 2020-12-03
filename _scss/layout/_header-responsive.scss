@@ -142,7 +142,7 @@
                 }
 
                 .nav-link {
-                  display: block;
+                  display: flex;
                   color: $white;
                   width: 100%;
                   padding: 15px 0 20px 0;
@@ -446,12 +446,14 @@
     display: none !important;
   }
   &.subnav {
-    width: 120px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
     &:hover {
       &::after {
         content: '';
         position: absolute;
-        margin-left: 30px;
+        margin-left: 0px;
         bottom: 0;
         width: 0;
         height: 0;
@@ -459,6 +461,7 @@
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
         border-bottom: 15px solid $bg;
+        pointer-events: none;
       }
     }
   }

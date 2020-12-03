@@ -216,11 +216,14 @@ header.site-header {
             }
 
             .nav-link {
-              display: block;
+              display: flex;
               color: $white;
               padding: 10px 0;
               font-size: $text-font-size-2;
+              height: 100%;
               text-transform: initial;
+              height: $desktop-header-height;
+              align-items: center;
 
               &:hover,
               &:active {
