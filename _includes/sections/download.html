@@ -7,14 +7,15 @@
         <h3 class="site-section__description">{{ page.header-description }}</h3>
     </div>
     <!-- Download dDrive -->
-    <div class="download hidden-xs">
+    <div class="download">
         <div class="container">
             <div class="row">
                 <div class="download__left col-sm-4">
-                    <div class="download-title">
+                    <div class="download-title hidden-xs">
                         <img class="icon" src="{{ site.d-drive.icon }}" />
                         <h2 class="title">{{ site.d-drive.title }} </h2>
                     </div>
+                    <p class="hidden-sm hidden-md hidden-lg">{{ site.d-drive.description }}</p>
                     <div class="download-action">
                         {% for download in site.d-drive.downloads %}
                         <a class="button hide {{ download.id }}" href="{{ site.d-drive.download-base }}{{ download.link }}">Download dDrive for {{ download.name }}</a>
@@ -28,12 +29,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-8">
+                <div class="col-sm-8 hidden-xs">
                     <div class="download-content">
                         <div class="download-description">
                             {{ site.d-drive.description }}
                         </div>
-                        <a class="link link--arrow" href="{{ site.links.learn_more }}">LEARN MORE</a>
+                        <a class="link link--arrow " href="{{ site.links.learn_more }}">LEARN MORE</a>
                     </div>
                 </div>
             </div>
