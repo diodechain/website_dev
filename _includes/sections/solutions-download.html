@@ -4,60 +4,36 @@
     <div class="container">
       <!-- Desktop layout -->
       <div class="row hidden-xs">
+        {% for download in page.downloads %}
         <div class="download col-sm-6 col-xs-12">
           <div class="download-title-container">
-            <img src="{{ site.d-drive.icon }}">
+            <img src="{{ download.icon }}">
             <h2 class="download-title">
-              {{ site.d-drive.title }}
+              {{ download.title }}
             </h2>
           </div>
           <p class="download-description">
-            {{ site.d-drive.description-1 }}
+            {{ download.description }}
           </p>
-          {% for download in site.d-drive.downloads %}
-          <a class="button hide {{ download.id }}" href="{{ site.d-drive.download-base }}{{ download.link }}">GET {{ site.d-drive.title }}</a>
-          {% endfor %}
+          <a class="button" href="{{ download.link }}">{{ download.button }}</a>
         </div>
-        <div class="download col-sm-6 col-xs-12">
-          <div class="download-title-container">
-            <img src="{{ site.diode-cli.icon }}">
-            <h2 class="download-title">
-              {{ site.diode-cli.title }}
-            </h2>
-          </div>
-          <p class="download-description">
-            {{ site.diode-cli.description-1 }}
-          </p>
-          {% for download in site.diode-cli.downloads %}
-          <a class="button hide {{ download.id }}" href="{{ site.diode-cli.download-base }}{{ download.link }}">GET {{ site.diode-cli.title }}</a>
-          {% endfor %}
-        </div>
+        {% endfor %}
       </div>
       <!-- Mobile layout (this design has bid diff from desktop) -->
       <div class="row hidden-sm hidden-md hidden-lg">
+        {% for download in page.downloads %}
         <div class="col-xs-12 download--xs">
-          <h3 class="download-title">Product 1 Highlight:</h3>
-          {% for download in site.d-drive.downloads %}
+          <h3 class="download-title">Product {{ forloop.index }} Highlight:</h3>
           <a
-            class="download-link link hide {{ download.id }}"
-            href="{{ site.d-drive.download-base }}{{ download.link }}">
-            {{ site.d-drive.title-1 }}
-          </a>
-          {% endfor %}
-          <p class="download-description">
-            {{ site.d-drive.description-2 }}
-          </p>
-        </div>
-        <div class="col-xs-12 download--xs">
-          <h3 class="download-title">Product 2 Highlight:</h3>
-          <a class="download-link link" href="{{ site.diode-network.link }}">
-            {{ site.diode-network.title }}
+            class="download-link link"
+            href="{{ download.link }}">
+            {{ download.xs-title }}
           </a>
           <p class="download-description">
-            {{ site.diode-network.description }}
+            {{ download.description }}
           </p>
         </div>
-
+        {% endfor %}
       </div>
     </div>
   </div>
