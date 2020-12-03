@@ -29,18 +29,19 @@ section.products-pricing-section {
       .col-blank {
         width: 350px;
         &--text {
-          padding: 10px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          padding: 10px 25px 10px 0;
           font-size: 30px;
-          color: $orange;
+          color: $web-blue;
           font-weight: 400;
           line-height: 1.5;
           margin-bottom: 30px;
-          text-align: center;
+          text-align: left;
+          text-align: left;
+          justify-content: flex-start;
+          display: flex;
+          align-items: flex-start;
           a {
-            text-decoration: underline;
+            text-align: left;
           }
         }
       }
@@ -89,6 +90,7 @@ section.products-pricing-section {
           color: $dark-blue;
           line-height: 1.5;
           letter-spacing: 1px;
+          font-size: $text-font-size-1-xs;
         }
         &__price {
           color: $dark-blue;
@@ -184,14 +186,15 @@ section.products-pricing-section {
   
   
         .col-blank {
-          color: $orange;
+          color: $web-blue;
           font-size: $text-font-size-2;
           line-height: 1.2;
+          text-transform: uppercase;
         }
         .col-plan {
-          border-left: 1px solid $orange;
-          background-color: $web-blue;
-          color: $white;
+          border-left: 2px solid $orange;
+          background-color: $white;
+          color: $web-blue;
           text-align: center;
           font-size: $text-font-size-2;
           text-transform: uppercase;

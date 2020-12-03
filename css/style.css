@@ -5772,29 +5772,30 @@ section.products-pricing-section .plans .col-blank {
 }
 
 section.products-pricing-section .plans .col-blank--text {
-  padding: 10px;
+  padding: 10px 25px 10px 0;
+  font-size: 30px;
+  color: #2d3e50;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  text-align: left;
+  text-align: left;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 30px;
-  color: #f15d2f;
-  font-weight: 400;
-  line-height: 1.5;
-  margin-bottom: 30px;
-  text-align: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 section.products-pricing-section .plans .col-blank--text a {
-  text-decoration: underline;
+  text-align: left;
 }
 
 section.products-pricing-section .plans .col-plan {
@@ -5856,6 +5857,7 @@ section.products-pricing-section .plans .plan__description {
   color: #1f2739;
   line-height: 1.5;
   letter-spacing: 1px;
+  font-size: 16px;
 }
 
 section.products-pricing-section .plans .plan__price {
@@ -5973,15 +5975,16 @@ section.products-pricing-section .pricing-table .row.plans:last-child {
 }
 
 section.products-pricing-section .pricing-table .row.plans .col-blank {
-  color: #f15d2f;
+  color: #2d3e50;
   font-size: 20px;
   line-height: 1.2;
+  text-transform: uppercase;
 }
 
 section.products-pricing-section .pricing-table .row.plans .col-plan {
-  border-left: 1px solid #f15d2f;
-  background-color: #2d3e50;
-  color: #fff;
+  border-left: 2px solid #f15d2f;
+  background-color: #fff;
+  color: #2d3e50;
   text-align: center;
   font-size: 20px;
   text-transform: uppercase;
