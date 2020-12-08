@@ -26,7 +26,7 @@ Centralized Internet services like PKI and DNS, and the prevalence of IT admins 
 
 ![alt_text](images/blog/steps-of-decentralization.png "image_tooltip")
 
-With this capability, Diode has removed significant amounts of centralization from hosting activities, but leaving the consumption/browsing Web2.0 ecosystem intact.  This progression is intentionally aligned with the more technical nature of early adopters - in this use case: those who setup websites or host content.  There are additional innovations required at the hosting infrastructure level to automate and leverage best-in-class hardware and connectivity, and we look to the Diode ecosystem to collaborate on moving these forward!
+With this capability, Diode has removed significant amounts of centralization from hosting activities, but has left the consumption/browsing Web2.0 ecosystem intact.  This progression is intentionally aligned with the more technical nature of early adopters - in this use case: those who setup websites or host content.  There are additional innovations required at the hosting infrastructure level to automate and leverage best-in-class hardware and connectivity, and we look to the Diode ecosystem to collaborate on moving these forward!
 
 **How to Get Started?**
 
