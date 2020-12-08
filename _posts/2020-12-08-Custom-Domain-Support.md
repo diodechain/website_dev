@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Web2.0 Custom Domains Hosted by Web3"
-date: 2020-10-20 02:12
+date: 2020-12-08 02:12
 categories: [Diode]
 tags: [Diode]
 author: Hans Rempel
@@ -34,4 +34,4 @@ It is easy to enable a Web2.0 domain to serve Web3 content - all that has to be 
 
 ![alt_text](images/blog/bns-screenshot.png "image_tooltip")
   
-To setup your customer Web2.0 domain, follow the guide at [https://support.diode.io/article/6pctb40wj8](https://support.diode.io/article/6pctb40wj8)!
+To setup your Web3 host with a custom Web2.0 domain, follow the guide at [https://support.diode.io/article/6pctb40wj8](https://support.diode.io/article/6pctb40wj8)!
