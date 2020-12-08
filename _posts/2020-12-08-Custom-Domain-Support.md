@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Web2.0 Custom Domains"
+title: "Web2.0 Custom Domains Hosted by Web3"
 date: 2020-10-20 02:12
 categories: [Diode]
 tags: [Diode]
