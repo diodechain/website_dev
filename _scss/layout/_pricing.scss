@@ -1,6 +1,42 @@
 section.products-pricing-section {
     background-color: $white !important;
     padding: 10px 0 60px;
+
+
+    .plan-switch-container {
+      width: 100%;
+      text-align: center;
+    }
+    .plan-switch-label-container {
+      width: 100%;
+      text-align: center;
+      margin-top: 15px;
+      margin-bottom: 25px;
+      .plan-switch-label {
+        span {
+          text-transform: uppercase;
+          font-size: $text-font-size-1;
+          font-weight: 700;
+          color: $text-gray;
+          margin: 0 5px;
+          &.active {
+            color: $dark-blue;
+          }
+        }
+      }
+    }
+
+    .plans-description {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: $text-font-size-3;
+      color: $web-blue;
+      line-height: 1.5;
+      @media (max-width: 993px) {
+        font-size: $text-font-size-2;
+      }
+    }
   
     .products-section__description {
       margin: 0 auto 60px auto;
@@ -48,6 +84,10 @@ section.products-pricing-section {
       .col-plan {
         width: calc((100% - 350px) / 3);
         padding: 15px;
+        &--card {
+          padding: 20px;
+          width: calc((100% - 100px) / 3);
+        }
       }
 
       @media (max-width: 1199px) {
@@ -58,6 +98,12 @@ section.products-pricing-section {
         .col-plan {
             width: calc((100% - 250px) / 3);
             padding: 15px;
+            &--card {
+              width: 33%;
+              ul {
+                padding: 0 !important;
+              }
+            }
         }
       }
       @media (max-width: 993px) {
@@ -67,16 +113,19 @@ section.products-pricing-section {
         }
         .col-plan {
             width: calc((100% - 180px) / 3);
-            padding: 15px;
+            padding: 10px;
+            &--card {
+              width: 33%;
+            }
         }
       }
       // pricing card
       .plan {
         border: 1px solid $orange;
         border-radius: 5px;
-        padding: 20px;
+        padding: 25px;
         text-align: center;
-        height: 285px;
+        height: 520px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -85,23 +134,92 @@ section.products-pricing-section {
         &__title {
           font-size: $text-font-size-2;
           color: $dark-blue;
+          margin-bottom: 25px;
         }
         &__description {
           color: $dark-blue;
           line-height: 1.5;
           letter-spacing: 1px;
           font-size: $text-font-size-1-xs;
+          margin-bottom: 20px;
+          letter-spacing: .5px;
         }
         &__price {
           color: $dark-blue;
           font-size: $title-font-size-2;
+          margin-bottom: 20px;
           &>span {
             font-size: $text-font-size-2;
-            color: $orange;
+            color: $web-blue;
+          }
+        }
+
+        &__action {
+          &>.button {
+            width: 100%;
+            text-transform: uppercase;
+          }
+        }
+
+        &__features {
+          margin-bottom: 10px;
+          height: 200px;
+
+          @media (min-width: 769px) and (max-width: 993px) {
+            height: 225px;
+          }
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 0 20px;
+            li {
+              display: flex;
+              margin-bottom: 12px;
+              position: relative;
+              padding-left: 30px;
+              font-size: $text-font-size-1-xs;
+              color: $dark-blue;
+              text-align: left;
+              letter-spacing: .5px;
+              &>.circle {
+                position: absolute;
+                display: block;
+                width: 20px;
+                height: 20px;
+                border: 2px solid $orange;
+                border-radius: 20px;
+                left: 1px;
+                top: -1px;
+              }
+
+              &::before {
+                content: '';
+                position: absolute;
+                width: 5px;
+                height: 2px;
+                background-color: $orange;
+                left: 5px;
+                top: 10px;
+                transform: rotate(45deg);
+              }
+              &::after {
+                content: '';
+                position: absolute;
+                width: 11px;
+                height: 2px;
+                background-color: $orange;
+                transform: rotate(-45deg);
+                left: 7px;
+                top: 8px;
+              }
+            }
           }
         }
 
         @media (max-width: 993px) {
+            padding: 25px 10px;
             &__price {
                 font-size: $text-font-size-6-xs;
                 &>span {
@@ -110,17 +228,12 @@ section.products-pricing-section {
             }
         }
         @media (max-width: 768px) {
+          padding: 25px;
           &__price {
               font-size: $title-font-size-2;
               &>span {
                   font-size: $text-font-size-2;
               }
-          }
-          &__action {
-            padding: 15px;
-            .button {
-              width: 150px;
-            }
           }
         }
       }
@@ -133,42 +246,6 @@ section.products-pricing-section {
               height: inherit;
               min-height: 500px;
               margin-bottom: 0;
-              &__features {
-                margin-top: 20px;
-                ul {
-                  min-height: 240px;
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: flex-start;
-                  li {
-                    display: flex;
-                    min-height: 20px;
-                    text-align: center;
-                    position: relative;
-                    padding-left: 30px;
-                    &::before {
-                      content: '';
-                      position: absolute;
-                      width: 7px;
-                      height: 2px;
-                      background-color: $orange;
-                      left: 4px;
-                      top: 9px;
-                      transform: rotate(45deg);
-                    }
-                    &::after {
-                      content: '';
-                      position: absolute;
-                      width: 13px;
-                      height: 2px;
-                      background-color: $orange;
-                      transform: rotate(-45deg);
-                      left: 8px;
-                      top: 8px;
-                    }
-                  }
-                }
-              }
             }
         }
       }
@@ -177,19 +254,26 @@ section.products-pricing-section {
     // pricing table
     .pricing-table {
       margin-bottom: 60px;
-      .row.plans {
-        border-top: 1px solid $web-gray;
-  
-        &:last-child {
-          border-bottom: 1px solid $web-gray;
+      &__header{
+        font-weight: 700;
+        .col-plan {
+          font-weight: 700 !important;
         }
-  
-  
+      }
+      .row.plans {
+
         .col-blank {
           color: $web-blue;
           font-size: $text-font-size-2;
           line-height: 1.2;
           text-transform: uppercase;
+          min-height: 80px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          align-items: flex-start;
+          padding-left: 15px;
+          border-bottom: 1px solid $web-gray;
         }
         .col-plan {
           border-left: 2px solid $orange;
@@ -205,6 +289,7 @@ section.products-pricing-section {
           justify-content: center;
           align-items: center;
           line-height: 1.2;
+          border-bottom: 1px solid $web-gray;
           &>.ammount {
             font-size: $text-font-size-3;
           }

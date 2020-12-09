@@ -1124,6 +1124,100 @@ table {
           transform: translate3d(0, 0, 0);
 }
 
+.switch {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  outline: none;
+}
+
+.switch,
+.switch small {
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.switch small {
+  position: relative;
+  font-size: 12px;
+  top: 0;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  text-align: center;
+  display: block;
+  background: transparent !important;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  overflow: hidden;
+  color: #000;
+}
+
+.switch-default {
+  width: 50px;
+  height: 30px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  line-height: 30px;
+}
+
+.switch-default small {
+  width: 30px;
+  height: 30px;
+}
+
+.switch-small {
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  height: 20px;
+  width: 33px;
+  line-height: 20px;
+}
+
+.switch-small small {
+  height: 20px;
+  width: 20px;
+}
+
+.switch-large {
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  height: 50px;
+  width: 100px;
+  line-height: 50px;
+  border: none !important;
+}
+
+.switch-large small {
+  height: 50px;
+  width: 50px;
+}
+
+.switch-disabled {
+  opacity: 0.5;
+}
+
+.switch-large small::after {
+  content: '';
+  position: absolute;
+  background-color: white;
+  width: 34px;
+  height: 34px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  left: 8px;
+  top: 8px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
 @font-face {
   font-family: '7-stroke';
   src: url("../fonts/Pe-icon-7-stroke/Pe-icon-7-stroke.eot?d7yf1v");
@@ -3069,6 +3163,7 @@ header.site-header .site-navigation-bar .navigation-bar nav.nav-menu ul li > .su
   width: -moz-fit-content;
   width: fit-content;
   font-size: 20px;
+  font-weight: 400;
 }
 
 header.site-header .site-navigation-bar .navigation-bar nav.nav-menu ul li > .subnav-content .container a:hover::before {
@@ -3122,6 +3217,7 @@ header.site-header .site-navigation-bar .navigation-bar nav.nav-menu ul li .nav-
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: 400;
 }
 
 header.site-header .site-navigation-bar .navigation-bar nav.nav-menu ul li .nav-link:hover, header.site-header .site-navigation-bar .navigation-bar nav.nav-menu ul li .nav-link:active {
@@ -5229,6 +5325,7 @@ section.features-section .feature .feature-title {
   text-transform: uppercase;
   margin-bottom: 20px;
   color: #2d3e50;
+  font-weight: 600;
 }
 
 section.features-section .feature .feature-title--xs {
@@ -5798,6 +5895,45 @@ section.products-pricing-section {
   padding: 10px 0 60px;
 }
 
+section.products-pricing-section .plan-switch-container {
+  width: 100%;
+  text-align: center;
+}
+
+section.products-pricing-section .plan-switch-label-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+section.products-pricing-section .plan-switch-label-container .plan-switch-label span {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  color: #848484;
+  margin: 0 5px;
+}
+
+section.products-pricing-section .plan-switch-label-container .plan-switch-label span.active {
+  color: #1f2739;
+}
+
+section.products-pricing-section .plans-description {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 24px;
+  color: #2d3e50;
+  line-height: 1.5;
+}
+
+@media (max-width: 993px) {
+  section.products-pricing-section .plans-description {
+    font-size: 20px;
+  }
+}
+
 section.products-pricing-section .products-section__description {
   margin: 0 auto 60px auto;
   font-size: 29px;
@@ -5867,6 +6003,11 @@ section.products-pricing-section .plans .col-plan {
   padding: 15px;
 }
 
+section.products-pricing-section .plans .col-plan--card {
+  padding: 20px;
+  width: calc((100% - 100px) / 3);
+}
+
 @media (max-width: 1199px) {
   section.products-pricing-section .plans .col-blank {
     width: 250px;
@@ -5875,6 +6016,12 @@ section.products-pricing-section .plans .col-plan {
   section.products-pricing-section .plans .col-plan {
     width: calc((100% - 250px) / 3);
     padding: 15px;
+  }
+  section.products-pricing-section .plans .col-plan--card {
+    width: 33%;
+  }
+  section.products-pricing-section .plans .col-plan--card ul {
+    padding: 0 !important;
   }
 }
 
@@ -5885,7 +6032,10 @@ section.products-pricing-section .plans .col-plan {
   }
   section.products-pricing-section .plans .col-plan {
     width: calc((100% - 180px) / 3);
-    padding: 15px;
+    padding: 10px;
+  }
+  section.products-pricing-section .plans .col-plan--card {
+    width: 33%;
   }
 }
 
@@ -5893,9 +6043,9 @@ section.products-pricing-section .plans .plan {
   border: 1px solid #f15d2f;
   -webkit-border-radius: 5px;
           border-radius: 5px;
-  padding: 20px;
+  padding: 25px;
   text-align: center;
-  height: 285px;
+  height: 520px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5915,6 +6065,7 @@ section.products-pricing-section .plans .plan {
 section.products-pricing-section .plans .plan__title {
   font-size: 20px;
   color: #1f2739;
+  margin-bottom: 25px;
 }
 
 section.products-pricing-section .plans .plan__description {
@@ -5922,58 +6073,38 @@ section.products-pricing-section .plans .plan__description {
   line-height: 1.5;
   letter-spacing: 1px;
   font-size: 16px;
+  margin-bottom: 20px;
+  letter-spacing: .5px;
 }
 
 section.products-pricing-section .plans .plan__price {
   color: #1f2739;
   font-size: 50px;
+  margin-bottom: 20px;
 }
 
 section.products-pricing-section .plans .plan__price > span {
   font-size: 20px;
-  color: #f15d2f;
+  color: #2d3e50;
 }
 
-@media (max-width: 993px) {
-  section.products-pricing-section .plans .plan__price {
-    font-size: 34px;
-  }
-  section.products-pricing-section .plans .plan__price > span {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 768px) {
-  section.products-pricing-section .plans .plan__price {
-    font-size: 50px;
-  }
-  section.products-pricing-section .plans .plan__price > span {
-    font-size: 20px;
-  }
-  section.products-pricing-section .plans .plan__action {
-    padding: 15px;
-  }
-  section.products-pricing-section .plans .plan__action .button {
-    width: 150px;
-  }
-}
-
-section.products-pricing-section .plans--xs .col-plan {
+section.products-pricing-section .plans .plan__action > .button {
   width: 100%;
+  text-transform: uppercase;
 }
 
-section.products-pricing-section .plans--xs .col-plan .plan {
-  height: inherit;
-  min-height: 500px;
-  margin-bottom: 0;
+section.products-pricing-section .plans .plan__features {
+  margin-bottom: 10px;
+  height: 200px;
 }
 
-section.products-pricing-section .plans--xs .col-plan .plan__features {
-  margin-top: 20px;
+@media (min-width: 769px) and (max-width: 993px) {
+  section.products-pricing-section .plans .plan__features {
+    height: 225px;
+  }
 }
 
-section.products-pricing-section .plans--xs .col-plan .plan__features ul {
-  min-height: 240px;
+section.products-pricing-section .plans .plan__features ul {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5987,55 +6118,105 @@ section.products-pricing-section .plans--xs .col-plan .plan__features ul {
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  padding: 0 20px;
 }
 
-section.products-pricing-section .plans--xs .col-plan .plan__features ul li {
+section.products-pricing-section .plans .plan__features ul li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  min-height: 20px;
-  text-align: center;
+  margin-bottom: 12px;
   position: relative;
   padding-left: 30px;
+  font-size: 16px;
+  color: #1f2739;
+  text-align: left;
+  letter-spacing: .5px;
 }
 
-section.products-pricing-section .plans--xs .col-plan .plan__features ul li::before {
+section.products-pricing-section .plans .plan__features ul li > .circle {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #f15d2f;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  left: 1px;
+  top: -1px;
+}
+
+section.products-pricing-section .plans .plan__features ul li::before {
   content: '';
   position: absolute;
-  width: 7px;
+  width: 5px;
   height: 2px;
   background-color: #f15d2f;
-  left: 4px;
-  top: 9px;
+  left: 5px;
+  top: 10px;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-section.products-pricing-section .plans--xs .col-plan .plan__features ul li::after {
+section.products-pricing-section .plans .plan__features ul li::after {
   content: '';
   position: absolute;
-  width: 13px;
+  width: 11px;
   height: 2px;
   background-color: #f15d2f;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  left: 8px;
+  left: 7px;
   top: 8px;
+}
+
+@media (max-width: 993px) {
+  section.products-pricing-section .plans .plan {
+    padding: 25px 10px;
+  }
+  section.products-pricing-section .plans .plan__price {
+    font-size: 34px;
+  }
+  section.products-pricing-section .plans .plan__price > span {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  section.products-pricing-section .plans .plan {
+    padding: 25px;
+  }
+  section.products-pricing-section .plans .plan__price {
+    font-size: 50px;
+  }
+  section.products-pricing-section .plans .plan__price > span {
+    font-size: 20px;
+  }
+}
+
+section.products-pricing-section .plans--xs .col-plan {
+  width: 100%;
+}
+
+section.products-pricing-section .plans--xs .col-plan .plan {
+  height: inherit;
+  min-height: 500px;
+  margin-bottom: 0;
 }
 
 section.products-pricing-section .pricing-table {
   margin-bottom: 60px;
 }
 
-section.products-pricing-section .pricing-table .row.plans {
-  border-top: 1px solid #f1f3f6;
+section.products-pricing-section .pricing-table__header {
+  font-weight: 700;
 }
 
-section.products-pricing-section .pricing-table .row.plans:last-child {
-  border-bottom: 1px solid #f1f3f6;
+section.products-pricing-section .pricing-table__header .col-plan {
+  font-weight: 700 !important;
 }
 
 section.products-pricing-section .pricing-table .row.plans .col-blank {
@@ -6043,6 +6224,25 @@ section.products-pricing-section .pricing-table .row.plans .col-blank {
   font-size: 20px;
   line-height: 1.2;
   text-transform: uppercase;
+  min-height: 80px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 15px;
+  border-bottom: 1px solid #f1f3f6;
 }
 
 section.products-pricing-section .pricing-table .row.plans .col-plan {
@@ -6072,6 +6272,7 @@ section.products-pricing-section .pricing-table .row.plans .col-plan {
       -ms-flex-align: center;
           align-items: center;
   line-height: 1.2;
+  border-bottom: 1px solid #f1f3f6;
 }
 
 section.products-pricing-section .pricing-table .row.plans .col-plan > .ammount {

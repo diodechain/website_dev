@@ -124,6 +124,35 @@
     });
 
     /**
+     *  Plan switch (Pricing page)
+     **/
+    var plan_switch =  document.getElementById("planSwitch");
+    console.log(plan_switch, Switch)
+    if (plan_switch) {
+      var mySwitch = new Switch(plan_switch, {
+        size: 'large',
+        onSwitchColor: '#f15d2f',
+        offSwitchColor: '#f15d2f',
+        onChange: function (e) {
+          if (!e) {
+            $(".plan-switch-label__yearly").addClass("active");
+            $(".plan-switch-label__monthly").removeClass("active");
+            $(".monthly").addClass("hide");
+            $(".yearly").removeClass("hide");
+          } else {
+            $(".plan-switch-label__monthly").addClass("active");
+            $(".plan-switch-label__yearly").removeClass("active");
+            $(".yearly").addClass("hide");
+            $(".monthly").removeClass("hide");
+          }
+
+          console.log(e);
+        }
+      });
+    }
+
+
+    /**
      * Updating Article Links to open in new tabs
      */
     $(".blog-single-page .article-content a").attr("target", "_blank");

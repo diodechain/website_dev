@@ -173,6 +173,7 @@ header.site-header {
                   position: relative;
                   width: fit-content;
                   font-size: $text-font-size-2;
+                  font-weight: 400;
                   &:hover::before {
                     content: '';
                     position: absolute;
@@ -224,6 +225,7 @@ header.site-header {
               text-transform: initial;
               height: $desktop-header-height;
               align-items: center;
+              font-weight: 400;
 
               &:hover,
               &:active {
