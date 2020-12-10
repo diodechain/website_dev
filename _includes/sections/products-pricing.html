@@ -28,7 +28,7 @@
               {{ plan.description }}
             </div>
             <div class="plan__price yearly">
-              ${{ plan.price.yearly }}<span>/YR</span>
+              ${{ plan.price.yearly }}<span>/MO</span>
             </div>
             <div class="plan__price monthly hide">
               ${{ plan.price.monthly }}<span>/MO</span>
@@ -66,7 +66,7 @@
               {{ plan.description }}
             </div>
             <div class="plan__price yearly">
-              ${{ plan.price.yearly }}<span>/YR</span>
+              ${{ plan.price.yearly }}<span>/MO</span>
             </div>
             <div class="plan__price monthly hide">
               ${{ plan.price.monthly }}<span>/MO</span>
@@ -126,6 +126,9 @@
           {% endfor %}
         </div>
       {% endfor %}
+      <div class="pricing-table__description">
+        * All plans have unlimited shares for full drive sharing. Only Business and Enterprise support users that can be assigned special permissions.
+      </div>
     </div>
 
 

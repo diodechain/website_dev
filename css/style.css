@@ -6213,10 +6213,18 @@ section.products-pricing-section .pricing-table {
 
 section.products-pricing-section .pricing-table__header {
   font-weight: 700;
+  background-color: #fff;
+  z-index: 2;
 }
 
 section.products-pricing-section .pricing-table__header .col-plan {
   font-weight: 700 !important;
+}
+
+section.products-pricing-section .pricing-table__description {
+  font-size: 16px;
+  margin: 10px 0;
+  line-height: 1.5;
 }
 
 section.products-pricing-section .pricing-table .row.plans .col-blank {

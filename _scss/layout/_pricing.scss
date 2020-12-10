@@ -256,9 +256,16 @@ section.products-pricing-section {
       margin-bottom: 60px;
       &__header{
         font-weight: 700;
+        background-color: $white;
+        z-index: 2;
         .col-plan {
           font-weight: 700 !important;
         }
+      }
+      &__description {
+        font-size: $text-font-size-1-xs;
+        margin: 10px 0;
+        line-height: 1.5;
       }
       .row.plans {
 

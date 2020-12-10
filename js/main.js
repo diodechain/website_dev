@@ -145,8 +145,6 @@
             $(".yearly").addClass("hide");
             $(".monthly").removeClass("hide");
           }
-
-          console.log(e);
         }
       });
     }
@@ -319,6 +317,29 @@
         autoWidth: true,
         items: 3,
         singleItem:true
+      });
+    }
+
+    // Pricing page features table header
+    let header = document.querySelector("header");
+    let pTable = document.querySelector(".pricing-table");
+    let pTableHeader = pTable.querySelector(".pricing-table__header");
+    let pTableRows = pTable.querySelectorAll(".plans");
+    if (pTableHeader) {
+      document.addEventListener("scroll", function(e) {
+        if (window.scrollY >= pTable.offsetTop - header.clientHeight &&
+          window.scrollY < pTableRows[pTableRows.length - 1].offsetTop - header.clientHeight) {
+          pTableHeader.setAttribute("style",
+          `
+            position: fixed;
+            top: ${header.clientHeight}px;
+            width: ${pTableRows[pTableRows.length - 1].clientWidth}px;
+          `);
+          pTable.setAttribute("style", `padding-top: ${header.clientHeight - 10}px`);
+        } else {
+          pTableHeader.setAttribute("style", "");
+          pTable.setAttribute("style", "");
+        }
       });
     }
 
