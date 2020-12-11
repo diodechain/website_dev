@@ -5712,8 +5712,6 @@ section.products-header-section .products-image {
 
 section.products-header-section .products-image iframe {
   width: 100%;
-  max-width: 800px;
-  height: 400px;
   margin-left: auto;
   margin-right: auto;
 }
