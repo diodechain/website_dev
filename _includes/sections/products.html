@@ -12,9 +12,12 @@
       <div class="col-sm-12 col-md-6">
         <div class="products-image">
           <!-- Products Header Image -->
-          <!--img src="{{ page.header-image }}"-->
-          <iframe src="{{ page.header-video }}" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+          {% if page.header-image %}
+            <img src="{{ page.header-image }}">
+          {% else %}
+            <iframe src="{{ page.header-video }}" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+          {% endif %}
         </div>
       </div>
       <div class="col-sm-12 col-md-6 hidden-sm hidden-xs">
