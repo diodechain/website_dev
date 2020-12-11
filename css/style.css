@@ -5721,6 +5721,10 @@ section.products-header-section .products-image-description {
   color: #1f2739;
 }
 
+section.products-header-section .products-header-actions {
+  margin-top:30px;
+}
+
 @media (max-width: 768px) {
   section.products-header-section .site-section__description {
     color: #1f2739;
@@ -5728,9 +5732,13 @@ section.products-header-section .products-image-description {
   }
   section.products-header-section .products-image {
     margin-bottom: 40px;
+    min-width: 350px;
   }
   section.products-header-section .products-image iframe {
     height: 300px;
+  }
+  section.products-header-section .products-header-actions {
+    margin-top:0px;
   }
 }
 
