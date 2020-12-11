@@ -8,13 +8,13 @@
     <!-- Products Header Page Description -->
     <h3 class="site-section__description">{{ page.header-description }}</h3>
 
-
-
     <div class="row">
       <div class="col-sm-12 col-md-6">
         <div class="products-image">
           <!-- Products Header Image -->
-          <img src="{{ page.header-image }}">
+          <!--img src="{{ page.header-image }}"-->
+          <iframe class="tutorial" src="{{ page.footer-video }}" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 hidden-sm hidden-xs">
@@ -23,16 +23,19 @@
           {{ page.header-image-description }}
         </div>
       </div>
-      
     </div>
-    <div class="products-body-actions hidden-xs">
+    
+    <!-- Products Header Actions -->
+    <div class="products-header-actions hidden-xs">
       <a href="{{ site.links.download }}" class="button">DOWNLOAD</a>
     </div>
-    <div class="products-body-actions hidden-sm hidden-md hidden-lg">
+    <div class="products-header-actions hidden-sm hidden-md hidden-lg">
       <a href="{{ site.links.download }}" class="button button--outline">DOWNLOAD</a>
     </div>
+    
   </div>
 </section>
+
 <section class="site-section section-focus products-body-section" id="products-body">
   <div class="container">
     <!-- Products body text -->
