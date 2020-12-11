@@ -5707,13 +5707,11 @@ section.products-header-section {
 section.products-header-section .products-image {
   width: 100%;
   min-height: 240px;
-  background-color: #c4c4c4;
 }
 
 section.products-header-section .products-image iframe {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  min-height: 240px;
 }
 
 section.products-header-section .products-image-description {
