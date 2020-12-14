@@ -113,10 +113,11 @@
           </div>
           {% for plan in item.plans %}
             <div class="col-plan">
-              {% if plan.value != true and plan.value != false %}
-                {{ plan.value }}
+              {% if plan.yearly != true and plan.yearly != false %}
+                <div class="yearly">{{ plan.yearly }}</div>
+                <div class="monthly hide">{{ plan.monthly }}</div>
               {% else %}
-                {% if plan.value  %}
+                {% if plan.yearly  %}
                   Yes
                 {% else %}
                   No

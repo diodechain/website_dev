@@ -8,6 +8,8 @@
 
 .breadcrumbs {
   margin-top: $desktop-header-height;
+  
+  margin-bottom: 60px; // remove breadcrumb
 
   display: flex;
   flex-direction: row;

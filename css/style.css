@@ -3879,6 +3879,7 @@ header.site-header .arrow-down-section .arrow-down i:before {
  **/
 .breadcrumbs {
   margin-top: 90px;
+  margin-bottom: 60px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4693,14 +4694,34 @@ section.site-section.hero-section {
   color: #fff;
   background-image: url("../images/cloud.png");
   background-repeat: no-repeat;
-  background-position: right;
-  -webkit-background-size: 50% 50%;
-          background-size: 50%;
+  background-position: right -500px center;
+  -webkit-background-size: 1311px 913px;
+          background-size: 1311px 913px;
+}
+
+@media (max-width: 1500px) {
+  section.site-section.hero-section {
+    background-position: right -600px center;
+  }
+}
+
+@media (max-width: 1300px) {
+  section.site-section.hero-section {
+    background-position: right -650px center;
+  }
+}
+
+@media (max-width: 1199px) {
+  section.site-section.hero-section {
+    background-position: right -720px center;
+  }
 }
 
 @media (max-width: 993px) {
   section.site-section.hero-section {
-    background-position: top right;
+    background-position: right -560px center;
+    -webkit-background-size: 900px 900px;
+            background-size: 900px;
   }
 }
 
@@ -4720,37 +4741,6 @@ section.site-section.hero-section .container .row {
       -ms-flex-pack: left;
           justify-content: left;
   position: relative;
-}
-
-section.site-section.hero-section .container .row::after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-image: url("../images/ic.png");
-  background-repeat: no-repeat;
-  background-position: 86% 40%;
-  pointer-events: none;
-}
-
-@media (max-width: 1200px) {
-  section.site-section.hero-section .container .row::after {
-    background-position: right 40%;
-  }
-}
-
-@media (max-width: 993px) {
-  section.site-section.hero-section .container .row::after {
-    -webkit-background-size: 200px 200px;
-            background-size: 200px;
-    background-position: 90% 40%;
-  }
-}
-
-@media (max-width: 768px) {
-  section.site-section.hero-section .container .row::after {
-    display: none;
-  }
 }
 
 section.site-section.hero-section .container .row .hero-title {
