@@ -13,7 +13,17 @@ section.products-header-section {
   .products-image {
     width: 100%;
     min-height: 240px;
-    background-color: #c4c4c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    iframe {
+      min-height: 300px;
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+  .products-header-actions {
+    margin-top: 40px;
   }
 
   .products-image-description {
@@ -29,6 +39,10 @@ section.products-header-section {
     }
     .products-image {
       margin-bottom: 40px;
+      iframe { 
+        min-height: 200px;
+        min-width: 320px;
+      }
     }
   }
 }
