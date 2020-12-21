@@ -6229,7 +6229,7 @@ section.products-pricing-section .pricing-table {
 section.products-pricing-section .pricing-table__header {
   font-weight: 700;
   background-color: #fff;
-  z-index: 2;
+  z-index: 0;
 }
 
 section.products-pricing-section .pricing-table__header .col-plan {
