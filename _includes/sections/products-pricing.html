@@ -5,15 +5,8 @@
     <!-- Products Pricing Page Title -->
     <h2 class="site-section__title">{{ page.header-title }}</h2>
 
-    <!-- Switch (Mothly/Yearly) -->
-    <div class="plan-switch-container">
-      <input id="planSwitch" type="checkbox" class="checkbox-switch" />
-    </div>
-    <div class="plan-switch-label-container">
-      <label class="plan-switch-label" for="planSwitch">
-        <span class="plan-switch-label__yearly active">Yearly</span>
-        <span class="plan-switch-label__monthly">Monthly</span>
-      </label>
+    <div class="plans-description">
+      All plans include access to the <a href="products/diode-network">Diode Network Explorer</a> and use of the <a href="products/diode-cli">Diode CLI</a>
     </div>
 
     <!-- Products Pricing Cards (Desktop) -->
@@ -29,7 +22,7 @@
             </div>
             <div class="plan__price yearly">
               ${{ plan.price.yearly }}<span>/User/Mo</span><br/>
-              <span>Billed yearly as ${{ plan.price.full-year }}/User</span>
+              <span class="plan__description">(billed yearly as ${{ plan.price.full-year }}/User)</span>
             </div>
             <div class="plan__price monthly hide">
               ${{ plan.price.monthly }}<span>/User/Mo</span>
@@ -68,7 +61,7 @@
             </div>
             <div class="plan__price yearly">
               ${{ plan.price.yearly }}<span>/User/Mo</span><br/>
-              <span>Billed yearly as ${{ plan.price.full-year }}/User</span>
+              <span class="plan__description">(billed yearly as ${{ plan.price.full-year }}/User)</span>
             </div>
             <div class="plan__price monthly hide">
               ${{ plan.price.monthly }}<span>/User/Mo</span>
@@ -91,11 +84,18 @@
         </div>
       {% endfor %}
     </div>
-
-    <div class="plans-description">
-      All plans include access to the <a href="products/diode-network">Diode Network Explorer</a> and use of the <a href="products/diode-cli">Diode CLI</a>
+   
+    <!-- Switch (Mothly/Yearly) -->
+    <div class="plan-switch-container">
+      <input id="planSwitch" type="checkbox" class="checkbox-switch" />
     </div>
-
+    <div class="plan-switch-label-container">
+      <label class="plan-switch-label" for="planSwitch">
+        <span class="plan-switch-label__yearly active">Yearly</span>
+        <span class="plan-switch-label__monthly">Monthly</span>
+      </label>
+    </div>
+    
     <!-- Products Pricing Table (Desktop) -->
 <!-- Reintroduce feature table when pricing becomes more complex
     <div class="pricing-table hidden-xs">
