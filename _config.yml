@@ -67,20 +67,20 @@ navigation:
     - title: Private Collaboration
       ft_title: Private Collaboration
       link: solutions/private-collaboration
-    - title: Private Storage
-      ft_title: Private Storage
-      link: solutions/private-storage
-    - title: Streaming Video
-      ft_title: Streaming Video
-      link: solutions/streaming-video
-    - title: Healthcare & Compliance
-      ft_title: Compliance
-      link: solutions/healthcare-and-compliance
+    - title: File Sharing
+      ft_title: File Sharing
+      link: solutions/file-sharing
+    - title: Backup
+      ft_title: Backup
+      link: solutions/backup
     - title: Internet of Things
+      ft_title: IoT
       link: solutions/internet-of-things
-    - title: IT and Developers
-      link: solutions/it-and-developers
+    - title: Asset Management
+      ft_title: Asset Management
+      link: solutions/asset-management
     - title: Serverless Communications
+      ft_title: Serverless Communications
       link: solutions/serverless-communications
 - title: Products
   link: products/
