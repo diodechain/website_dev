@@ -6103,6 +6103,11 @@ section.products-pricing-section .plans .plan__price > span {
   color: #2d3e50;
 }
 
+section.products-pricing-section .plans .plan__price .plan__price_annotation {
+  font-size: 12px;
+  color: #2d3e50;
+}
+
 section.products-pricing-section .plans .plan__action > .button {
   width: 100%;
   text-transform: uppercase;
