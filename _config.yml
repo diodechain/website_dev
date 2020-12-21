@@ -73,9 +73,9 @@ navigation:
     - title: Backup
       ft_title: Backup
       link: solutions/backup
-    - title: Internet of Things
-      ft_title: IoT
-      link: solutions/internet-of-things
+    - title: Remote Work
+      ft_title: Remote Work
+      link: solutions/remote-work
     - title: Asset Management
       ft_title: Asset Management
       link: solutions/asset-management
