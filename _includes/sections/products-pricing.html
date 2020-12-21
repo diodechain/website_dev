@@ -22,7 +22,9 @@
             </div>
             <div class="plan__price yearly">
               ${{ plan.price.yearly }}<span>/User/Mo</span><br/>
-              <span class="plan__description">(billed yearly as ${{ plan.price.full-year }}/User)</span>
+              <div class="plan__price_annotation">
+                Billed yearly as ${{ plan.price.full-year }}/User</br>Minimum ${{ plan.price.min-users }} Users
+              </div>
             </div>
             <div class="plan__price monthly hide">
               ${{ plan.price.monthly }}<span>/User/Mo</span>
@@ -61,7 +63,9 @@
             </div>
             <div class="plan__price yearly">
               ${{ plan.price.yearly }}<span>/User/Mo</span><br/>
-              <span class="plan__description">(billed yearly as ${{ plan.price.full-year }}/User)</span>
+              <div class="plan__price_annotation">
+                Billed yearly as ${{ plan.price.full-year }}/User</br>Minimum ${{ plan.price.min-users }} Users
+              </div>
             </div>
             <div class="plan__price monthly hide">
               ${{ plan.price.monthly }}<span>/User/Mo</span>
