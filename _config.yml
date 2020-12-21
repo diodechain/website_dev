@@ -64,9 +64,9 @@ navigation:
   link: solutions/
   ft_order: 1
   subs:
-    - title: Remote Work
-      ft_title: Remote Work
-      link: solutions/remote-work
+    - title: Private Collaboration
+      ft_title: Private Collaboration
+      link: solutions/private-collaboration
     - title: Private Storage
       ft_title: Private Storage
       link: solutions/private-storage
