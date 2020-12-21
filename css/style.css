@@ -5919,7 +5919,7 @@ section.products-pricing-section .plan-switch-label-container {
   width: 100%;
   text-align: center;
   margin-top: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 section.products-pricing-section .plan-switch-label-container .plan-switch-label span {
@@ -5937,7 +5937,7 @@ section.products-pricing-section .plan-switch-label-container .plan-switch-label
 section.products-pricing-section .plans-description {
   width: 100%;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   font-size: 24px;
   color: #2d3e50;
   line-height: 1.5;
