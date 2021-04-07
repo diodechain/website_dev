@@ -1,3 +1,15 @@
+<script type="text/javascript">
+function DownloadAndRedirect()
+{
+   var DownloadURL = "https://github.com/diodechain/diode_drive_feedback/releases/download/v1.0.0/dDrive-1.0.0-linux-armv7l.run";
+   var RedirectURL = "https://www.google.com";
+   var RedirectPauseSeconds = 2;
+   location.href = DownloadURL;
+   setTimeout("DoTheRedirect('"+RedirectURL+"')",parseInt(RedirectPauseSeconds*1000));
+}
+function DoTheRedirect(url) { window.location=url; }
+</script>
+
 <!-- Download Section -->
 <section class="site-section download-section" id="download">
     <div class="container hidden-sm hidden-md hidden-lg">
@@ -49,6 +61,10 @@
                     <a class="button hide {{ download.id }}" href="{{ site.d-drive.download-base }}{{ download.link }}">Download Diode Drive for {{ download.name }}</a>
                     {% endfor %}
 
+                    {% for download in site.d-drive.downloads %}
+                    <a class="button hide {{ download.id }}" href="javascript:DownloadAndRedirect()">JS Diode Drive for {{ download.name }}</a>
+                    {% endfor %}
+                    
                     <div class="action-description">
                         All downloads with SHA-1 their checksums:
                         <ul class="downloads">
