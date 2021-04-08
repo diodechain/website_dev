@@ -62,7 +62,7 @@ function DoTheRedirect(url) { window.location=url; }
                     {% endfor %}
 
                     {% for download in site.d-drive.downloads %}
-                    <a class="button hide {{ download.id }}" href="javascript:DownloadAndRedirect({{ site.d-drive.download-base }}{{ download.link }})">JS Diode Drive for {{ download.name }}</a>
+                    <a class="button hide {{ download.id }}" href="javascript:DownloadAndRedirect('{{ site.d-drive.download-base }}{{ download.link }}')">JS Diode Drive for {{ download.name }}</a>
                     {% endfor %}
                     
                     <div class="action-description">
