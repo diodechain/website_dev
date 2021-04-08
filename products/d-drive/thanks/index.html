@@ -1,1 +1,51 @@
-hellow world
+---
+layout: default
+header-title: Thanks for downloading Diode Drive!
+header-description: Here are some links to help you get started
+subtitle: ABC
+
+section:
+  items:
+    - title: Item 1
+      description: |
+        Description 1
+
+    - title: Item 2
+      description: |
+        Description 2
+---
+
+{% include header.html %}
+
+{% include breadcrumbs.html %}
+
+<section class="site-section section-focus privacy-policy-section">
+    <div class="container">
+      <h2 class="site-section__title">{{ page.header-title }}</h2>
+      <h3 class="site-section__description">{{ page.header-description }}</h3>
+      <div class="item-container">
+        <div class="item">
+          <div class="item-description">
+            {{ page.subtitle | markdownify }}
+          </div>
+        </div>
+      </div>
+      {% for item in page.section.items %}
+        <div class="item-container">
+          <div class="item">
+            <div class="item-title-wrapper">
+              <span class="number">{{ forloop.index + 1 }}</span>
+              <h4 class="item-title">
+                {{ item.title }}
+              </h4>
+            </div>
+            <div class="item-description">
+              {{ item.description | markdownify }}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+</section>
+  
+</section>
