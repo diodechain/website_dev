@@ -8,6 +8,9 @@ function DownloadAndRedirect(download_link, redirect_link)
    setTimeout("DoTheRedirect('"+RedirectURL+"')",parseInt(RedirectPauseSeconds*1000));
 }
 function DoTheRedirect(url) { window.location=url; }
+   
+var button_link = document.getElementById("button_macos");
+button_link.setAttribute("href", "https://www.google.com");
 </script>
 
 <!-- Download Section -->
@@ -62,7 +65,7 @@ function DoTheRedirect(url) { window.location=url; }
                     {% endfor %}
 
                     {% for download in site.d-drive.downloads %}
-                    <a class="button hide {{ download.id }}" href="javascript:DownloadAndRedirect('{{ site.d-drive.download-base }}{{ download.link }}', '{{ site.d-drive.thank-you-for-downloading }}')">JS Diode Drive for {{ download.name }}</a>
+                    <a id="button_{{ download.id }}" class="button hide {{ download.id }}" href="javascript:DownloadAndRedirect('{{ site.d-drive.download-base }}{{ download.link }}', '{{ site.d-drive.thank-you-for-downloading }}')">JS Diode Drive for {{ download.name }}</a>
                     {% endfor %}
                     
                     <div class="action-description">
