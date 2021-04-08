@@ -8904,7 +8904,6 @@ section.download-section .download-popup .popup .popup-content .action-descripti
   font-size: 80%;
 }
 
-
 section.download-section .download-list .action-description ul.downloads {
   margin-top: 0.3em;
   list-style: disc;
@@ -8919,8 +8918,6 @@ section.download-section .download-list .action-description ul.downloads span.sh
   font-family: monospace;
   font-size: 80%;
 }
-
-
 
 /**
  *
