@@ -8905,10 +8905,6 @@ section.download-section .download-popup .popup .popup-content .action-descripti
 }
 
 
-section.download-section .download-command .action-description {
-  margin-top: 3em;
-}
-
 section.download-section .download-command .action-description ul.downloads {
   margin-top: 0.3em;
   list-style: disc;
