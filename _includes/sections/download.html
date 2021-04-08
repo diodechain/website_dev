@@ -7,13 +7,16 @@ function DownloadAndRedirect(download_link, redirect_link)
    location.href = DownloadURL;
    setTimeout("DoTheRedirect('"+RedirectURL+"')",parseInt(RedirectPauseSeconds*1000));
 }
+  
+function ThankYouRedirect(redirect_link)
+{
+   var RedirectURL = redirect_link;
+   var RedirectPauseSeconds = 2;
+   setTimeout("DoTheRedirect('"+RedirectURL+"')",parseInt(RedirectPauseSeconds*1000));
+}
+   
 function DoTheRedirect(url) { window.location=url; }
-   
-function myFunction() { window.location="https://www.google.com"; }
-   
-   
-var button_link = document.getElementById("button_macos");
-button_link.setAttribute("href", "https://www.google.com");
+
 </script>
 
 <!-- Download Section -->
@@ -64,7 +67,7 @@ button_link.setAttribute("href", "https://www.google.com");
                     </p>
 
                     {% for download in site.d-drive.downloads %}
-                    <a onclick="myFunction()" class="button hide {{ download.id }}" href="{{ site.d-drive.download-base }}{{ download.link }}">Download Diode Drive for {{ download.name }}</a>
+                    <a onclick="ThankYouRedirect('{{ site.d-drive.thank-you-for-downloading }}')" class="button hide {{ download.id }}" href="{{ site.d-drive.download-base }}{{ download.link }}">Download Diode Drive for {{ download.name }}</a>
                     {% endfor %}
 
                     {% for download in site.d-drive.downloads %}
