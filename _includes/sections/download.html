@@ -1,8 +1,8 @@
 <script type="text/javascript">
-function DownloadAndRedirect()
+function DownloadAndRedirect(download_link)
 {
-   var DownloadURL = "https://github.com/diodechain/diode_drive_feedback/releases/download/v1.0.0/dDrive-1.0.0-linux-armv7l.run";
-   var RedirectURL = "https://www.google.com";
+   var DownloadURL = download_link;
+   var RedirectURL = "/products/d-drive/";
    var RedirectPauseSeconds = 2;
    location.href = DownloadURL;
    setTimeout("DoTheRedirect('"+RedirectURL+"')",parseInt(RedirectPauseSeconds*1000));
@@ -62,7 +62,7 @@ function DoTheRedirect(url) { window.location=url; }
                     {% endfor %}
 
                     {% for download in site.d-drive.downloads %}
-                    <a class="button hide {{ download.id }}" href="javascript:DownloadAndRedirect()">JS Diode Drive for {{ download.name }}</a>
+                    <a class="button hide {{ download.id }}" href="javascript:DownloadAndRedirect({{ site.d-drive.download-base }}{{ download.link }})">JS Diode Drive for {{ download.name }}</a>
                     {% endfor %}
                     
                     <div class="action-description">
