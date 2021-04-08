@@ -48,14 +48,16 @@ function DoTheRedirect(url) { window.location=url; }
                <div class="row download-command">
                   <div class="col-xs-12">
                      <div class="action-description">
-                        All downloads with SHA-1 their checksums:
-                        {% for download in site.d-drive.downloads %}
+                        <ul class="downloads">
+                           {% for download in site.d-drive.downloads %}
                            <li>
                               <a href="{{ site.d-drive.download-base }}{{ download.link }}">{{ download.name }}</a><br/>
                               <span class="sha" style="padding-left:10px;">{{ download.sha }}</span>
                            </li>
-                        {% endfor %}
+                           {% endfor %}
+                        </ul>
                      </div>
+                     </br>
                      <p>
                         By downloading Diode Drive you accept the <a href="/msa" target="_blank">Diode Master Services Agreement</a> 
                         and our <a href="/privacy-policy" target="_blank">privacy policy</a>.
