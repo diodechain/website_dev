@@ -8905,17 +8905,17 @@ section.download-section .download-popup .popup .popup-content .action-descripti
 }
 
 
-section.download-section .download-command .action-description ul.downloads {
+section.download-section .download-list .action-description ul.downloads {
   margin-top: 0.3em;
   list-style: disc;
   padding-left: 1em;
 }
 
-section.download-section .download-command .action-description ul.downloads li {
+section.download-section .download-list .action-description ul.downloads li {
   padding: 0.3em 0em;
 }
 
-section.download-section .download-command .action-description ul.downloads span.sha {
+section.download-section .download-list .action-description ul.downloads span.sha {
   font-family: monospace;
   font-size: 80%;
 }
