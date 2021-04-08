@@ -30,9 +30,7 @@ function DoTheRedirect(url) { window.location=url; }
                     </div>
                     <p class="hidden-sm hidden-md hidden-lg">{{ site.d-drive.description }}</p>
                     <div class="download-action">
-                        {% for download in site.d-drive.downloads %}
-                           <a class="button hide {{ download.id }}" id="download_button">Download Diode Drive</a>
-                        {% endfor %}
+                        <a class="button hide JSButton" id="download_button">Download Diode Drive</a>
                         <noscript>Select your download:</noscript>
                     </div>
                 </div>
@@ -59,8 +57,8 @@ function DoTheRedirect(url) { window.location=url; }
                         </ul>
                      </div>
                      </br>
-                     <p>By downloading Diode Drive you accept the <a href="/msa" target="_blank">Diode Master Services Agreement</a> 
-                     and our <a href="/privacy-policy" target="_blank">privacy policy</a>.</p> 
+                     <p>By downloading Diode Drive you accept the <a href="{{ site.links.terms }}" target="_blank">Diode Master Services Agreement</a> 
+                     and our <a href="{{ site.links.privacy }}" target="_blank">privacy policy</a>.</p> 
                   </div> 
                </div>
            </noscript>
