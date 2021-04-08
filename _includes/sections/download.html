@@ -1,8 +1,8 @@
 <script type="text/javascript">
-function DownloadAndRedirect(download_link)
+function DownloadAndRedirect(download_link, redirect_link)
 {
    var DownloadURL = download_link;
-   var RedirectURL = "/products/d-drive/";
+   var RedirectURL = redirect_link;
    var RedirectPauseSeconds = 2;
    location.href = DownloadURL;
    setTimeout("DoTheRedirect('"+RedirectURL+"')",parseInt(RedirectPauseSeconds*1000));
@@ -62,7 +62,7 @@ function DoTheRedirect(url) { window.location=url; }
                     {% endfor %}
 
                     {% for download in site.d-drive.downloads %}
-                    <a class="button hide {{ download.id }}" href="javascript:DownloadAndRedirect('{{ site.d-drive.download-base }}{{ download.link }}')">JS Diode Drive for {{ download.name }}</a>
+                    <a class="button hide {{ download.id }}" href="javascript:DownloadAndRedirect('{{ site.d-drive.download-base }}{{ download.link }}', '{{ site.d-drive.thank-you-for-downloading }}')">JS Diode Drive for {{ download.name }}</a>
                     {% endfor %}
                     
                     <div class="action-description">
