@@ -18,31 +18,25 @@ section:
 
 {% include breadcrumbs.html %}
 
-<section class="site-section section-focus">
-    <div class="container">
-      <h2 class="site-section__title">{{ page.header-title }}</h2>
+<section>
+  <div class="container">
+    <h2 class="site-section__title">{{ page.header-title }}</h2>
+    <h3 class="site-section__description">{{ page.header-description }}</h3>
+    {% for item in page.section.items %}
       <div class="item-container">
         <div class="item">
+          <div class="item-title-wrapper">
+            <span class="number">{{ forloop.index + 1 }}</span>
+            <h4 class="item-title">
+              {{ item.title }}
+            </h4>
+          </div>
           <div class="item-description">
-            {{ page.subtitle | markdownify }}
+            {{ item.description | markdownify }}
           </div>
         </div>
       </div>
-      {% for item in page.section.items %}
-        <div class="item-container">
-          <div class="item">
-            <div class="item-title-wrapper">
-              <span class="number">{{ forloop.index + 1 }}</span>
-              <h4 class="item-title">
-                {{ item.title }}
-              </h4>
-            </div>
-            <div class="item-description">
-              {{ item.description | markdownify }}
-            </div>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
+    {% endfor %}
+  </div>
 </section>
 
