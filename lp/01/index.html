@@ -5,24 +5,15 @@ header-description: This is our prototype landing page
 
 section:
   items:
-    - title: Setup Diode Drive
-      link: https://support.diode.io/article/d3eguu0pem-setup-diode-drive
+    - title: Section 1
+      content: Aliquam semper arcu sed urna facilisis maximus. Aenean sapien est, convallis at tellus quis, commodo imperdiet odio. Vestibulum sit amet volutpat massa. In non massa sapien. Aliquam erat augue, sollicitudin eu enim at, ultrices malesuada erat. Aliquam ullamcorper a urna in sodales. Sed aliquam quam non ex convallis congue. Cras ut porta enim. Nulla ultricies suscipit rhoncus. 
+      cta-text: Download
+      cta-link: https://diode.io/download
 
-    - title: Share a File or Folder
-      link: https://support.diode.io/article/v428b36e31
-
-    - title: Backup Confidential Files
-      link: https://support.diode.io/article/x859ax5avc
-
-    - title: Add a Team Member or Device
-      link: https://support.diode.io/article/jkzakxo7a0
-
-    - title: More Articles
-      link: https://support.diode.io/category/njb9fd8sl9-diode-drive
-
-    - title: Contact Us!
-      link: https://t.me/diode_chain
-
+    - title: Section 2
+      content: Aliquam semper arcu sed urna facilisis maximus. Aenean sapien est, convallis at tellus quis, commodo imperdiet odio. Vestibulum sit amet volutpat massa. In non massa sapien. Aliquam erat augue, sollicitudin eu enim at, ultrices malesuada erat. Aliquam ullamcorper a urna in sodales. Sed aliquam quam non ex convallis congue. Cras ut porta enim. Nulla ultricies suscipit rhoncus. 
+      cta-text: Download
+      cta-link: https://diode.io/download
 ---
 
 {% include header.html %}
@@ -37,7 +28,10 @@ section:
       <div class="item-container" style="text-align: center;">
         <div class="item">
           <div class="item-title-wrapper">
-            <a href="{{ item.link }}" target="_blank"><h4 class="item-title">{{ item.title }}</h4></a>
+            <h4>{{ item.title }}</h4>
+            <p>{{ item.content }}</p>
+            <a href="{{ item.cta-link }}">{{ item.cta-text }}</a>
+            </br>
           </div>
 
         </div>
