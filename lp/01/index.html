@@ -22,20 +22,9 @@ gs-title: Get Started in 3 Easy Steps
 gs-image: https://stoffe.kawaiifabric.com/images/product_images/large_img/black-mesh-fabric-223630-1.jpg
 gs-video: 
 gs-description: Everyone can do it
-gs-action: /download
+gs-action-link: /download
+gs-action-text: Download Now!
 
-
-section:
-  items:
-    - title: Section 1
-      content: Aliquam semper arcu sed urna facilisis maximus. Aenean sapien est, convallis at tellus quis, commodo imperdiet odio. Vestibulum sit amet volutpat massa. In non massa sapien. Aliquam erat augue, sollicitudin eu enim at, ultrices malesuada erat. Aliquam ullamcorper a urna in sodales. Sed aliquam quam non ex convallis congue. Cras ut porta enim. Nulla ultricies suscipit rhoncus. 
-      cta-text: Download
-      cta-link: https://diode.io/download
-
-    - title: Section 2
-      content: Aliquam semper arcu sed urna facilisis maximus. Aenean sapien est, convallis at tellus quis, commodo imperdiet odio. Vestibulum sit amet volutpat massa. In non massa sapien. Aliquam erat augue, sollicitudin eu enim at, ultrices malesuada erat. Aliquam ullamcorper a urna in sodales. Sed aliquam quam non ex convallis congue. Cras ut porta enim. Nulla ultricies suscipit rhoncus. 
-      cta-text: Download
-      cta-link: https://diode.io/download
 ---
 
 {% include header.html %}
@@ -45,24 +34,3 @@ section:
 {% include sections/get-started.html %} 
 {% include breadcrumbs.html %}
 
-<section>
-  <div class="container">
-    <h2 class="site-section__title">{{ page.header-title }}</h2>
-    <h3 class="site-section__description">{{ page.header-description }}</h3>
-    {% for item in page.section.items %}
-      <div class="item-container" style="text-align: center;">
-        <div class="item">
-          <div class="item-title-wrapper">
-            <h4>{{ item.title }}</h4>
-            <p>{{ item.content }}</p>
-            <a href="{{ item.cta-link }}">{{ item.cta-text }}</a>
-            </br>
-          </div>
-
-        </div>
-      </div>
-      </br>
-    {% endfor %}
-  </div>
-  </br>
-</section>
