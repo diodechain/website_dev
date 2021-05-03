@@ -4767,6 +4767,16 @@ section.site-section.hero-section .container .row .hero-title {
   max-width: 500px;
 }
 
+section.site-section.hero-section .container .row .hero-title::after {
+  content: '';
+  position: absolute;
+  width: 400px;
+  background-color: #f15d2f;
+  height: 1px;
+  bottom: -7px;
+  left: 0;
+}
+
 section.site-section.hero-section .container .row .hero-title-lp {
   font-size: 50px;
   line-height: 1.2;
@@ -4781,7 +4791,7 @@ section.site-section.hero-section .container .row .hero-title::after {
   position: absolute;
   width: 400px;
   background-color: #f15d2f;
-  height: 1px;
+  height: 0px;
   bottom: -7px;
   left: 0;
 }
