@@ -4816,6 +4816,28 @@ section.site-section.hero-section .container .row .hero-title--xs::after {
   left: 0;
 }
 
+
+section.site-section.hero-section .container .row .hero-title-lp--xs {
+  display: none;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  position: relative;
+  margin-bottom: 30px;
+  font-weight: 400;
+  max-width: 500px;
+}
+
+section.site-section.hero-section .container .row .hero-title--xs::after {
+  content: '';
+  position: absolute;
+  width: 68px;
+  background-color: #f15d2f;
+  height: 0px;
+  bottom: -12px;
+  left: 0;
+}
+
+
 @media (max-width: 768px) {
   section.site-section.hero-section .container .row .hero-title {
     display: none;
