@@ -247,7 +247,7 @@
     if (navigator.userAgent.indexOf("iPad") != -1) OSName = "iOS";
     if (navigator.userAgent.indexOf("iPhone") != -1) OSName = "iOS";
     if (navigator.userAgent.indexOf("Linux") != -1) {
-      if (navigator.userAgent.indexOf("Raspberry") != -1) OSName = "Raspberry Pi";
+      if (navigator.userAgent.indexOf("armv") != -1) OSName = "Raspberry Pi";
         else if (navigator.userAgent.indexOf("Android") != -1) OSName = "Android";
           else OSName = "Linux";
     }
