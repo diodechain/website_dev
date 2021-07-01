@@ -242,7 +242,12 @@
      */
     let OSName = "Unknown OS";
     if (navigator.userAgent.indexOf("Win") != -1) OSName = "Windows";
-    if (navigator.userAgent.indexOf("Mac") != -1) OSName = "MacOS";
+    if (navigator.userAgent.indexOf("Mac") != -1) {
+      if (navigator.userAgent.indexOf("iPhone") != -1) OSName = "iOS";
+        else if (navigator.userAgent.indexOf("iPad") != -1) OSName = "iOS";
+          else if (navigator.userAgent.indexOf("iPod") != -1) OSName = "iOS";
+            else OSName = "MacOS";
+    }
     if (navigator.userAgent.indexOf("iOS") != -1) OSName = "iOS";
     if (navigator.userAgent.indexOf("Linux") != -1) {
       if (navigator.userAgent.indexOf("Raspberry") != -1) OSName = "Raspberry Pi";
