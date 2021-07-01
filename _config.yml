@@ -244,7 +244,7 @@ d-drive:
       name: iOS
       id: ios
     - title: <i class="fab fa-android"></i> Android
-      link: dDrive-1.2.0-linux-x86_64.run
+      link: /
       name: Android
       id: android
 diode-cli:
