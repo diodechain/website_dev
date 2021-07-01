@@ -239,6 +239,16 @@ d-drive:
       name: Linux (64-bit)
       id: linux
       sha: c1b1fff38e34c197ec9db97e748c843a93122b69
+    - title: <i class="fab fa-ios"></i> iOS
+      link: /
+      name: iOS
+      id: ios
+      sha: none
+    - title: <i class="fab fa-android"></i> Android
+      link: dDrive-1.2.0-linux-x86_64.run
+      name: Android
+      id: android
+      sha: none
 diode-cli:
   title: Diode CLI
   description: High security remote access for your IT assets, localhost websites / webservices, and data/video streams.
