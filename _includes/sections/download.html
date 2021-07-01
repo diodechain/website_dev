@@ -86,6 +86,11 @@ function DoTheRedirect(url) { window.location=url; }
                         <ul class="downloads">
                             {% for download in site.d-drive.downloads %}
                             <li>
+                               {% if page.platform == "mac" %}
+                               yep, mac
+                               {% else %}
+                               not mac
+                               {% endif %}
                                {% if download.sha %}
                                 <a onclick="ThankYouRedirect('{{ site.d-drive.thank-you-for-downloading }}')" href="{{ site.d-drive.download-base }}{{ download.link }}">{{ download.name }}</a><br/>
                                 <span class="sha">{{ download.sha }}</span>
