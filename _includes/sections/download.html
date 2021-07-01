@@ -82,15 +82,15 @@ function DoTheRedirect(url) { window.location=url; }
                        <a onclick="ThankYouRedirect('{{ site.d-drive.thank-you-for-downloading }}')" class="button hide {{ download.id }}" href="{{ site.d-drive.download-base }}{{ download.link }}">Download Diode Drive for {{ download.name }}</a>
                        {% else %}
                        <a class="button hide {{ download.id }}" href="{{ site.links.mobilesurvey }}">Download Diode Drive for {{ download.name }}</a>
-                       {% endif %}
+                       {% endif %}   
                     {% endfor %}
                     
                     <div class="action-description">
-                        All downloads with SHA-1 their checksums:
+                        Or choose another Platform:
                         <ul class="downloads">
                             {% for download in site.d-drive.downloads %}
                             <li>
-                               {% if download.link %}
+                                {% if download.link %}
                                 <a onclick="ThankYouRedirect('{{ site.d-drive.thank-you-for-downloading }}')" href="{{ site.d-drive.download-base }}{{ download.link }}">{{ download.name }}</a><br/>
                                 <span class="sha">{{ download.sha }}</span>
                                {% else %}
@@ -99,6 +99,8 @@ function DoTheRedirect(url) { window.location=url; }
                             </li>
                             {% endfor %}
                         </ul>
+                        <hr/>
+                        MacOS + Windows builds are signed/notarized. For Linux builds please compare the SHA-1 checksum above with the file downloaded for validation.
                     </div>
                 </div>
             </div>
