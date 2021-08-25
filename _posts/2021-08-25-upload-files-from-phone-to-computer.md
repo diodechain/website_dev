@@ -26,9 +26,9 @@ A much better solution would be to upload a file directly from my phone to my co
 4. Scan the QR code with your phone.  It will open a web portal where you can upload files directly.
 5. Click one file or long press to select multiple files.  Once you have selected your files, they are uploaded automatically.
 
-<a href="https://vimeo.com/562684103">Check out this video for a visual walk-through!</a>
-
 <p align="center"><a href="https://vimeo.com/562684103"><img src="images/blog/file-uploading-share-zone-2.png"></a></p>
+
+<a href="https://vimeo.com/562684103">Check out this video for a visual walk-through!</a>
 
 Some additional tips!:
 * Bookmark the upload webpage for easy access from your mobile browser
