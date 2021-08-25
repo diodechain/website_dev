@@ -30,6 +30,11 @@ Step 5: Click one file or long press to select multiple files.  Once you have se
 
 <p align="center"><a href="https://vimeo.com/562684103"><img src="images/blog/file-uploading-share-zone-2.png"></a></p>
 
-Tip:
-You can bookmark the upload webpage for easy access from your mobile browser.  You can also “Add to Home Screen” so that you can upload any time with one click!  And finally, as an added bonus you can share the QR code or URL with others so that they can also share files directly to your computer, perfect for parties and other events!
+Additional Tips:
+<ul>
+  <li>Bookmark the upload webpage for easy access from your mobile browser</li>
+  <li>Use “Add to Home Screen” to add an icon so you can upload any time with one click!</li>
+  <li>Share the QR code or URL with others so that they can also share files directly to your computer, perfect for parties and other events!<li>
+</ul>
+  
 
