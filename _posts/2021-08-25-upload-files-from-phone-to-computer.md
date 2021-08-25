@@ -20,11 +20,11 @@ Another option I sometimes use is a messaging app.  I will message files from my
 A much better solution would be to upload a file directly from my phone to my computer.  Diode enables exactly this situation - all I need to do is set up a shared folder in my Diode Zone.  I can set up as many folders as I like and upload any size or type of file.  
 
 **Here’s how:**
-1. Open Diode Drive and select the desired Zone</br>
-2. Click the box arrow icon to open base the Zone folder and create a sub-folder that you want to use for uploads</br>
-3. Select your new upload folder by checking the box and then clicking the share icon.  This will open the “Share” setting where you can select the options you want.  Check the boxes for both “Can Upload” and “Enabled”, then hit “Save”.</br>  
-4. Scan the QR code with your phone.  It will open a web portal where you can upload files directly – bookmark this link!</br> 
-5. Click one file or long press to select multiple files.  Once you have selected your files, they are uploaded automatically.</br>
+1. Open Diode Drive and select the desired Zone
+2. Click the box arrow icon to open base the Zone folder and create a sub-folder that you want to use for uploads.
+3. Select your new upload folder by checking the box and then clicking the share icon.  This will open the “Share” setting where you can select the options you want.  Check the boxes for both “Can Upload” and “Enabled”, then hit “Save”.  
+4. Scan the QR code with your phone.  It will open a web portal where you can upload files directly.
+5. Click one file or long press to select multiple files.  Once you have selected your files, they are uploaded automatically.
 
 <a href="https://vimeo.com/562684103">Check out this video for a visual walk-through!</a>
 
