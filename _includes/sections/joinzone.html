@@ -1,5 +1,9 @@
-<!-- Joincode Section -->
-
+<script>
+    var url = new URL(document.location.toString());
+    if (url.hash.slice(1).length != 75) {
+        window.location.href = '/';
+    }
+</script>
 <section style="transform: scale(0.90, 0.90); zoom: 0.90; zoom: 90%;" id="joinzone">
     <div class="container text-center" style="width:1200px; transform:translateY(-70px)">
         <h2 class="site-section__title">Join Code</h2>
@@ -7,13 +11,13 @@
         <br>
         <h3>
             <script>
-                var url = new URL(document.location.toString());
                 document.write(url.hash.slice(1))
             </script>
         </h3>
         <br>
         <br>
-        <img style="display:block; margin-left:auto; margin-right: auto; width: 520px;" src="resources/join-zone-gif.gif" alt="how to join zone with join code">
+        <img style="display:block; margin-left:auto; margin-right: auto; width: 520px;"
+            src="resources/join-zone-gif.gif" alt="how to join zone with join code">
         <br>
         <br>
         <p>Don't have Diode Drive yet?</p>
