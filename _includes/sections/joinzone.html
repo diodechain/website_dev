@@ -1,24 +1,59 @@
 <script>
     var url = new URL(document.location.toString());
     if (url.hash.slice(1).length != 75) {
-      window.location.replace((url.origin + url.pathname).replace("/joinzone/", "/"));
+        window.location.replace((url.origin + url.pathname).replace("/joinzone/", "/"));
     }
 </script>
-<section style="transform: scale(0.90, 0.90); zoom: 0.90; zoom: 90%;" id="joinzone">
+
+<section style="transform: scale(0.90, 0.90); zoom: 0.90; zoom: 90%;" id="download">
     <div class="container text-center" style="width:1200px; transform:translateY(-70px)">
         <h2 class="site-section__title">Join Code</h2>
-        <p>Just click the "Join" button on the Zones page of Diode Drive and enter this Join Code!</p>
-        <br>
-        <h3>
-            <script>
-                document.write(url.hash.slice(1))
-            </script>
-        </h3>
-        <br>
-        <br>
-        <img style="display:block; margin-left:auto; margin-right: auto; width: 520px;"
-            src="resources/join-zone-gif.gif" alt="how to join zone with join code">
-        <br>
+        <div id="linux">
+            <p>Already Have Diode Drive? Just click the button below!</p>
+            <a id="auto-add" class="button nav-button">Auto Join</a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>Alternativly, you can enter this Join Code by clicking the "Join" button on the Zones page of Diode
+                Drive.
+            </p>
+            <h3>
+                <script>
+                    document.write(url.hash.slice(1))
+                </script>
+            </h3>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div id="other">
+            <p>Just click the "Join" button on the Zones page of Diode Drive and enter this Join Code!</p>
+            <br>
+            <h3>
+                <script>
+                    document.write(url.hash.slice(1))
+                </script>
+            </h3>
+            <br>
+            <br>
+            <img style="display:block; margin-left:auto; margin-right: auto; width: 520px;"
+                src="resources/join-zone-gif.gif" alt="how to join zone with join code">
+            <br>
+        </div>
+
+        <script>
+            if (navigator.userAgent.indexOf("Linux") != -1) {
+                document.getElementById('other').style.display = 'none';
+                document.getElementById('linux').style.display = 'block';
+            } else {
+                document.getElementById('other').style.display = 'block';
+                document.getElementById('linux').style.display = 'none';
+            }
+            var auto_join_link = "ddrive://" + url.hash.slice(1);
+            document.getElementById("auto-add").href = auto_join_link;
+        </script>
         <br>
         <p>Don't have Diode Drive yet?</p>
         <div>
