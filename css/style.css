@@ -2939,7 +2939,7 @@ blockquote:before {
   cursor: pointer;
   border: 1px solid #F15C2E;
   background: rgba(244, 248, 249, 0.2);
-  -webkit-transform: translate3d(0, -webkit-calc(130% + 50px), 0);
+  -webkit-transform: translate3d(0, calc(130% + 50px), 0);
           transform: translate3d(0, calc(130% + 50px), 0);
   -webkit-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
@@ -3022,7 +3022,6 @@ header.site-header.blog-header .container {
 }
 
 header.site-header.blog-header .header-banner {
-  height: -webkit-calc(600px - 250px);
   height: calc(600px - 250px);
 }
 
@@ -3053,9 +3052,7 @@ header.site-header > .container .heading-content .heading-title h2 {
 }
 
 header.site-header > .container .heading-content .tutorial {
-  width: -webkit-calc(100vh / 900 * 560);
   width: calc(100vh / 900 * 560);
-  height: -webkit-calc(100vh / 900 * 315);
   height: calc(100vh / 900 * 315);
 }
 
@@ -3238,9 +3235,7 @@ header.site-header .frag {
 
 header.site-header .header-banner {
   margin-top: 2em;
-  height: -webkit-calc(100vh - 250px);
   height: calc(100vh - 250px);
-  max-height: -webkit-calc(1080px - 250px);
   max-height: calc(1080px - 250px);
   z-index: 2;
   color: #fff;
@@ -3356,9 +3351,7 @@ header.site-header .arrow-down-section .arrow-down i:before {
   }
   header.site-header .header-banner {
     top: 50px;
-    height: -webkit-calc(100vh - 190px);
     height: calc(100vh - 190px);
-    max-height: -webkit-calc(1080px - 190px);
     max-height: calc(1080px - 190px);
   }
   header.site-header .header-banner .heading-content {
@@ -3391,7 +3384,6 @@ header.site-header .arrow-down-section .arrow-down i:before {
     top: 70px;
     left: 0;
     width: 100%;
-    height: -webkit-calc(100vh - 50px);
     height: calc(100vh - 50px);
     font-weight: lighter;
     overflow-y: scroll;
@@ -3438,7 +3430,6 @@ header.site-header .arrow-down-section .arrow-down i:before {
     width: 36px;
     height: 1px;
     background-color: #f15d2f;
-    left: -webkit-calc(50% - 18px);
     left: calc(50% - 18px);
   }
   header.site-header > .container .site-navigation-bar .navigation-bar .nav-menu ul.menu li:first-child::before {
@@ -3792,7 +3783,6 @@ header.site-header .arrow-down-section .arrow-down i:before {
     font-weight: 700;
     font-size: 1.6em;
     font-family: '7-stroke';
-    top: -webkit-calc(50% - 14px);
     top: calc(50% - 14px);
     line-height: 30px;
   }
@@ -3953,7 +3943,6 @@ header.site-header .arrow-down-section .arrow-down i:before {
   .breadcrumbs li::after {
     color: #161c2a;
     font-size: 1.4em;
-    top: -webkit-calc(50% - 11px);
     top: calc(50% - 11px);
   }
 }
@@ -4406,7 +4395,6 @@ code.highlighter-rouge {
   width: 150px;
   height: 1px;
   bottom: -20px;
-  left: -webkit-calc(50% - 75px);
   left: calc(50% - 75px);
   background-color: #f15d2f;
 }
@@ -4419,7 +4407,6 @@ code.highlighter-rouge {
   }
   .site-section__title:after {
     width: 36px;
-    left: -webkit-calc(50% - 18px);
     left: calc(50% - 18px);
   }
 }
@@ -4431,7 +4418,7 @@ code.highlighter-rouge {
 }
 
 .site-section__description {
-  margin: 0 0 30px;
+  margin: 0 0 60px;
   font-size: 29px;
   line-height: 1.5;
   font-weight: 400;
@@ -4659,7 +4646,6 @@ section.offer-section .offer-link::after {
   height: 1px;
   background-color: #f15d2f;
   bottom: -30px;
-  left: -webkit-calc(50% - 113px);
   left: calc(50% - 113px);
 }
 
@@ -4777,25 +4763,6 @@ section.site-section.hero-section .container .row .hero-title::after {
   left: 0;
 }
 
-section.site-section.hero-section .container .row .hero-title-lp {
-  font-size: 50px;
-  line-height: 1.2;
-  position: relative;
-  margin-bottom: 30px;
-  font-weight: 400;
-  max-width: 1000px;
-}
-
-section.site-section.hero-section .container .row .hero-title::after {
-  content: '';
-  position: absolute;
-  width: 400px;
-  background-color: #f15d2f;
-  height: 0px;
-  bottom: -7px;
-  left: 0;
-}
-
 section.site-section.hero-section .container .row .hero-title--xs {
   display: none;
   font-size: 1.8rem;
@@ -4815,28 +4782,6 @@ section.site-section.hero-section .container .row .hero-title--xs::after {
   bottom: -12px;
   left: 0;
 }
-
-
-section.site-section.hero-section .container .row .hero-title-lp--xs {
-  display: none;
-  font-size: 1.8rem;
-  line-height: 1.2;
-  position: relative;
-  margin-bottom: 30px;
-  font-weight: 400;
-  max-width: 500px;
-}
-
-section.site-section.hero-section .container .row .hero-title--xs::after {
-  content: '';
-  position: absolute;
-  width: 68px;
-  background-color: #f15d2f;
-  height: 0px;
-  bottom: -12px;
-  left: 0;
-}
-
 
 @media (max-width: 768px) {
   section.site-section.hero-section .container .row .hero-title {
@@ -5025,7 +4970,6 @@ section.team-section .site-section__title--small::after {
   content: "";
   position: absolute;
   width: 40px;
-  left: -webkit-calc(50% - 20px);
   left: calc(50% - 20px);
   height: 1px;
   background-color: #f15d2f;
@@ -5064,7 +5008,6 @@ section.team-section .container {
 
 section.team-section .team-card {
   position: absolute;
-  width: -webkit-calc(100% - 30px);
   width: calc(100% - 30px);
   padding: 50px 60px 50px 60px;
   background-color: #fff;
@@ -5083,7 +5026,6 @@ section.team-section .team-card {
 
 @media (max-width: 1199px) {
   section.team-section .team-card {
-    width: -webkit-calc(100% - 118px);
     width: calc(100% - 118px);
     padding-bottom: 0;
   }
@@ -5203,7 +5145,6 @@ section.story-section .story__title::after {
   width: 50px;
   height: 1px;
   background: #f15d2f;
-  left: -webkit-calc(50% - 25px);
   left: calc(50% - 25px);
   bottom: -10px;
   font-weight: 400;
@@ -5255,7 +5196,6 @@ section.story-section--xs .section-title::after {
   content: "";
   position: absolute;
   width: 40px;
-  left: -webkit-calc(50% - 20px);
   left: calc(50% - 20px);
   height: 1px;
   background-color: #f15d2f;
@@ -5288,7 +5228,6 @@ section.story-section--xs .story--dark::before {
   height: 1px;
   background-color: #f15d2f;
   top: 50px;
-  left: -webkit-calc(50% - 18px);
   left: calc(50% - 18px);
 }
 
@@ -5488,7 +5427,7 @@ section.solutions-section .container {
 }
 
 section.solutions-section .site-section__title {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 @media (max-width: 993px) {
@@ -5575,7 +5514,6 @@ section.solutions-section .solution-title::after {
   height: 1px;
   background-color: #f15d2f;
   bottom: -15px;
-  left: -webkit-calc(50% - 50px);
   left: calc(50% - 50px);
 }
 
@@ -5586,7 +5524,6 @@ section.solutions-section .solution-title::after {
   }
   section.solutions-section .solution-title::after {
     width: 36px;
-    left: -webkit-calc(50% - 18px);
     left: calc(50% - 18px);
     bottom: -25px;
   }
@@ -5678,7 +5615,6 @@ section.solutions-download-section .downloads .container .download--xs:first-chi
   height: 2px;
   background-color: #fff;
   bottom: 0;
-  left: -webkit-calc(50% - 18px);
   left: calc(50% - 18px);
 }
 
@@ -5833,7 +5769,6 @@ section.products-body-section .products-body-text::after {
   width: 50px;
   height: 1px;
   background-color: #f15d2f;
-  left: -webkit-calc(50% - 25px);
   left: calc(50% - 25px);
   bottom: -10px;
 }
@@ -6096,14 +6031,12 @@ section.products-pricing-section .plans .col-blank--text a {
 }
 
 section.products-pricing-section .plans .col-plan {
-  width: -webkit-calc((100% - 350px) / 3);
   width: calc((100% - 350px) / 3);
   padding: 15px;
 }
 
 section.products-pricing-section .plans .col-plan--card {
   padding: 20px;
-  width: -webkit-calc((100% - 100px) / 3);
   width: calc((100% - 100px) / 3);
 }
 
@@ -6113,7 +6046,6 @@ section.products-pricing-section .plans .col-plan--card {
     font-size: 24px;
   }
   section.products-pricing-section .plans .col-plan {
-    width: -webkit-calc((100% - 250px) / 3);
     width: calc((100% - 250px) / 3);
     padding: 15px;
   }
@@ -6131,7 +6063,6 @@ section.products-pricing-section .plans .col-plan--card {
     font-size: 20px;
   }
   section.products-pricing-section .plans .col-plan {
-    width: -webkit-calc((100% - 180px) / 3);
     width: calc((100% - 180px) / 3);
     padding: 10px;
   }
@@ -6472,7 +6403,6 @@ section.how-it-works-section--2 .container .title::after {
   width: 50px;
   height: 1px;
   background-color: #f15d2f;
-  left: -webkit-calc(50% - 25px);
   left: calc(50% - 25px);
   bottom: -15px;
 }
@@ -6545,7 +6475,6 @@ section.how-it-works-section--3 .section-top-container .container .title::after 
   width: 50px;
   height: 1px;
   background-color: #f15d2f;
-  left: -webkit-calc(50% - 25px);
   left: calc(50% - 25px);
   bottom: -15px;
 }
@@ -6666,7 +6595,6 @@ section.how-it-works-section--3 .section-top-container .container .row > .item-c
     width: 36px;
     height: 1px;
     background-color: #f15d2f;
-    left: -webkit-calc(50% - 18px);
     left: calc(50% - 18px);
     bottom: 0;
     top: inherit;
@@ -6779,7 +6707,6 @@ section.how-it-works-section--3 .section-bottom-container .container .item-conta
     height: 1px;
     background-color: #f15d2f;
     bottom: -20px;
-    left: -webkit-calc(50% - 18px);
     left: calc(50% - 18px);
   }
 }
@@ -6835,7 +6762,6 @@ section.how-it-works-section--4 .container .title::after {
   width: 50px;
   height: 1px;
   background-color: #f15d2f;
-  left: -webkit-calc(50% - 25px);
   left: calc(50% - 25px);
   bottom: -15px;
 }
@@ -6848,7 +6774,6 @@ section.how-it-works-section--4 .container .title::after {
   }
   section.how-it-works-section--4 .container .title::after {
     width: 36px;
-    left: -webkit-calc(50% - 18px);
     left: calc(50% - 18px);
     bottom: -20px;
     top: inherit;
@@ -7018,7 +6943,6 @@ section.parallax-features-section .section-features .feature {
 
 section.parallax-features-section .section-features .feature .text-wrap {
   display: inline-block;
-  width: -webkit-calc(100% - 100px);
   width: calc(100% - 100px);
 }
 
@@ -7199,7 +7123,6 @@ section.privacy-policy-section--1 .section-top-container .container .title::afte
   width: 50px;
   height: 1px;
   background-color: #f15d2f;
-  left: -webkit-calc(50% - 25px);
   left: calc(50% - 25px);
   bottom: -15px;
 }
@@ -7320,7 +7243,6 @@ section.privacy-policy-section--1 .section-top-container .container .row > .item
     width: 36px;
     height: 1px;
     background-color: #f15d2f;
-    left: -webkit-calc(50% - 18px);
     left: calc(50% - 18px);
     bottom: 0;
     top: inherit;
@@ -7439,7 +7361,6 @@ section.privacy-policy-section--1 .section-bottom-container .container .item-con
     height: 1px;
     background-color: #f15d2f;
     bottom: -20px;
-    left: -webkit-calc(50% - 18px);
     left: calc(50% - 18px);
   }
 }
@@ -7487,7 +7408,6 @@ section.how-it-works-section--4 .container .title::after {
   width: 50px;
   height: 1px;
   background-color: #f15d2f;
-  left: -webkit-calc(50% - 25px);
   left: calc(50% - 25px);
   bottom: -15px;
 }
@@ -7500,7 +7420,6 @@ section.how-it-works-section--4 .container .title::after {
   }
   section.how-it-works-section--4 .container .title::after {
     width: 36px;
-    left: -webkit-calc(50% - 18px);
     left: calc(50% - 18px);
     bottom: -20px;
     top: inherit;
@@ -8087,7 +8006,6 @@ section.blog-section .blog-articles-container article.blog-article .article-cont
 }
 
 section.blog-section .blog-articles-container article.blog-article .article-content .article-text {
-  width: -webkit-calc(100% - 100px);
   width: calc(100% - 100px);
   font-size: 0.9rem;
   float: left;
@@ -8611,7 +8529,6 @@ section.download-section .download-command .download-action .button {
 }
 
 section.download-section .download-command .download-action .action-description {
-  width: -webkit-calc(100% - 50px);
   width: calc(100% - 50px);
   text-align: center;
 }
@@ -8941,21 +8858,6 @@ section.download-section .download-popup .popup .popup-content .action-descripti
 }
 
 section.download-section .download-popup .popup .popup-content .action-description ul.downloads span.sha {
-  font-family: monospace;
-  font-size: 80%;
-}
-
-section.download-section .download-list .action-description ul.downloads {
-  margin-top: 0.3em;
-  list-style: disc;
-  padding-left: 1em;
-}
-
-section.download-section .download-list .action-description ul.downloads li {
-  padding: 0.3em 0em;
-}
-
-section.download-section .download-list .action-description ul.downloads span.sha {
   font-family: monospace;
   font-size: 80%;
 }
@@ -9699,7 +9601,6 @@ body.prenet .figure-content svg {
 }
 
 body.prenet .figure-key {
-  min-width: -webkit-calc(8 / 12);
   min-width: calc(8 / 12);
 }
 
@@ -9889,21 +9790,17 @@ body.prenet .button .icon.is-small, body.prenet .button .icon.is-medium, body.pr
 }
 
 body.prenet .button .icon:first-child:not(:last-child) {
-  margin-left: -webkit-calc(-0.5em - 1px);
   margin-left: calc(-0.5em - 1px);
   margin-right: 0.25em;
 }
 
 body.prenet .button .icon:last-child:not(:first-child) {
   margin-left: 0.25em;
-  margin-right: -webkit-calc(-0.5em - 1px);
   margin-right: calc(-0.5em - 1px);
 }
 
 body.prenet .button .icon:first-child:last-child {
-  margin-left: -webkit-calc(-0.5em - 1px);
   margin-left: calc(-0.5em - 1px);
-  margin-right: -webkit-calc(-0.5em - 1px);
   margin-right: calc(-0.5em - 1px);
 }
 
@@ -10086,7 +9983,6 @@ body.prenet .tooltip[x-placement^="top"] .tooltip-arrow {
   border-right-color: transparent !important;
   border-bottom-color: transparent !important;
   bottom: -5px;
-  left: -webkit-calc(50% - 5px);
   left: calc(50% - 5px);
   margin-top: 0;
   margin-bottom: 0;
@@ -10102,7 +9998,6 @@ body.prenet .tooltip[x-placement^="bottom"] .tooltip-arrow {
   border-right-color: transparent !important;
   border-top-color: transparent !important;
   top: -5px;
-  left: -webkit-calc(50% - 5px);
   left: calc(50% - 5px);
   margin-top: 0;
   margin-bottom: 0;
@@ -10118,7 +10013,6 @@ body.prenet .tooltip[x-placement^="right"] .tooltip-arrow {
   border-top-color: transparent !important;
   border-bottom-color: transparent !important;
   left: -5px;
-  top: -webkit-calc(50% - 5px);
   top: calc(50% - 5px);
   margin-left: 0;
   margin-right: 0;
@@ -10134,7 +10028,6 @@ body.prenet .tooltip[x-placement^="left"] .tooltip-arrow {
   border-right-color: transparent !important;
   border-bottom-color: transparent !important;
   right: -5px;
-  top: -webkit-calc(50% - 5px);
   top: calc(50% - 5px);
   margin-left: 0;
   margin-right: 0;
