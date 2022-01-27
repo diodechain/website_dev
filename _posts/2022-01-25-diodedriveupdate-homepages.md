@@ -16,7 +16,7 @@ In addition to file sharing and collaboration, Diode Drive has added “viewers�
 
 In version 1.3.11 (2021-12-28) and later, Diode Drive supports viewing Markdown (.md file extension) contents.  Markdown allows you to add simple formatting elements to text documents (check out the <a href="https://support.diode.io/article/9i98bmdwia">Diode Drive Markdown Editing Basics guide</a>), while still maintaining readability of the text itself. 
 
-This update allows you to “promote” a Markdown document to be your Zone’s home page.  This gives you the ability to customize your Zone's introductory look an feel so that your team is oriented upon entering the Zone.  You can share everything from greetings, notes, and instructions to local files, pictures, and web links.  For detailed instructions on setting up your home page checkout <a href="https://support.diode.io/article/3wu19hhldc">Create a home page for your zone</a>.
+This version also allows you to “promote” a Markdown document as your Zone’s home page.  This gives you the ability to customize your Zone's introductory look and feel so that your team is oriented upon entering the Zone.  Your home page can contain whatever you want it to contain - greetings, instructions, pictures, links to files and external articles, etc.  For detailed instructions on setting up a home page for your Zone, checkout <a href="https://support.diode.io/article/3wu19hhldc">Create a home page for your zone</a>.
 
 This is an example Markdown document that could be used for a home page:
 
