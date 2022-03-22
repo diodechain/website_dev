@@ -55,9 +55,9 @@ function DoTheRedirect(url) { window.location=url; }
                                  <span class="sha" style="padding-left:10px;">{{ download.sha }}</span>
                               {% else %}
                                  {% if download.ext-link %}
-                                    <a href="{{ download.ext-link }}" target="_blank">{{ download.name }}</a>
+                                    <a href="{{ download.ext-link }}" target="_blank">{{ download.name }}</a><br/>
                                  {% else %}
-                                    <a href="{{ site.links.mobilesurvey }}">{{ download.name }} (preview)</a>
+                                    <a href="{{ site.links.mobilesurvey }}">{{ download.name }} (preview)</a><br/>
                                  {% endif %}
                               {% endif %}
                            </li>
