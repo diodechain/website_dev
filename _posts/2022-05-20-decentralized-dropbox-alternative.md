@@ -8,13 +8,11 @@ author: Allen M
 image: decentralized-dropbox-alternative.png
 imageclass: top
 ---
-[Diode Drive](https://diode.io/products/d-drive/) is a secure and confidential decentralized alternative to Dropbox.  
+[Diode Drive](https://diode.io/products/d-drive/) is a secure and confidential decentralized Dropbox alternative.  [Dropbox](https://dropbox.com) is an online service that offers you cloud storage space for your files, and allows you to easily share the files with others.  
 
-[Dropbox](https://dropbox.com) is an online service that offers you cloud storage space for your files, and allows you to easily share the files with others.  Dropbox is a traditional web service - cloud servers are at the center of the service, and are responsible for storing your files and managing access to them.  A growing number of individuals and organizations are becoming aware of [the security challenges](https://www.theguardian.com/technology/2016/aug/31/dropbox-hack-passwords-68m-data-breach) of this model, and are looking for a more secure and confidential alternative to Dropbox.  
+As opposed to Dropbox's model of storing your files on cloud servers, Diode Drive is an [information self-custody](https://diode.io/diode%20drive/self-custody-for-data-22032/) solution - users have full control of who has access to their information and where the information is stored.  This revolutionizes the ability to deploy a secure information program without custom IT development or maintenance (e.g. GDPR, HIPAA, cross-geopolitical security).
 
-Diode Drive is a secure and decentralized [information self-custody](https://diode.io/diode%20drive/self-custody-for-data-22032/) solution.  Although Diode Drive has many of the same capabilities as Dropbox, Diode Drive users have full control of who has access to their information and where the information is stored.  This revolutionizes the ability to deploy a secure information program without custom IT development or maintenance (e.g. GDPR, HIPAA, cross-geopolitical security).
-
-The topics below detail why Diode Drive can be a more secure, confidential, and affordable decentralized alternative to Dropbox.
+Read below for why Diode Drive can be a more secure, confidential, and affordable decentralized Dropbox alternative.
 
 # Diode Drive as a Decentralized Dropbox Alternative
 
