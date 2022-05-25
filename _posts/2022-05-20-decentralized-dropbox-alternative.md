@@ -22,7 +22,7 @@ The topics below detail why Diode Drive can be a more secure, confidential, and 
 
 Dropbox has a [number of plans](https://dropbox.com/plans), including a basic free plan that has up to 2GB of storage.  The highest plan has unlimited storage, and costs $20/user/month.
 
-Diode Drive has no fees for storage size – you can store as much data as your devices can handle for free.
+Diode Drive has [no fees for storage size](https://support.diode.io/article/vr156n18cf-is-diodedrive-unlimited-storage) – you can store as much data as your devices can handle for free.
 
 ## 2) Data Confidentiality
 
@@ -62,7 +62,7 @@ Diode Drive’s file synchronization behaviour can be pictured as a self-custody
 
 Dropbox uses user-to-server encryption for transferring files.  The server always terminates the encryption. 
 
-Diode uses user-to-user encryption (end to end encryption) for transferring files, chat, and other communications.  This removes a number of attack vectors that can be used to gain access to your information, communications, and team members.
+Diode uses [user-to-user encryption (end to end encryption)](https://support.diode.io/article/pvmzyqlesq-how-it-works) for transferring files, chat, and other communications.  This removes a number of attack vectors that can be used to gain access to your information, communications, and team members.
 
 ## 8)	Share Without the App
 
