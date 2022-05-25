@@ -5,7 +5,7 @@ date: 2022-05-20 15:44
 categories: [Web3, Diode Drive]
 tags: [Web3, Self-Custody, Decentralization, Decentralized Dropbox Alternative]
 author: Allen M
-image: decentralized_dropbox_alternative.png
+image: decentralized-dropbox-alternative.png
 imageclass: top
 ---
 [Diode Drive](https://diode.io/products/d-drive/) is a secure and confidential decentralized alternative to Dropbox.  
