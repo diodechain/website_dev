@@ -5,7 +5,7 @@ date: 2022-05-22 15:55
 categories: [Web3, Diode Network, Diode CLI]
 tags: [Web3, Self-Custody, Decentralization, Free ngrok Alternative, Open Source]
 author: Allen M
-image: free-ngrok-alternative.jpg
+image: free-ngrok-alternative2.jpg
 imageclass: top
 ---
 Diode offers a free ngrok alternative.
