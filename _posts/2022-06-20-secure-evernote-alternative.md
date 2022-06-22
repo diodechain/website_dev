@@ -102,6 +102,6 @@ In Diode Drive, all notes can include links to other notes or other files – th
 <br/>
 You’ve probably heard of [de-googling](https://www.reddit.com/r/degoogle/) – a process that you can also do for [Google Drive or Dropbox by deploying Diode Drive](https://diode.io/web3/diode%20drive/decentralized-dropbox-alternative-22140/).  We at Diode have now “de-evernoted” our notes and are not looking back!  
 
-For a how-to for Diode Drive secure note taking, see the [support article](https://support.diode.io/article/nwoi0x3d67-take-secure-notes-with-diode-drive).
+For a how-to on Diode Drive secure note taking, see the [support article](https://support.diode.io/article/nwoi0x3d67-take-secure-notes-with-diode-drive).
 
 Diode Drive is bringing a whole new approach to collaboration – please [download it](https://diode.io/download) and [let us know what you think](https://t.me/diode_chain)!
