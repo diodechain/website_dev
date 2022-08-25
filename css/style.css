@@ -6077,7 +6077,7 @@ section.products-pricing-section .plans .plan {
           border-radius: 5px;
   padding: 25px;
   text-align: center;
-  height: 460px;
+  height: 540px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6088,9 +6088,7 @@ section.products-pricing-section .plans .plan {
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-bottom: 30px;
 }
 
@@ -6123,6 +6121,10 @@ section.products-pricing-section .plans .plan__price > span {
 section.products-pricing-section .plans .plan__price .plan__price_annotation {
   font-size: 12px;
   color: #2d3e50;
+}
+
+section.products-pricing-section .plans .plan__action {
+  margin-top:auto;
 }
 
 section.products-pricing-section .plans .plan__action > .button {
