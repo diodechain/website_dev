@@ -27,7 +27,7 @@ One of the most important factors is the security of your chat app.  No-one want
 
 The core vulnerability for most chat applications is that your chats reside on a server that the chat company runs - they can be exploited and/or exposed to data breaches. 
 
-Diode is different - when using Diode, your information is never resident on a server.  Although a few other chat applications, like Signal, have a similar commitment for chat content, Diode goes even further: Diode accounts use self custodial authentication (your account information is not stored on any server where it could be subject to a data breach), and accounts are pseudo anonymous (they have a username, but require no identifiable information).  Apps like Slack,  Discord, and even Signal require other account identifiers and store certain authentication information on managed servers.  
+Diode is different - when using Diode, your DMs, group chats, and other information are never resident on a server.  Although a few other chat applications, like Signal, have a similar commitment for chat content, Diode goes even further: Diode accounts use self custodial authentication (your account information is not stored on any server where it could be subject to a data breach), and accounts are pseudo anonymous (they have a username, but require no identifiable information).  Apps like Slack,  Discord, and even Signal require other account identifiers and store certain authentication information on managed servers.  
 
 ## Designed for Team Collaborations
 
