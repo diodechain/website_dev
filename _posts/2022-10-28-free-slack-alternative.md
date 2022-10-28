@@ -27,11 +27,13 @@ One of the most important factors is the security of your chat app.  No-one want
 
 The core vulnerability for most chat applications is that your chats reside on a server that the chat company runs - they can be exploited and/or exposed to data breaches. 
 
-Diode is different - when using Diode, your DMs, group chats, and other information are never resident on a server.  Although a few other chat applications, like Signal, have a similar commitment for chat content, Diode goes even further: Diode accounts use self custodial authentication (your account information is not stored on any server where it could be subject to a data breach), and accounts are pseudo anonymous (they have a username, but require no identifiable information).  Apps like Slack,  Discord, and even Signal require other account identifiers and store certain authentication information on managed servers.  
+Diode is different - when using Diode, your DMs, group chats, and other information are never resident on a server.  
 
-## Designed for Team Collaborations
+Although a few other chat applications, like Signal, have a similar commitment for chat content, Diode goes even further: Diode accounts use self custodial authentication (your account information is not stored on any server where it could be subject to a data breach), and accounts are pseudo anonymous (they have a username, but require no identifiable information).  Apps like Slack,  Discord, and even Signal require other account identifiers and store certain authentication information on managed servers.  
 
-We really respect Signal here at Diode.  However, Signal is oriented towards individual users and user groups - not towards teams.
+## Designed for Organizations
+
+We really respect Signal here at Diode.  However, Signal is oriented towards individual users and user groups - not towards organizations and teams.
 
 Diode is more organization-oriented, like Slack or Discord, and also has native integrations with [structured files](https://diode.io/web3/diode%20drive/decentralized-dropbox-alternative-22140/) (a self custody Dropbox / Google Drive like capability) and [dynamic content](https://diode.io/diode%20cli/web3/diode%20network/free-ngrok-alternative-22152/) (an enterprise VPN like capability) - the very information that makes many chats pertinent to teams in the first place!
 
