@@ -23,8 +23,7 @@ Let’s dig in.
 ## Inherently Secure and Private
 One of the most important factors is the security of your chat app.  No-one wants their communications, personal information, or friend network to be used in a way they don’t intend. People’s frustrations with their data becoming someone else’s product has meant that chat application security has become the number one determining factor in chat application adoption:
 
-<p align="center"><img src="images/blog/security-determining-factor-for-chat.png"></p>
-_Source: https://www.businessofapps.com/data/messaging-app-market/_
+<p align="center"><a href="https://www.businessofapps.com/data/messaging-app-market/"><img src="images/blog/security-determining-factor-for-chat.png"></a></p>
 
 The core vulnerability for most chat applications is that your chats reside on a server that the chat company runs - they can be exploited and/or exposed to data breaches. 
 
