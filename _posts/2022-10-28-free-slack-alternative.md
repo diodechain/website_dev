@@ -10,11 +10,15 @@ imageclass: top
 ---
 [Slack](https://slack.com/pricing) has recently changed its pricing to require a subscription to a paid plan to retain access to older messages - this change has motivated a lot of people to look for a free Slack alternative.
 
-Read below for how [Diode Drive](https://diode.io/products/d-ddrive) can not only be used a free Slack alternative, but also as a more secure and capable environment for individuals and teams!
+[Diode Drive](https://diode.io/products/d-ddrive) is a content-first collaboration application that makes chat for teams more pertinent, more secure, and better to use. 
+
+Read below for how Diode can not only be used a free Slack alternative, but also as a more secure and capable environment for individuals and teams!
 
 # What Features are Important in a Free Slack Alternative?
 
-Chat has become an indispensable tool for work and personal communications.  Some key features that make or break a chat application are simple!  Let’s dig in.
+Chat has become an indispensable tool for work and personal communications.  Some key features that make or break a chat application are simple!  
+
+Let’s dig in.
 
 ## Inherently Secure and Private
 One of the most important factors is the security of your chat app.  No-one wants their communications, personal information, or friend network to be used in a way they don’t intend. People’s frustrations with their data becoming someone else’s product has meant that chat application security has become the number one determining factor in chat application adoption:
