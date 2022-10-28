@@ -25,7 +25,7 @@ One of the most important factors is the security of your chat app.  No-one want
 
 <p align="center"><a href="https://www.businessofapps.com/data/messaging-app-market/"><img src="images/blog/security-determining-factor-for-chat.png"></a></p>
 
-The core vulnerability for most chat applications is that your chats reside on a server that the chat company runs - they can be exploited and/or exposed to data breaches. 
+The core vulnerability for most chat applications is that your chats reside on a server that the chat company runs - they can be exploited and/or exposed to [data breaches](https://arstechnica.com/information-technology/2022/10/microsoft-under-fire-for-response-to-leak-of-2-4tb-of-sensitive-customer-data/). 
 
 Diode is different - when using Diode, your DMs, group chats, and other information are never resident on a server.  
 
