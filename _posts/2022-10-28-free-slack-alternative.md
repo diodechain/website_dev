@@ -35,16 +35,18 @@ Although a few other chat applications, like Signal, have a similar commitment f
 
 We really respect Signal here at Diode.  However, Signal is oriented towards individual users and user groups - not towards organizations and teams.
 
-Diode is more organization-oriented, like Slack or Discord, and also has native integrations with [structured files](https://diode.io/web3/diode%20drive/decentralized-dropbox-alternative-22140/) (a self custody Dropbox / Google Drive like capability) and [dynamic content](https://diode.io/diode%20cli/web3/diode%20network/free-ngrok-alternative-22152/) (an enterprise VPN like capability) - the very information that makes many chats pertinent to teams in the first place!
+Diode is more organization-oriented, like Slack or Discord, but also has native integrations with [structured files](https://diode.io/web3/diode%20drive/decentralized-dropbox-alternative-22140/) (a self custody Dropbox / Google Drive like capability) and [dynamic content](https://diode.io/diode%20cli/web3/diode%20network/free-ngrok-alternative-22152/) (an enterprise VPN like capability) - the very information that makes many chats pertinent to teams in the first place!
 
 If the team's focus includes files/work product, Diode Drive can help the team's chats organize, share, reference, pin, and even author files in conversations.  
 
-If the team's core focus includes accessing secure dynamic content - like access to a server admin interface or training content - those resources can be accessed end-to-end encrypted from within the app, making the insitu team collaboration more pertinent and accessible.
+If the team's core focus includes accessing secure dynamic content - like access to a server admin interface or training content - those resources can be accessed end-to-end encrypted from within the app, making the insitu team collaboration more secure, pertinent, and accessible.
 
 ## Never Holds Your Data Hostage
-Most chat apps have to restrict storage / history in their free plans so that their "freebie" cloud server bill remains at a dull roar.  This means that teams need to subscribe to higher priced plans when they need more storage or longer history.  For example, if you need more than 90 days of chat history with Slack, you need to pay a minimum of $7.25 USD per team member for that privelege.
+Most chat apps have to restrict storage / history in their free plans so that their "freebie" cloud server bill remains at a dull roar.  This means that teams need to subscribe to higher priced plans when they need more storage or longer history.  
 
-Diode is a self-custody solution - we have no cloud server bills related to storage and chat history - your team's devices act as a "self custody bit torrent" to supply and maintain the full context of your organizations chat history overtime - regardless of message or content size. 
+For example, if you need more than 90 days of chat history with Slack, you need to pay a minimum of $7.25 USD per team member for that privelege.
+
+Diode is different - it is a self-custody solution that has no cloud server bills related to storage and chat history.  We pass this benefit directly to our users by having free unlimited history and chat content storage.   
 
 # Get Started Today!
 
