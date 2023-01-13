@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Diode Drive Update
+title: Diode Drive Product Update
 date: 2023-01-11 12:45
 categories: [Diode Drive]
 tags: [Product Update]
@@ -8,8 +8,6 @@ author: Allen M
 image: diode_drive_logo.png
 imageclass: top
 ---
-## Diode Drive Product Update
-
 The Diode Drive 1.7.14 release is a minor update that includes the following improvements:
 
 *   **Nomad Plan:** The Nomad plan, Diode free evaluation plan, has been expanded to allow up to 10 team members.  We made this update in order to allow larger teams to evaluate Diode’s entry level features.
