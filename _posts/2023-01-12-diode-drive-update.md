@@ -5,7 +5,7 @@ date: 2023-01-11 12:45
 categories: [Diode Drive]
 tags: [Product Update]
 author: Allen M
-image: diode_drive_logo.png
+image: Feature-Update-1_7_14.png
 imageclass: top
 ---
 The Diode Drive 1.7.14 release is a minor update that includes the following improvements:
